@@ -12,7 +12,6 @@ timetable:
   - time: "13:00 - 13:10"
     title: "Opening remarks"
     speaker: "Daeyeong Jeong"
-    material_id: ""
   - time: "13:10 - 14:40"
     title: "Symmetry and its breaking with QCD"
     speaker: "Chang Hyeon Lee"

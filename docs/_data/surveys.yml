@@ -3,9 +3,9 @@
   url: "https://docs.google.com/forms/d/e/1FAIpQLSdPmuhxUEiCufYF1t0lNbipjlweX33ZXaD_78am91TXwnSB_g/viewform?usp=header"
   enabled: true
 - name: "Registration"
-  topic: "Non-perturbative effects in Quantum Field Theory"
-  url: "https://docs.google.com/forms/d/e/1FAIpQLSdA5FJ95xKKFpmOlP0Qdnsg1D0U5dUbGEaWfw-7ur8TwiWd5A/viewform"
-  enabled: true
+  topic: ""
+  url: ""
+  enabled: false
 - name: "Presurvey"
   topic: ""
   url: ""

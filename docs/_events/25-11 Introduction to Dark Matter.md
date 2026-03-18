@@ -21,7 +21,6 @@ timetable:
   - time: "13:00 - 13:05"
     title: "Opening remarks"
     speaker: "Chang Hyeon Lee"
-    material_id: ""
   - time: "13:05 - 14:35"
     title: "Session 1: Dark Matter Introduction"
     speaker: "Haebarg Kang"

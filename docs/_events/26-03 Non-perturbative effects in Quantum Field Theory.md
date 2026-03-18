@@ -9,9 +9,15 @@ note: "Student Lecture"
 overview: >
   Non-perturbative effects in Quantum Field Theory
 timetable:
-  - time: "13:20 - 13:30"
+  - time: "12:00 - 12:10"
     title: "Opening remarks"
     speaker: "Chang Hyeon Lee"
+  - time: "12:10 - 12:30"
+    title: "Discussion"
+    speaker: ""
+  - time: "12:30 - 13:30"
+    title: "Lunch"
+    speaker: ""
   - time: "13:30 - 14:45"
     title: "The Witten SU(2) Anomaly"
     speaker: "Gyuri Lee"

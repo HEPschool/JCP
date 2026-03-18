@@ -1,7 +1,7 @@
 ---
 layout: event
 title: "Non-perturbative effects in Quantum Field Theory"
-date: 2026-03-21 13:20 +0900
+date: 2026-03-21 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
 speaker: "Gyuri Lee"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"

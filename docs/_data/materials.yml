@@ -18,3 +18,8 @@
   date: 2026-01-31
   file: "/assets/materials/The Strong CP Problem.pdf"
   id: "StrongCP_Note"
+- title: "Non-perturbative Effects in Quantum Field Theory"
+  speaker: "Gyuri Lee"
+  date: 2026-03-21
+  file: "/assets/materials/Non-perturbative Effects in Quantum Field Theory.pdf"
+  id: "NonPert_Note"

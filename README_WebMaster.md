@@ -110,8 +110,10 @@ favicon은 페이지 방문 시, 웹 브라우저의 탭 항목에 표시되는 
 ```html
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon_16.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon_32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/favicon/favicon_64.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="128x128" href="{{ '/assets/favicon/favicon_128.png' | relative_url }}">
 <link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | relative_url }}">
-<link rel="apple-touch-icon" href="{{ '/assets/favicon/favicon_180.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/favicon/favicon_256.png' | relative_url }}">
 ```
 기본 설정된 favicon은 ${e^-}{e^+}\to{\mu^-}{\mu^+}$ 과정의 Feynman diagram을 Weinberg angle만큼 돌린 그림입니다. <br/><br/><br/>
 

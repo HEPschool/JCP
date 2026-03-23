@@ -56,9 +56,9 @@ participants:
     affiliation: Chungbuk National University
   - name: Haebarg Kang
     affiliation: Jeonbuk National University
-  - name: Minsub Lee
+  - name: Min Sub Lee
     affiliation: Chungbuk National University
-  - name: Chan Youn Weon
+  - name: Chan Youn Won
     affiliation: Chungbuk National University
   - name: Min-Gyun Park
     affiliation: Chungnam National University
@@ -66,7 +66,7 @@ participants:
     affiliation: Jeonbuk National University
   - name: Beom Su Kim
     affiliation: Jeonbuk National University
-  - name: Seong-Sik Kim
+  - name: Seongsik Kim
     affiliation: Chungnam National University
 photos:
   - "/assets/img/photos/StrongCP_groupphoto.jpg"

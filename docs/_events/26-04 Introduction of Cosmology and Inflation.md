@@ -1,10 +1,10 @@
 ---
 layout: event
 title: "Introduction of Cosmology and Inflation"
-date: 2026-04-25 13:00 +0900
-location: "Jeonbuk National University, Jeonju, Korea"
+date: 2026-04-25 12:00 +0900
+location: "Chungnam National University, Daejeon, Korea"
 speaker: "Beom Su Kim"
-address: "TBA"
+address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 note: "Student Lecture"
 overview: >
   Introduction of Cosmology and Inflation

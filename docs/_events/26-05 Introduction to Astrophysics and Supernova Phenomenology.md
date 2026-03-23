@@ -1,10 +1,10 @@
 ---
 layout: event
 title: "Introduction to Astrophysics and Supernova Phenomenology"
-date: 2026-05-01 13:00 +0900
-location: "Pusan National University, Busan, Korea"
+date: 2026-05-30 12:00 +0900
+location: "Chungnam National University, Daejeon, Korea"
 speaker: "Ju Hyeong Kang"
-address: "TBA"
+address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 note: "Student Lecture"
 overview: >
   Introduction to Astrophysics and Supernova Phenomenology
@@ -23,6 +23,6 @@ hero:
       style: title
     - text: "Ju Hyeong Kang"
       style: subtitle
-    - text: "2026.05.01 (Sat)"
+    - text: "2026.05.30 (Sat)"
       style: text
 ---

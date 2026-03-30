@@ -1,13 +1,13 @@
 ---
 layout: event
-title: "Introduction of Cosmology and Inflation"
-date: 2026-04-25 12:00 +0900
+title: "Introduction of Cosmology"
+date: 2026-04-18 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
 speaker: "Beom Su Kim"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 note: "Student Lecture"
 overview: >
-  Introduction of Cosmology and Inflation
+  Introduction of Cosmology
 timetable:
   - time: "TBA"
     title: "TBA"
@@ -17,12 +17,12 @@ map_embed: >
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.7521887087823!2d127.3375980119162!3d36.36678097225866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654b5a03ccdb71%3A0x131d324a82b243ae!2z7J6Q7Jew6rO87ZWZ64yA7ZWZIDTtmLjqtIAoVzExLTIp!5e0!3m2!1sko!2skr!4v1760513072497!5m2!1sko!2skr"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 hero:
-  image: "/assets/img/heros/event_default.jpg"
+  image: "/assets/img/heros/cosmology.jpg"
   lines:
-    - text: "Introduction of Cosmology and Inflation"
+    - text: "Introduction of Cosmology"
       style: title
     - text: "Beom Su Kim"
       style: subtitle
-    - text: "2026.04.25 (Sat)"
+    - text: "2026.04.18 (Sat)"
       style: text
 ---

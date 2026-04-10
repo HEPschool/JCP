@@ -1,13 +1,13 @@
 ---
 layout: event
-title: "Invited Lecture, TBA"
-date: 2026-06-01 13:00 +0900
+title: "Introduction to Astrophysics and Supernova Phenomenology"
+date: 2026-06-27 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
-speaker: "Seong-Sik Kim"
+speaker: "Ju Hyeong Kang"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
-note: "Invited Lecture"
+note: "Student Lecture"
 overview: >
-  TBA
+  Introduction to Astrophysics and Supernova Phenomenology
 timetable:
   - time: "TBA"
     title: "TBA"
@@ -19,10 +19,10 @@ map_embed: >
 hero:
   image: "/assets/img/heros/event_default.jpg"
   lines:
-    - text: "TBA"
+    - text: "Introduction to Astrophysics and Supernova Phenomenology"
       style: title
-    - text: "Seong-Sik Kim"
+    - text: "Ju Hyeong Kang"
       style: subtitle
-    - text: "2026.06.01 (Sat)"
+    - text: "2026.06.27 (Sat)"
       style: text
 ---

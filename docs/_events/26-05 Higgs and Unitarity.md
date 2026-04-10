@@ -1,13 +1,13 @@
 ---
 layout: event
-title: "Introduction to Astrophysics and Supernova Phenomenology"
-date: 2026-05-30 12:00 +0900
+title: "Higgs and Unitarity"
+date: 2026-05-30 13:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
-speaker: "Ju Hyeong Kang"
+speaker: "Seongsik Kim"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
-note: "Student Lecture"
+note: "Invited Lecture"
 overview: >
-  Introduction to Astrophysics and Supernova Phenomenology
+  TBA
 timetable:
   - time: "TBA"
     title: "TBA"
@@ -19,9 +19,9 @@ map_embed: >
 hero:
   image: "/assets/img/heros/event_default.jpg"
   lines:
-    - text: "Introduction to Astrophysics and Supernova Phenomenology"
+    - text: "Higgs and Unitarity"
       style: title
-    - text: "Ju Hyeong Kang"
+    - text: "Seongsik Kim"
       style: subtitle
     - text: "2026.05.30 (Sat)"
       style: text

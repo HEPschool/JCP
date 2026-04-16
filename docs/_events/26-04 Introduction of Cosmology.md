@@ -7,7 +7,7 @@ speaker: "Beom Su Kim"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 note: "Student Lecture"
 overview: >
-  Introduction of Cosmology
+  There is no quantum field theory in this lecture. This is a lecture that introduces cosmology based on what you need to know when you encounter cosmology. Therefore, the content may be quite easy, but I would greatly appreciate it if anyone who has done cosmology once would listen to it for reminding, and those who have never done it before would listen to it for introduction.
 timetable:
   - time: "12:00 - 12:10"
     title: "Opening remarks"

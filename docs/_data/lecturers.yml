@@ -25,19 +25,19 @@
 - name: "Beom Su Kim"
   affiliation: "Jeonbuk National University"
   email: ""
-  date: 2026-04-01
+  date: 2026-04-18
+  intro: "The lecturer of 'Introduction of Cosmology' on Apr 18, 2026."
+  photo: ""
+- name: "Seong-Sik Kim"
+  affiliation: "Chungnam National University"
+  email: ""
+  date: 2026-05-30
   intro: ""
   photo: ""
 - name: "Ju Hyeong Kang"
   affiliation: "Pusan National University"
   email: ""
-  date: 2026-05-01
-  intro: ""
-  photo: ""
-- name: "Seong-Sik Kim"
-  affiliation: "Chungnam National University"
-  email: ""
-  date: 2026-06-01
+  date: 2026-06-27
   intro: ""
   photo: ""
 - name: "Yongik Jang"

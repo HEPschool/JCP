@@ -4,7 +4,7 @@ title: "Introduction of Cosmology"
 date: 2026-04-18 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
 speaker: "Beom Su Kim"
-address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
+address: "Room 440, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 note: "Student Lecture"
 overview: >
   There is no quantum field theory in this lecture. This is a lecture that introduces cosmology based on what you need to know when you encounter cosmology. Therefore, the content may be quite easy, but I would greatly appreciate it if anyone who has done cosmology once would listen to it for reminding, and those who have never done it before would listen to it for introduction.
@@ -45,6 +45,25 @@ timetable:
 map_embed: >
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.7521887087823!2d127.3375980119162!3d36.36678097225866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654b5a03ccdb71%3A0x131d324a82b243ae!2z7J6Q7Jew6rO87ZWZ64yA7ZWZIDTtmLjqtIAoVzExLTIp!5e0!3m2!1sko!2skr!4v1760513072497!5m2!1sko!2skr"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+participants:
+  - name: Beom Su Kim
+    affiliation: Jeonbuk National University
+  - name: Chang Hyeon Lee
+    affiliation: Chungnam National University
+  - name: Geon Wook Jeong
+    affiliation: Jeonbuk National University
+  - name: Seongsik Kim
+    affiliation: Chungnam National University
+  - name: Ju Hyeong Kang
+    affiliation: Pusan National University
+  - name: Min-Gyun Park
+    affiliation: Chungnam National University
+  - name: Su Hyeok Hwang
+    affiliation: Chungnam National University
+  - name: Eunhye Cho
+    affiliation: Chungnam National University
+photos:
+  - "/assets/img/photos/Cosmology_groupphoto.jpg"
 hero:
   image: "/assets/img/heros/cosmology.jpg"
   lines:

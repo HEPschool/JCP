@@ -3,9 +3,9 @@
   url: "https://docs.google.com/forms/d/e/1FAIpQLSdPmuhxUEiCufYF1t0lNbipjlweX33ZXaD_78am91TXwnSB_g/viewform?usp=header"
   enabled: true
 - name: "Registration"
-  topic: ""
-  url: ""
-  enabled: false
+  topic: "Higgs and Unitarity"
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSeV2--rYAgMXKpBpP2gLZ00q6r6xwhiThg8EEzen4bVv7shBg/viewform?usp=header"
+  enabled: true
 - name: "Presurvey"
   topic: ""
   url: ""

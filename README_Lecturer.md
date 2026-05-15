@@ -58,7 +58,10 @@ timetable: # timetable은 아래와 같은 형태로 기술됩니다.
   - time: "16:00"
     title: "Lecture 3: Something Again"
     speaker: "Lecturer_3"
-    material_id: "material_3"
+    material_id:
+      - "material_3"
+      - "suppliments_1"
+      - "suppliments_2"
   - time: "17:00"
     title: "Discussion"
     speaker: ""
@@ -108,4 +111,25 @@ Material은 /assets/materials 폴더에 pdf 파일을 업로드하고, docs/_dat
 파일은 홈페이지 접속이 가능한 누구나 열람·다운로드 가능하므로, 열람을 제한하려면 pdf 파일에 비밀번호를 설정하여 업로드하시기 바랍니다. <br/>
 pdf 파일에 비밀번호를 설정하는 경우, Lecturer 정보 설정 시 email 항목을 작성하여 자료 열람을 위한 연락이 가능하도록 해주실 것을 강하게 권장드립니다. <br/>
 등록된 파일의 title, speaker, date는 Materials 페이지에 date 순서로 정렬되어 표시됩니다. <br/>
-파일의 id는 Event 등록·관리시 timetable 내의 material_id 설정에 사용되며, 파일의 id를 material_id에 입력하면 Event의 상세 페이지 시간표에서 해당 파일이 해당 일정에 함께 표시됩니다.
+파일의 id는 Event 등록·관리시 timetable 내의 material_id 설정에 사용되며, 파일의 id를 material_id에 입력하면 Event의 상세 페이지 시간표에서 해당 파일이 해당 일정에 함께 표시됩니다. <br/>
+material_id는 다음의 두 가지 형태로 입력 가능합니다. <br/>
+```yml
+---
+- time: "12:00"
+  title: "Lecture 1"
+  speaker: "Lecturer_1"
+  material_id: "material_1"
+- time: "24:00"
+  title: "Lecture 2"
+  speaker: "Lecturer_2"
+  material_id:
+    - "material_2"
+    - "suppliments_1"
+    - "suppliments_2"
+---
+```
+Lecture 1와 같은 형태의 material_id는 해당 일정의 자료가 하나일 때 사용합니다. <br/>
+등록된 자료는 Event의 상세 페이지 시간표에서 해당 일정에 click 버튼으로 표시됩니다. <br/>
+Lecture 2와 같은 형태의 material_id는 해당 일정의 자료가 다수일 때 사용합니다. <br/>
+등록된 자료는 Event의 상세 페이지 시간표에서 해당 일정에 M, S1, S2... 버튼으로 표시됩니다. <br/>
+표시되는 순서는 material_id에 입력된 순서로 표시되므로, 주 자료를 가장 앞에, 보조 자료들을 중요한 순서대로 뒤이어 입력하시기 바랍니다. <br/><br/><br/>

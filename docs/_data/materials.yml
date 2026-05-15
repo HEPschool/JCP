@@ -28,3 +28,18 @@
   date: 2026-04-18
   file: "/assets/materials/Introduction of Cosmology.pdf"
   id: "Cosmology_Note"
+- title: "Higgs and Unitarity"
+  speaker: "SeongSik Kim"
+  date: 2026-05-30
+  file: "/assets/materials/Higgs and Unitarity.pdf"
+  id: "HiggsAndUnitarity_Note"
+- title: "Higgs and Unitarity (KOR)"
+  speaker: "SeongSik Kim"
+  date: 2026-05-30
+  file: "/assets/materials/Higgs and Unitarity (KOR).pdf"
+  id: "HiggsAndUnitarity_KorNote"
+- title: "Higgs and Unitarity Mathematica Notebook"
+  speaker: "SeongSik Kim"
+  date: 2026-05-30
+  file: "/assets/materials/Higgs and Unitarity Mathematica.nb"
+  id: "HiggsAndUnitarity_Mathematica"

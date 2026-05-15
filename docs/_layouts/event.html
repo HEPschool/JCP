@@ -38,22 +38,46 @@ layout: default
         </thead>
         <tbody>
           {% for it in page.timetable %}
-            {%- assign href = nil -%}
-            {% if it.material_id %}
-              {% assign m = site.data.materials | where: "id", it.material_id | first %}
-              {% if m %}{% assign href = m.file %}{% endif %}
-            {% endif %}
             <tr>
               <td>{{ it.time }}</td>
               <td>{{ it.title }}</td>
               <td>{{ it.speaker | default: "-" }}</td>
               <td>
-                {% if href %}
-                  {% if href contains '://' %}
-                    <a class="btn primary small" href="{{ href }}" target="_blank" rel="noopener">click</a>
+                {% if it.material_id %}
+                  {% assign material_ids = "" | split: "" %}
+                  {% if it.material_id.first %}
+                    {% assign material_ids = it.material_id %}
                   {% else %}
-                    <a class="btn primary small" href="{{ href | relative_url }}" target="_blank" rel="noopener">click</a>
+                    {% assign material_ids = material_ids | push: it.material_id %}
                   {% endif %}
+                  {% assign has_material = false %}
+                  <div style="display:flex;gap:.35rem;flex-wrap:wrap">
+                    {% for material_id in material_ids %}
+                      {% assign m = site.data.materials | where: "id", material_id | first %}
+                      {% if m %}
+                        {% assign has_material = true %}
+                        {% assign href = m.file %}
+                        {% if material_ids.size > 1 %}
+                          {% if forloop.first %}
+                            {% assign label = "M" %}
+                          {% else %}
+                            {% assign supplement_index = forloop.index | minus: 1 %}
+                            {% assign label = "S" | append: supplement_index %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label = "click" %}
+                        {% endif %}
+                        {% if href contains '://' %}
+                          <a class="btn primary small" href="{{ href }}" target="_blank" rel="noopener" title="{{ m.title | escape }}">{{ label }}</a>
+                        {% else %}
+                          <a class="btn primary small" href="{{ href | relative_url }}" target="_blank" rel="noopener" title="{{ m.title | escape }}">{{ label }}</a>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  {% unless has_material %}
+                    <span style="opacity:.6">-</span>
+                  {% endunless %}
                 {% else %}
                   <span style="opacity:.6">-</span>
                 {% endif %}

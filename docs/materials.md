@@ -21,12 +21,23 @@ If you require access to the encrypted materials, please contact the author.
   {% assign mats = site.data.materials | sort: "date" %}
   {% for m in mats %}
     {% assign href = m.file %}
+    {% assign ext = href | split: "." | last | upcase %}
+    {% case ext %}
+      {% when "NB" %}
+        {% assign download_label = "Notebook" %}
+      {% when "PPT" %}
+        {% assign download_label = "PPT" %}
+      {% when "PPTX" %}
+        {% assign download_label = "PPTX" %}
+      {% else %}
+        {% assign download_label = ext %}
+    {% endcase %}
     <li data-year="{{ m.date | date: '%Y' }}">
       <strong>{{ m.date }} - {{ m.title }}</strong> - {{ m.speaker }}
       {% if href contains '://' %}
-        [ <a href="{{href}}" target="_blank" rel="noopener">PDF</a> ]
+        [ <a href="{{href}}" target="_blank" rel="noopener">{{ download_label }}</a> ]
       {% else %}
-        [ <a href="{{href | relative_url}}" target="_blank" rel="noopener">PDF</a> ]
+        [ <a href="{{href | relative_url}}" target="_blank" rel="noopener">{{ download_label }}</a> ]
       {% endif %}
     </li>
   {% endfor %}
@@ -90,4 +101,3 @@ If you require access to the encrypted materials, please contact the author.
     applyFilter();
   })();
 </script>
-

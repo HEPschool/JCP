@@ -3,7 +3,7 @@ layout: event
 title: "Higgs and Unitarity"
 date: 2026-05-30 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
-speaker: "Seongsik Kim"
+speaker: "SeongSik Kim"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 note: "Invited Lecture"
 overview: >
@@ -20,19 +20,19 @@ timetable:
     speaker: ""
   - time: "13:30 - 14:00"
     title: "Crush Course on Quantum Field Theory"
-    speaker: "Seongsik Kim"
+    speaker: "SeongSik Kim"
     material_id:
       - "HiggsAndUnitarity_Note"
       - "HiggsAndUnitarity_KorNote"
   - time: "14:00 - 14:40"
     title: "Unitarity Bound"
-    speaker: "Seongsik Kim"
+    speaker: "SeongSik Kim"
     material_id:
       - "HiggsAndUnitarity_Note"
       - "HiggsAndUnitarity_KorNote"
   - time: "14:40 - 15:10"
     title: "Higgs Mechanism"
-    speaker: "Seongsik Kim"
+    speaker: "SeongSik Kim"
     material_id:
       - "HiggsAndUnitarity_Note"
       - "HiggsAndUnitarity_KorNote"
@@ -41,14 +41,14 @@ timetable:
     speaker: ""
   - time: "15:30 - 16:30"
     title: "Amplitude Part 1 - without Higgs"
-    speaker: "Seongsik Kim"
+    speaker: "SeongSik Kim"
     material_id:
       - "HiggsAndUnitarity_Note"
       - "HiggsAndUnitarity_KorNote"
       - "HiggsAndUnitarity_Mathematica"
   - time: "16:30 - 17:00"
     title: "Amplitude Part 2 - Higgs and LQT Bound"
-    speaker: "Seongsik Kim"
+    speaker: "SeongSik Kim"
     material_id:
       - "HiggsAndUnitarity_Note"
       - "HiggsAndUnitarity_KorNote"
@@ -58,7 +58,7 @@ timetable:
     speaker: ""
   - time: "17:20 - 18:00"
     title: "Goldstone Equivalence Theorem"
-    speaker: "Seongsik Kim"
+    speaker: "SeongSik Kim"
     material_id:
       - "HiggsAndUnitarity_Note"
       - "HiggsAndUnitarity_KorNote"
@@ -76,7 +76,7 @@ hero:
   lines:
     - text: "Higgs and Unitarity"
       style: title
-    - text: "Seongsik Kim"
+    - text: "SeongSik Kim"
       style: subtitle
     - text: "2026.05.30 (Sat)"
       style: text

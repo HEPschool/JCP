@@ -42,6 +42,7 @@ timetable:
     speaker: "Ju Hyeong Kang"
     material_id:
       - "Astro_Note"
+      - "Astro_PPT"
   - time: "14:40 - 15:00"
     title: "Break"
     speaker: ""
@@ -58,6 +59,7 @@ timetable:
     speaker: "Ju Hyeong Kang"
     material_id:
       - "Astro_Note"
+      - "Astro_PPT"
   - time: "18:00 - 20:00"
     title: "Banquet"
     speaker: ""

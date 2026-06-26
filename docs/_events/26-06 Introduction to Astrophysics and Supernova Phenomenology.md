@@ -11,21 +11,21 @@ overview: >
 
   This lecture will provide an introduction to astrophysics and discuss the phenomenological applications of supernovae. Through this lecture, I aim to explain what kinds of objects are studied in astrophysics and how they can be utilized from the perspective of high-energy physics phenomenology. <br><br>
 
-  Session 1: Introduction: Why Astrophysics? <br>
+  Introduction: Why Astrophysics? <br>
   At the beginning of this lecture, I will introduce the overall structure of the lecture, focusing on why astrophysics is worth studying in the context of high-energy physics phenomenology. <br><br>
 
-  Session 2: Landscape of Stellar Evolution <br>
+  Session 1: Landscape of Stellar Evolution <br>
   This section aims at the evolutionary processes of stars, which are among the central objects of astrophysics. Following the stages of stellar evolution, I will introduce the key concepts and phenomena associated with each stage. Topics will include star formation, the mass-dependent evolution and final fate of stars, and how these objects can be used in research within a phenomenological context. <br><br>
 
-  Session 3: Basic Equations and Theorems <br>
-  In this section, I will explain the basic equations and theorems required to describe and understand stars on the basis of physics. The main goal is to understand the derivations of these equations and theories, as well as their physical meanings. This subject requires undergraduate-level backgrounds of classical mechanics and thermal/statistical physics, while some parts also require basic familiarity with general relativity and fluid dynamics. <br><br>
+  Session 2: Basic Equations and Theorems <br>
+  In this section, I will explain the basic equations and theorems required to describe and understand stars on the basis of physics. The main goal is to understand the derivations of these equations and theories, as well as their physical meanings. This subject requires undergraduate-level backgrounds of classical mechanics, thermodynamics and statistical mechanics, while some parts also require basic familiarity with general relativity and fluid dynamics. <br><br>
 
-  Session 4: Core-Collapse Supernovae <br>
-  This section focus on core-collapse supernovae, one of the major subjects in astrophysics. I will discuss the progenitors of core-collapse supernovae, the processes that trigger collapse, the collapse mechanism, observational examples of supernovae, and research applications based on these phenomena.
+  Session 3: Core-Collapse Supernova <br>
+  This section focus on core-collapse supernova, one of the major subjects in astrophysics. I will discuss the progenitors of core-collapse supernovae, the processes that trigger collapse, the collapse mechanism, observational signatures of supernovae, and research applications based on these phenomena.
 timetable:
   - time: "12:00 - 12:10"
     title: "Opening remarks"
-    speaker: "TBA"
+    speaker: "Beom Su Kim"
   - time: "12:10 - 12:30"
     title: "Discussion"
     speaker: ""
@@ -35,26 +35,30 @@ timetable:
   - time: "13:30 - 13:40"
     title: "Introduction: Why Astrophysics?"
     speaker: "Ju Hyeong Kang"
-    material_id: ""
-  - time: "13:40 - 15:00"
+    material_id:
+      - "Astro_Note"
+  - time: "13:40 - 14:40"
     title: "Landscape of Stellar Evolution"
     speaker: "Ju Hyeong Kang"
-    material_id: ""
-  - time: "15:00 - 15:15"
+    material_id:
+      - "Astro_Note"
+  - time: "14:40 - 15:00"
     title: "Break"
     speaker: ""
-  - time: "15:15 - 16:30"
+  - time: "15:00 - 16:30"
     title: "Basic Equations and Theorems"
     speaker: "Ju Hyeong Kang"
-    material_id: ""
+    material_id:
+      - "Astro_Note"
   - time: "16:30 - 16:45"
     title: "Break"
     speaker: ""
-  - time: "16:45 - 18:30"
-    title: "Core-Collapse Supernovae"
+  - time: "16:45 - 18:00"
+    title: "Core-Collapse Supernova"
     speaker: "Ju Hyeong Kang"
-    material_id: ""
-  - time: "18:30 - 20:00"
+    material_id:
+      - "Astro_Note"
+  - time: "18:00 - 20:00"
     title: "Banquet"
     speaker: ""
   - time: "20:00 - 21:00"

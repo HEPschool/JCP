@@ -43,3 +43,8 @@
   date: 2026-05-30
   file: "/assets/materials/Higgs and Unitarity Mathematica.nb"
   id: "HiggsAndUnitarity_Mathematica"
+- title: "Introduction to Astrophysics and Supernova Phenomenology"
+  speaker: "Ju Hyeong Kang"
+  date: 2026-06-27
+  file: "/assets/materials/Introduction to Astrophysics and Supernova Phenomenology.pdf"
+  id: "Astro_Note"

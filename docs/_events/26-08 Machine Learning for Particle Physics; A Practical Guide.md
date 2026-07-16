@@ -1,13 +1,13 @@
 ---
 layout: event
-title: "TBA"
-date: 2026-07-01 13:00 +0900
-location: "Kyungpook National University, Daegu, Korea"
+title: "Machine Learning for Particle Physics: A Practical Guide"
+date: 2026-08-22 12:00 +0900
+location: "Chungnam National University, Daegu, Korea"
 speaker: "Yongik Jang"
-address: "TBA"
+address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 note: "Student Lecture"
 overview: >
-  TBA
+  Machine Learning for Particle Physics: A Practical Guide
 timetable:
   - time: "TBA"
     title: "TBA"
@@ -19,10 +19,10 @@ map_embed: >
 hero:
   image: "/assets/img/heros/event_default.jpg"
   lines:
-    - text: "TBA"
+    - text: "Machine Learning for Particle Physics: A Practical Guide"
       style: title
-    - text: "TBA"
+    - text: "Yongik Jang"
       style: subtitle
-    - text: "2026.07.01 (Sat)"
+    - text: "2026.08.22 (Sat)"
       style: text
 ---

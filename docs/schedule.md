@@ -92,4 +92,3 @@ You can view the details of each event by clicking on it.
     applyFilter();
   })();
 </script>
-

@@ -88,4 +88,3 @@ hero:
     applyFilter();
   })();
 </script>
-

@@ -17,21 +17,22 @@ hero:
       style: note
 ---
 ## COSMIC School:
+
 # {{ site.title }}
 
 ## Monthly Graduate-Student Workshop on High-Energy Phenomenology
 
 JCP HEP School is a student-led monthly workshop featuring graduate-level, field-building overviews that survey active research areas with emphasis on foundational principles, standard methodologies, and the current state of the art. The series advances two objectives: for speakers, the consolidation of disciplinary fundamentals (core concepts, canonical models, and standard computations); for participants, the development of cross-field literacy that enhances conference engagement and collaborative work.
 
-<br>
+&nbsp;
 
 {% include upcoming.html %}
 
-<br>
+&nbsp;
 
 {% include surveys.html %}
 
-<br>
+&nbsp;
 
 {% include poster.html %}
 

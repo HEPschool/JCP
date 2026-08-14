@@ -1,7 +1,7 @@
 ---
 layout: event
 title: "Machine Learning for Particle Physics: A Practical Guide"
-date: 2026-08-22 12:00 +0900
+date: 2026-09-19 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
 speaker: "Yongik Jang"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
@@ -23,6 +23,6 @@ hero:
       style: title
     - text: "Yongik Jang"
       style: subtitle
-    - text: "2026.08.22 (Sat)"
+    - text: "2026.09.19 (Sat)"
       style: text
 ---

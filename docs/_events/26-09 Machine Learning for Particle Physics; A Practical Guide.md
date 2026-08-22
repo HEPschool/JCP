@@ -7,7 +7,13 @@ speaker: "Yongik Jang"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 note: "Student Lecture"
 overview: >
-  Machine Learning for Particle Physics: A Practical Guide
+  Machine learning has become part of the standard toolkit across the sciences, and particle physics is no exception. Neural networks now appear throughout the field, from jet tagging and event classification to detector simulation and anomaly detection. <br><br>
+
+  This lecture provides a practical, hands-on introduction for students in particle theory with little or no prior background in machine learning. We begin with the fundamentals of neural networks (perceptrons, activation functions, loss functions, and gradient-based optimization via backpropagation), focusing on what is actually being optimized and why it works. <br><br>
+
+  We then move on to the two most basic architectures, deep neural networks and convolutional neural networks. A hands-on session follows, in which participants implement and train both. <br><br>
+
+  We close with a brief introduction to the transformer, the architecture underlying the large language models many of us now use every day.
 timetable:
   - time: "TBA"
     title: "TBA"

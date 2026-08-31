@@ -6,7 +6,7 @@ url: https://HEPschool.github.io
 markdown: kramdown
 timezone: Asia/Seoul
 plugins:
-#- jekyll-seo-tag
+- jekyll-seo-tag
 #- jekyll-sitemap
 kramdown:
   input: GFM
@@ -21,8 +21,13 @@ nav:
   url: /lecturers/
 - name: Materials
   url: /materials/
+- name: Online Meeting
+  url: /online/
 collections:
   events:
     output: true
     permalink: /events/:slug/
+  online:
+    output: true
+    permalink: /online/:slug/
 nav_next_label: Upcoming Event

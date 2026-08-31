@@ -1,6 +1,8 @@
 {
-  "name": "1st JCP HEP School",
-  "short_name": "1st JCP",
+  "name": "JCP HEP School",
+  "short_name": "JCP HEP",
+  "id": "../../",
+  "lang": "en",
   "start_url": "../../",
   "scope": "../../",
   "display": "standalone",
@@ -21,6 +23,18 @@
       "src": "favicon_180.png",
       "sizes": "180x180",
       "type": "image/png"
+    },
+    {
+      "src": "favicon_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

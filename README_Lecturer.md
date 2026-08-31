@@ -11,11 +11,11 @@ README_Lecturer에서는 Lecturer, Event, Material 등록·관리 방법을 안�
 
 ## Lecturer 등록·관리
 
-Lecturer 정보는 docs/_data/lecturers.Ymal 파일을 수정하여 등록·관리할 수 있습니다.  
+Lecturer 정보는 docs/_data/lecturers.yml 파일을 수정하여 등록·관리할 수 있습니다.  
 해당 파일에 등록한 정보는, 홈페이지의 Lecturers 페이지에 게시되게 됩니다.  
 
 ```yml
-- name: "Jhon Doe"
+- name: "John Doe"
   affiliation: "your affiliation"
   email: "your_email@google.com"
   date: 2025-08-22
@@ -41,7 +41,7 @@ date: 2025-12-25 01:23 +0900
 location: "EVENT LOCATION" # Schedule 페이지에서 표시되는 주소
 speaker: "EVENT Speakers"
 address: "Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea" # 상세 페이지에서 표시되는 주소
-note: "Lecture, Offline, TBA" <!-- Schedule 페이지에서 표시되는 Note -->
+note: "Lecture, Offline, TBA" # Schedule 페이지에서 표시되는 Note
 overview: > # 상세 페이지에서 표시되는 Overview. Lecture/Special Talk에 대해 간단하게 기술해주세요.
   Brief overview for Lecture/Special talk: Your_TITLE 
 timetable: # timetable은 아래와 같은 형태로 기술됩니다.
@@ -67,8 +67,8 @@ timetable: # timetable은 아래와 같은 형태로 기술됩니다.
     speaker: "Lecturer_3"
     material_id:
       - "material_3"
-      - "suppliments_1"
-      - "suppliments_2"
+      - "supplements_1"
+      - "supplements_2"
   - time: "17:00"
     title: "Discussion"
     speaker: ""
@@ -77,11 +77,11 @@ map_embed: > # 상세 페이지에 표시되는 지도. src="" 부분에 구글 
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 participants: # 참가자 명단을 생성합니다. 이름-소속의 표 형태로 표시되며, 소속 기준 정렬 후 이름 기준 정렬하여 순서대로 표시됩니다. 참가자 명단 표시를 원하지 않는다면, 아래의 각 항목을 완전하게 삭제하여 "Participants" section이 생성되지 않도록 합니다.
   - name: Panthera Pardus
-    affiliation: Jeonbuk National Univerisity
+    affiliation: Jeonbuk National University
   - name: Equus Ferus Caballus
-    affiliation: Chungnam National Univerisity
+    affiliation: Chungnam National University
   - name: Larus Canus
-    affiliation: Pusan National Univerisity
+    affiliation: Pusan National University
 photos: # 사진 위치를 아래와 같이 나열합니다. 만약 photo가 없다면, 아래의 각 항목을 완전하게 삭제하여 "Photo" section이 생성되지 않도록 합니다.
   - "assets/img/photos/photo1.jpg"
   - "assets/img/photos/photo2.jpg"
@@ -100,17 +100,17 @@ hero: # 상세 페이지 상단에 표시되는 이미지와 문구를 지정합
 hero 설정을 위해서는 docs/assets/img/heros 폴더에 사진을 업로드하고, image: "" 값을 올바르게 수정해주시기 바랍니다.  
 가급적 hero 항목을 완전히 설정해주시고, 적절한 image가 없는 경우 /assets/img/heros/event_default.jpg를 사용해주시기 바랍니다.  
 docs/_events 폴더에 .md 파일이 생성되면, Schedule 페이지에 일정 등록 및 상세 페이지가 생성됩니다.  
-Schedule 페이지에는 data 값을 기준으로 정렬된 순서로 일정이 표시되며, 각 일정을 클릭하여 상세 페이지에 접근할 수 있습니다.  
-.md 파일에 입력된 data 값을 기준으로, 페이지 방문 시점에서 같거나 미래의 일정 중, 가장 가까운 일정이 Upcoming Event 페이지에 자동으로 표시됩니다.  
+Schedule 페이지에는 date 값을 기준으로 정렬된 순서로 일정이 표시되며, 각 일정을 클릭하여 상세 페이지에 접근할 수 있습니다.  
+.md 파일에 입력된 date 값을 기준으로, 페이지 방문 시점에서 같거나 미래의 일정 중, 가장 가까운 일정이 Upcoming Event 페이지에 자동으로 표시됩니다.  
 Upcoming Event 페이지에 표시되는 일정의 banner가 자동으로 Home 페이지에 생성되어 표시됩니다.  
 Banner는 hero 항목에 설정된 image와 동일한 image를 사용하며, image가 설정되어 있어야 정상적으로 표시됩니다.  
 
 ## Material 등록·관리
 
-Material은 /assets/materials 폴더에 pdf 파일을 업로드하고, docs/_data/materials.Ymal 파일을 수정하여 등록·관리할 수 있습니다.  
+Material은 docs/assets/materials 폴더에 pdf 파일을 업로드하고, docs/_data/materials.yml 파일을 수정하여 등록·관리할 수 있습니다.  
 
-1. 등록하고자 하는 pdf 파일을 /assets/materials 폴더에 업로드 합니다. (관리의 용이성을 위해, 파일 이름은 통일된 규칙으로 작성하는 것을 권장합니다.)  
-2. docs/_data/materials.Ymal 파일을 열어 material의 정보를 입력합니다.  
+1. 등록하고자 하는 pdf 파일을 docs/assets/materials 폴더에 업로드 합니다. (관리의 용이성을 위해, 파일 이름은 통일된 규칙으로 작성하는 것을 권장합니다.)  
+2. docs/_data/materials.yml 파일을 열어 material의 정보를 입력합니다.  
 
 ```yml
 - title: "file title" # Materials 페이지에 표시되는 파일의 이름
@@ -137,8 +137,8 @@ material_id는 다음의 두 가지 형태로 입력 가능합니다.
   speaker: "Lecturer_2"
   material_id:
     - "material_2"
-    - "suppliments_1"
-    - "suppliments_2"
+    - "supplements_1"
+    - "supplements_2"
 ---
 ```
 

@@ -1,0 +1,210 @@
+{% assign empty_array = "" | split: "" %}
+{% assign material_catalog = include.materials | default: empty_array %}
+{% assign textbook = page.textbook | default: "" | strip %}
+{% assign video_url = page.video.url | default: "" | strip %}
+{% assign video_display = page.video.display | default: "link" | downcase | strip %}
+{% assign youtube_id = "" %}
+{% if include.show_recording and video_url != "" and video_display == "embed" %}
+  {% if video_url contains "youtu.be/" %}
+    {% assign youtube_id = video_url | split: "youtu.be/" | last | split: "?" | first | split: "#" | first %}
+  {% elsif video_url contains "youtube.com/watch" and video_url contains "v=" %}
+    {% assign youtube_id = video_url | split: "v=" | last | split: "&" | first | split: "#" | first %}
+  {% elsif video_url contains "youtube.com/embed/" %}
+    {% assign youtube_id = video_url | split: "youtube.com/embed/" | last | split: "?" | first | split: "#" | first %}
+  {% elsif video_url contains "youtube.com/live/" %}
+    {% assign youtube_id = video_url | split: "youtube.com/live/" | last | split: "?" | first | split: "#" | first %}
+  {% elsif video_url contains "youtube.com/shorts/" %}
+    {% assign youtube_id = video_url | split: "youtube.com/shorts/" | last | split: "?" | first | split: "#" | first %}
+  {% endif %}
+{% endif %}
+
+<article class="event">
+  <header class="section" style="margin-bottom: .5rem;">
+    <h1 style="margin:.25rem 0">{{ page.title }}</h1>
+    <div style="margin-top:0.75rem">
+      {% if page.speaker %}{{ page.speaker }}{% endif %}
+    </div>
+    <div class="meeting-meta muted">
+      <div>
+        {{ page.date | date: "%Y.%m.%d (%a) %H:%M" }}{% if include.context_value %} · {{ include.context_value }}{% endif %}
+      </div>
+      {% if include.show_textbook and textbook != "" %}
+        <div class="meeting-textbook"><strong>Textbook:</strong> {{ textbook }}</div>
+      {% endif %}
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Overview</h2>
+    {% if page.overview %}
+      <div>
+        {{ page.overview }}
+      </div>
+    {% else %}
+      TBA - Overview will be posted soon.
+    {% endif %}
+  </section>
+
+  <section class="section">
+    <h2>Timetable</h2>
+    {% if page.timetable and page.timetable.size > 0 %}
+      <table>
+        <thead>
+          <tr>
+            <th style="width:8rem">Time</th>
+            <th>Title</th>
+            <th style="width:14rem">Speaker</th>
+            <th style="width:9rem">Material</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for it in page.timetable %}
+            <tr>
+              <td>{{ it.time }}</td>
+              <td>{{ it.title }}</td>
+              <td>{{ it.speaker | default: "-" }}</td>
+              <td>
+                {% if it.material_id %}
+                  {% assign material_ids = "" | split: "" %}
+                  {% if it.material_id.first %}
+                    {% assign material_ids = it.material_id %}
+                  {% else %}
+                    {% assign material_ids = material_ids | push: it.material_id %}
+                  {% endif %}
+                  {% assign has_material = false %}
+                  <div style="display:flex;gap:.35rem;flex-wrap:wrap">
+                    {% for material_id in material_ids %}
+                      {% assign m = material_catalog | where: "id", material_id | first %}
+                      {% if m %}
+                        {% assign has_material = true %}
+                        {% assign href = m.file %}
+                        {% if material_ids.size > 1 %}
+                          {% if forloop.first %}
+                            {% assign label = "M" %}
+                          {% else %}
+                            {% assign supplement_index = forloop.index | minus: 1 %}
+                            {% assign label = "S" | append: supplement_index %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label = "click" %}
+                        {% endif %}
+                        {% if href contains "://" %}
+                          <a class="btn primary small" href="{{ href }}" target="_blank" rel="noopener" title="{{ m.title | escape }}">{{ label }}</a>
+                        {% else %}
+                          <a class="btn primary small" href="{{ href | relative_url }}" target="_blank" rel="noopener" title="{{ m.title | escape }}">{{ label }}</a>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  {% unless has_material %}
+                    <span style="opacity:.6">-</span>
+                  {% endunless %}
+                {% else %}
+                  <span style="opacity:.6">-</span>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      TBA - Time table will be posted soon.
+    {% endif %}
+  </section>
+
+  {% if include.show_recording and video_url != "" %}
+    <section class="section">
+      <h2>Recording</h2>
+      {% if video_display == "embed" and youtube_id != "" %}
+        <div class="embed recording-embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/{{ youtube_id | escape }}"
+                  title="{{ page.title | append: ' recording' | escape }}"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+        </div>
+        <p><a class="btn small" href="{{ video_url | escape }}" target="_blank" rel="noopener">Watch on YouTube</a></p>
+      {% else %}
+        <p><a class="btn small" href="{{ video_url | escape }}" target="_blank" rel="noopener">Open recording</a></p>
+      {% endif %}
+    </section>
+  {% endif %}
+
+  {% if include.show_venue %}
+    {% if page.address or page.map_embed %}
+      <section class="section">
+        <h2>Venue</h2>
+        {% if page.address %}
+          <p><strong>Address:</strong> {{ page.address }}</p>
+        {% endif %}
+        {% if page.map_embed %}
+          <div class="embed">{{ page.map_embed }}</div>
+        {% endif %}
+      </section>
+    {% endif %}
+  {% endif %}
+
+  {% if page.participants and page.participants.size > 0 %}
+    <section class="section">
+      <h2>Participants</h2>
+      {% assign participants_with_key = "" | split: "" %}
+
+      {% for p in page.participants %}
+        {% if p.name %}
+          {% assign aff = p.affiliation | default: "" | strip %}
+          {% assign nm = p.name | strip %}
+          {% if aff == "" %}
+            {% assign aff_key = "~" %}
+          {% else %}
+            {% assign aff_key = aff %}
+          {% endif %}
+          {% capture item %}
+            {{ aff_key | downcase }}|||{{ nm | downcase }}|||{{ nm }}|||{{ aff }}
+          {% endcapture %}
+          {% assign participants_with_key = participants_with_key | push: item %}
+        {% endif %}
+      {% endfor %}
+      {% assign participants_with_key = participants_with_key | sort %}
+      <table>
+        <thead>
+          <tr>
+            <th style="width:40%">Name</th>
+            <th>Affiliation</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in participants_with_key %}
+            {% assign parts = item | split: "|||" %}
+            {%- assign name_display = parts[2] -%}
+            {%- assign aff_display = parts[3] -%}
+            <tr>
+              <td>{{ name_display }}</td>
+              <td>
+                {% if aff_display and aff_display != "" %}
+                  {{ aff_display }}
+                {% else %}
+                  -
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  {% endif %}
+
+  {% if page.photos and page.photos.size > 0 %}
+    <section class="section">
+      <h2>Photo</h2>
+      {% for photo in page.photos %}
+        {% if photo and photo != "" %}
+          <img src="{{ photo | relative_url }}"
+               alt="Photo {{ forloop.index }}"
+               style="display:block;width:100%;height:auto;margin-bottom:1rem;
+                      border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+        {% endif %}
+      {% endfor %}
+    </section>
+  {% endif %}
+</article>

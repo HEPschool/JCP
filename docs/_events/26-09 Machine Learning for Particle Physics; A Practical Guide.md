@@ -15,10 +15,44 @@ overview: >
 
   We close with a brief introduction to the transformer, the architecture underlying the large language models many of us now use every day.
 timetable:
-  - time: "TBA"
-    title: "TBA"
+  - time: "12:00 - 12:10"
+    title: "Opening remarks"
+    speaker: "Chang Hyeon Lee"
+  - time: "12:10 - 12:30"
+    title: "Discussion"
     speaker: ""
-    material_id: ""
+  - time: "12:30 - 13:30"
+    title: "Lunch"
+    speaker: ""
+  - time: "13:30 - 14:30"
+    title: "Building blocks of machine learning"
+    speaker: "Yongik Jang"
+    material_id:
+      - ""
+  - time: "14:30 - 15:30"
+    title: "Hands-on I"
+    speaker: "Yongik Jang"
+    material_id:
+      - ""
+  - time: "15:30 - 16:00"
+    title: "Break"
+    speaker: ""
+  - time: "16:00 - 17:00"
+    title: "DNN and CNN"
+    speaker: "Yongik Jang"
+    material_id:
+      - ""
+  - time: "17:00 - 18:00"
+    title: "Hands-on II"
+    speaker: "Yongik Jang"
+    material_id:
+      - ""
+  - time: "18:00 - 20:00"
+    title: "Banquet"
+    speaker: ""
+  - time: "20:00 - 21:00"
+    title: "Discussion"
+    speaker: ""
 map_embed: >
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.7521887087823!2d127.3375980119162!3d36.36678097225866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654b5a03ccdb71%3A0x131d324a82b243ae!2z7J6Q7Jew6rO87ZWZ64yA7ZWZIDTtmLjqtIAoVzExLTIp!5e0!3m2!1sko!2skr!4v1760513072497!5m2!1sko!2skr"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

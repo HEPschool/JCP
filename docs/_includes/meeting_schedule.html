@@ -1,0 +1,104 @@
+{% assign empty_array = "" | split: "" %}
+{% assign meeting_items = include.items | default: empty_array | sort: "date" %}
+{% assign id_prefix = include.id_prefix | default: "meeting" %}
+
+<div id="{{ id_prefix }}-year-view" data-year-view>
+  <div class="year-filter">
+    <button id="{{ id_prefix }}-prev-toggle" class="btn small year-filter-btn" type="button"
+            aria-expanded="false" aria-controls="{{ id_prefix }}-year-filter">Select year</button>
+    <span id="{{ id_prefix }}-current-year" class="year-filter-current" aria-live="polite"></span>
+  </div>
+  <div id="{{ id_prefix }}-year-filter" class="year-scroll" hidden></div>
+  <p id="{{ id_prefix }}-empty" class="year-filter-empty" hidden>{{ include.empty_message }}</p>
+
+  <table id="{{ id_prefix }}-table" class="schedule-table">
+    <thead>
+      <tr>
+        <th>Date/Time</th>
+        <th>Title</th>
+        <th>Speaker</th>
+        <th>{{ include.context_label }}</th>
+        <th>Note</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for meeting in meeting_items %}
+        {% assign context_value = meeting[include.context_key] %}
+        <tr data-year="{{ meeting.date | date: '%Y' }}"
+            onclick="location.href='{{ meeting.url | relative_url }}'" style="cursor:pointer">
+          <td data-label="Date/Time">{{ meeting.date | date: "%Y.%m.%d (%a) %H:%M" }}</td>
+          <td data-label="Title">{{ meeting.title }}</td>
+          <td data-label="Speaker">{{ meeting.speaker | default: "TBD" }}</td>
+          <td data-label="{{ include.context_label }}">{{ context_value }}</td>
+          <td data-label="Note">{{ meeting.note | default: "" }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<script>
+  (function () {
+    var idPrefix = {{ id_prefix | jsonify }};
+    var view = document.getElementById(idPrefix + "-year-view");
+    var filterRoot = document.getElementById(idPrefix + "-year-filter");
+    var toggleBtn = document.getElementById(idPrefix + "-prev-toggle");
+    var currentYearText = document.getElementById(idPrefix + "-current-year");
+    var table = document.getElementById(idPrefix + "-table");
+    var emptyNote = document.getElementById(idPrefix + "-empty");
+    if (!view || !filterRoot || !table || !toggleBtn || !currentYearText) return;
+
+    var currentYear = String(new Date().getFullYear());
+    var rows = Array.prototype.slice.call(table.querySelectorAll("tbody tr[data-year]"));
+    var years = Array.from(new Set(rows.map(function (row) {
+      return row.getAttribute("data-year");
+    }).filter(Boolean))).sort(function (a, b) {
+      return Number(b) - Number(a);
+    });
+    if (years.indexOf(currentYear) === -1) {
+      years.push(currentYear);
+      years.sort(function (a, b) {
+        return Number(b) - Number(a);
+      });
+    }
+
+    var selectedYear = currentYear;
+
+    function applyFilter() {
+      var visibleCount = 0;
+      rows.forEach(function (row) {
+        var show = row.getAttribute("data-year") === selectedYear;
+        row.style.display = show ? "" : "none";
+        if (show) visibleCount += 1;
+      });
+      if (emptyNote) emptyNote.hidden = visibleCount > 0;
+      currentYearText.textContent = "Selected year: " + selectedYear;
+    }
+
+    function renderYearButtons() {
+      filterRoot.innerHTML = "";
+      years.forEach(function (year) {
+        var button = document.createElement("button");
+        button.type = "button";
+        button.className = "btn small year-filter-btn" + (year === selectedYear ? " is-active" : "");
+        button.textContent = year;
+        button.setAttribute("aria-pressed", String(year === selectedYear));
+        button.addEventListener("click", function () {
+          selectedYear = year;
+          renderYearButtons();
+          applyFilter();
+        });
+        filterRoot.appendChild(button);
+      });
+    }
+
+    toggleBtn.addEventListener("click", function () {
+      var willOpen = filterRoot.hidden;
+      filterRoot.hidden = !willOpen;
+      toggleBtn.setAttribute("aria-expanded", String(willOpen));
+    });
+
+    renderYearButtons();
+    applyFilter();
+  })();
+</script>

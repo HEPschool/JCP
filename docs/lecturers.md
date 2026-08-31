@@ -9,8 +9,9 @@ hero:
 # Lecturers
 
 <div class="year-filter">
-  <button id="lecturers-prev-toggle" class="btn small year-filter-btn" type="button">Select year</button>
-  <span id="lecturers-current-year" class="year-filter-current"></span>
+  <button id="lecturers-prev-toggle" class="btn small year-filter-btn" type="button"
+          aria-expanded="false" aria-controls="lecturers-year-filter">Select year</button>
+  <span id="lecturers-current-year" class="year-filter-current" aria-live="polite"></span>
 </div>
 <div id="lecturers-year-filter" class="year-scroll" hidden></div>
 <p id="lecturers-empty" class="year-filter-empty" hidden>No lecturers available for the selected year.</p>
@@ -46,10 +47,12 @@ hero:
     }).filter(Boolean))).sort(function (a, b) {
       return Number(b) - Number(a);
     });
-    years = years.filter(function (year) {
-      return Number(year) <= Number(currentYear);
-    });
-    if (!years.length) years = [currentYear];
+    if (years.indexOf(currentYear) === -1) {
+      years.push(currentYear);
+      years.sort(function (a, b) {
+        return Number(b) - Number(a);
+      });
+    }
 
     var selectedYear = currentYear;
 
@@ -71,6 +74,7 @@ hero:
         button.type = "button";
         button.className = "btn small year-filter-btn" + (year === selectedYear ? " is-active" : "");
         button.textContent = year;
+        button.setAttribute("aria-pressed", String(year === selectedYear));
         button.addEventListener("click", function () {
           selectedYear = year;
           renderYearButtons();
@@ -81,7 +85,9 @@ hero:
     }
 
     toggleBtn.addEventListener("click", function () {
-      filterRoot.hidden = !filterRoot.hidden;
+      var willOpen = filterRoot.hidden;
+      filterRoot.hidden = !willOpen;
+      toggleBtn.setAttribute("aria-expanded", String(willOpen));
     });
 
     renderYearButtons();

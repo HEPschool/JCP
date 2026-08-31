@@ -11,8 +11,9 @@ hero:
 If you require access to the encrypted materials, please contact the author.
 
 <div class="year-filter">
-  <button id="materials-prev-toggle" class="btn small year-filter-btn" type="button">Select year</button>
-  <span id="materials-current-year" class="year-filter-current"></span>
+  <button id="materials-prev-toggle" class="btn small year-filter-btn" type="button"
+          aria-expanded="false" aria-controls="materials-year-filter">Select year</button>
+  <span id="materials-current-year" class="year-filter-current" aria-live="polite"></span>
 </div>
 <div id="materials-year-filter" class="year-scroll" hidden></div>
 <p id="materials-empty" class="year-filter-empty" hidden>No materials available for the selected year.</p>
@@ -59,10 +60,12 @@ If you require access to the encrypted materials, please contact the author.
     }).filter(Boolean))).sort(function (a, b) {
       return Number(b) - Number(a);
     });
-    years = years.filter(function (year) {
-      return Number(year) <= Number(currentYear);
-    });
-    if (!years.length) years = [currentYear];
+    if (years.indexOf(currentYear) === -1) {
+      years.push(currentYear);
+      years.sort(function (a, b) {
+        return Number(b) - Number(a);
+      });
+    }
 
     var selectedYear = currentYear;
 
@@ -84,6 +87,7 @@ If you require access to the encrypted materials, please contact the author.
         button.type = "button";
         button.className = "btn small year-filter-btn" + (year === selectedYear ? " is-active" : "");
         button.textContent = year;
+        button.setAttribute("aria-pressed", String(year === selectedYear));
         button.addEventListener("click", function () {
           selectedYear = year;
           renderYearButtons();
@@ -94,7 +98,9 @@ If you require access to the encrypted materials, please contact the author.
     }
 
     toggleBtn.addEventListener("click", function () {
-      filterRoot.hidden = !filterRoot.hidden;
+      var willOpen = filterRoot.hidden;
+      filterRoot.hidden = !willOpen;
+      toggleBtn.setAttribute("aria-expanded", String(willOpen));
     });
 
     renderYearButtons();

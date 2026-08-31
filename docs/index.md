@@ -16,7 +16,7 @@ hero:
     - text: "Hosted by the Institute for Sciences of the Universe"
       style: note
 ---
-## COSMIC School:
+<div class="home-heading-kicker">COSMIC School:</div>
 
 # {{ site.title }}
 

@@ -17,7 +17,7 @@
 
 <style>
 #upcoming-hero[hidden]{display:none !important;}
-#upcoming-hero .hero-media img{height:180px;}
+#upcoming-hero .hero-media img{height:clamp(240px,70vw,280px);}
 @media (min-width:700px){#upcoming-hero .hero-media img{height:280px;}}
 @media (min-width:1000px){#upcoming-hero .hero-media img{height:360px;}}
 
@@ -25,6 +25,7 @@
 #upcoming-hero .hero-line.subtitle{font-size:clamp(0.8rem,2.0vw,1.6rem);}
 #upcoming-hero .hero-line.text{font-size:clamp(0.6rem,1.6vw,1.2rem);}
 #upcoming-hero .hero-line.note{font-size:clamp(0.6rem,1.6vw,1.2rem);}
+#upcoming-hero .hero-lines{min-width:0;}
 
 #upcoming-hero .hero-media{position:relative;overflow:hidden}
 #upcoming-hero .hero-media::before,

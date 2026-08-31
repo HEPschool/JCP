@@ -17,6 +17,3 @@ Thumbs.db
 *.log
 *.tmp
 *~ 
-
-Gemfile
-Gemfile.lock

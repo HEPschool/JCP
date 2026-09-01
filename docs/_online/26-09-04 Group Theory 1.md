@@ -1,14 +1,14 @@
 ---
 layout: online
 title: "Group Theory 1"
-date: 2026-09-03 19:00 +0900
+date: 2026-09-04 19:00 +0900
 series: "2026 Fall Joint Meeting"
 speaker: "Sangjin Mun"
 note: "Joint Study"
 textbook: "Howard Georgi, Lie Algebras in Particle Physics"
-video:
-  url: "https://youtu.be/H3AFzbrqH68?si=S-IoxaJFIVs8NxRy"
-  display: "embed"
+# video:
+#   url: ""
+#   display: "embed"
 overview: >
   None.
 timetable:
@@ -26,6 +26,6 @@ hero:
       style: title
     - text: "Sangjin Mun"
       style: subtitle
-    - text: "2026.09.03 (Thu)"
+    - text: "2026.09.04 (Fri)"
       style: text
 ---

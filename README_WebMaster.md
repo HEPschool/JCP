@@ -141,7 +141,7 @@ favicon은 페이지 방문 시, 웹 브라우저의 탭 항목에 표시되는 
 <link rel="apple-touch-icon" href="{{ '/assets/favicon/favicon_180.png' | relative_url }}">
 ```
 
-설치형 웹 앱 아이콘은 `site.webmanifest`에 등록합니다. 현재 설정을 사용하려면 같은 폴더에 `favicon_192.png`와 `favicon_512.png`를 각각 정확한 정사각형 크기로 추가합니다.  
+설치형 웹 앱 아이콘은 `site.webmanifest`에 등록합니다.
 
 기본 설정된 favicon은 ${e^-}{e^+}\to{\mu^-}{\mu^+}$ 과정의 Feynman diagram을 Weinberg angle만큼 돌린 그림입니다.  
 

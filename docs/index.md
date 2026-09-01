@@ -20,9 +20,9 @@ hero:
 
 # {{ site.title }}
 
-## Monthly Graduate-Student Workshop on High-Energy Phenomenology
+## A Monthly Workshop for Graduate Students in High-Energy Phenomenology
 
-JCP HEP School is a student-led monthly workshop featuring graduate-level, field-building overviews that survey active research areas with emphasis on foundational principles, standard methodologies, and the current state of the art. The series advances two objectives: for speakers, the consolidation of disciplinary fundamentals (core concepts, canonical models, and standard computations); for participants, the development of cross-field literacy that enhances conference engagement and collaborative work.
+JCP HEP School is a monthly workshop organized by graduate students in high-energy phenomenology. Through graduate-level introductory lectures, we explore the basic ideas, standard tools, and recent developments across a wide range of research topics. Speakers have a chance to revisit the foundations of their own field, while participants can learn about areas beyond their immediate research. We hope these meetings provide a common ground for exchanging ideas and building connections across fields.
 
 &nbsp;
 

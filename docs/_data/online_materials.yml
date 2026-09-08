@@ -8,3 +8,13 @@
   date: 2026-09-04
   file: "/assets/materials/online/2026 Fall - Finite Groups I.pdf"
   id: "online_2026Fall_GT_1"
+- title: "Cross Sections and Decay Rates"
+  speaker: "In Jung Kim"
+  date: 2026-09-08
+  file: "/assets/materials/online/2026 Fall - Cross Sections and Decay Rates.pdf"
+  id: "online_2026Fall_QFT_2"
+- title: "Cross Sections and Decay Rates (Supplementary Note)"
+  speaker: "In Jung Kim"
+  date: 2026-09-08
+  file: "/assets/materials/online/2026 Fall - Cross Sections and Decay Rates Supplementary Note.pdf"
+  id: "online_2026Fall_QFT_2_supplementary"

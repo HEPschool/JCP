@@ -1,5 +1,6 @@
 ---
 layout: event
+event_id: "25-11-DM"
 title: "Introduction to Dark Matter"
 date: 2025-11-08 13:00 +0900
 location: "Chungnam National University, Daejeon, Korea"

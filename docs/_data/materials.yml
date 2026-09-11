@@ -1,55 +1,81 @@
-- title: "Dark Matter Introduction and Indirect Detection Lecture Note"
+- lecture_id: "25-11-Intro-ID"
+  event_id: "25-11-DM"
+  title: "Introduction to Dark Matter (Introduction and Indirect Detection)"
   speaker: "Haebarg Kang"
-  date: 2025-11-08
-  file: "/assets/materials/Dark Matter Introduction and Indirect Detection Lecture Note.pdf"
-  id: "DM_IDNote"
-- title: "Dark Matter Introduction and Indirect Detection PPT"
-  speaker: "Haebarg Kang"
-  date: 2025-11-08
-  file: "/assets/materials/Dark Matter Introduction and Indirect Detection PPT.pdf"
-  id: "DM_IDPPT"
-- title: "Dark Matter Direct Detection Lecture Note"
+  date: 2025-11-08 13:05 +0900
+  materials:
+    - id: "DM_IDNote"
+      title: "Note"
+      file: "/assets/materials/Dark Matter Introduction and Indirect Detection Lecture Note.pdf"
+    - id: "DM_IDPPT"
+      title: "Slides"
+      file: "/assets/materials/Dark Matter Introduction and Indirect Detection PPT.pdf"
+
+- lecture_id: "25-11-DD"
+  event_id: "25-11-DM"
+  title: "Introduction to Dark Matter (Direct Detection)"
   speaker: "Daeyeong Jeong"
-  date: 2025-11-08
-  file: "/assets/materials/Dark Matter Direct Detection Lecture Note.pdf"
-  id: "DM_DDNote"
-- title: "The Strong CP Problem"
+  date: 2025-11-08 17:05 +0900
+  materials:
+    - id: "DM_DDNote"
+      title: "Note"
+      file: "/assets/materials/Dark Matter Direct Detection Lecture Note.pdf"
+
+- lecture_id: "26-01-Axion"
+  event_id: "26-01-Axion"
+  title: "The Strong CP Problem and QCD Axion"
   speaker: "Chang Hyeon Lee"
-  date: 2026-01-31
-  file: "/assets/materials/The Strong CP Problem.pdf"
-  id: "StrongCP_Note"
-- title: "Non-perturbative Effects in Quantum Field Theory"
+  date: 2026-01-31 13:10 +0900
+  materials:
+    - id: "StrongCP_Note"
+      title: "Note"
+      file: "/assets/materials/The Strong CP Problem.pdf"
+
+- lecture_id: "26-03-NonPert"
+  event_id: "26-03-NonPert"
+  title: "Non-perturbative Effects in Quantum Field Theory"
   speaker: "Gyuri Lee"
-  date: 2026-03-21
-  file: "/assets/materials/Non-perturbative Effects in Quantum Field Theory.pdf"
-  id: "NonPert_Note"
-- title: "Introduction of Cosmology"
+  date: 2026-03-21 13:30 +0900
+  materials:
+    - id: "NonPert_Note"
+      title: "Note"
+      file: "/assets/materials/Non-perturbative Effects in Quantum Field Theory.pdf"
+
+- lecture_id: "26-04-Cosmology"
+  event_id: "26-04-Cosmology"
+  title: "Introduction of Cosmology"
   speaker: "Beom Su Kim"
-  date: 2026-04-18
-  file: "/assets/materials/Introduction of Cosmology.pdf"
-  id: "Cosmology_Note"
-- title: "Higgs and Unitarity"
+  date: 2026-04-18 13:30 +0900
+  materials:
+    - id: "Cosmology_Note"
+      title: "Note"
+      file: "/assets/materials/Introduction of Cosmology.pdf"
+
+- lecture_id: "26-05-HiggsAndUnitarity"
+  event_id: "26-05-HiggsAndUnitarity"
+  title: "Higgs and Unitarity"
   speaker: "SeongSik Kim"
-  date: 2026-05-30
-  file: "/assets/materials/Higgs and Unitarity.pdf"
-  id: "HiggsAndUnitarity_Note"
-- title: "Higgs and Unitarity (KOR)"
-  speaker: "SeongSik Kim"
-  date: 2026-05-30
-  file: "/assets/materials/Higgs and Unitarity (KOR).pdf"
-  id: "HiggsAndUnitarity_KorNote"
-- title: "Higgs and Unitarity Mathematica Notebook"
-  speaker: "SeongSik Kim"
-  date: 2026-05-30
-  file: "/assets/materials/Higgs and Unitarity Mathematica.nb"
-  id: "HiggsAndUnitarity_Mathematica"
-- title: "Introduction to Astrophysics and Supernova Phenomenology"
+  date: 2026-05-30 13:30 +0900
+  materials:
+    - id: "HiggsAndUnitarity_EngNote"
+      title: "Note (English)"
+      file: "/assets/materials/Higgs and Unitarity (ENG).pdf"
+    - id: "HiggsAndUnitarity_KorNote"
+      title: "Note (Korean)"
+      file: "/assets/materials/Higgs and Unitarity (KOR).pdf"
+    - id: "HiggsAndUnitarity_Mathematica"
+      title: "Mathematica Notebook"
+      file: "/assets/materials/Higgs and Unitarity Mathematica.nb"
+
+- lecture_id: "26-06-Astro"
+  event_id: "26-06-Astro"
+  title: "Introduction to Astrophysics and Supernova Phenomenology"
   speaker: "Ju Hyeong Kang"
-  date: 2026-06-27
-  file: "/assets/materials/Introduction to Astrophysics and Supernova Phenomenology.pdf"
-  id: "Astro_Note"
-- title: "Introduction to Astrophysics and Supernova Phenomenology Supplementary Material"
-  speaker: "Ju Hyeong Kang"
-  date: 2026-06-27
-  file: "/assets/materials/Introduction to Astrophysics and Supernova Phenomenology Supplementary Material.pdf"
-  id: "Astro_PPT"
+  date: 2026-06-27 13:30 +0900
+  materials:
+    - id: "Astro_Note"
+      title: "Note"
+      file: "/assets/materials/Introduction to Astrophysics and Supernova Phenomenology.pdf"
+    - id: "Astro_PPT"
+      title: "Supplementary Material"
+      file: "/assets/materials/Introduction to Astrophysics and Supernova Phenomenology Supplementary Material.pdf"

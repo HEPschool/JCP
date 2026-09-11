@@ -1,5 +1,6 @@
 ---
 layout: event
+event_id: "26-01-Axion"
 title: "The Strong CP Problem and QCD Axion"
 date: 2026-01-31 13:00 +0900
 location: "Chungnam National University, Daejeon, Korea"

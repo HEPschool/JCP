@@ -1,5 +1,6 @@
 ---
 layout: event
+event_id: "26-03-NonPert"
 title: "Non-perturbative effects in Quantum Field Theory"
 date: 2026-03-21 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"

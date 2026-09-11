@@ -74,7 +74,15 @@
                   {% assign has_material = false %}
                   <div style="display:flex;gap:.35rem;flex-wrap:wrap">
                     {% for material_id in material_ids %}
-                      {% assign m = material_catalog | where: "id", material_id | first %}
+                      {% assign m = nil %}
+                      {% if include.materials_nested %}
+                        {% for lecture in material_catalog %}
+                          {% assign m = lecture.materials | where: "id", material_id | first %}
+                          {% if m %}{% break %}{% endif %}
+                        {% endfor %}
+                      {% else %}
+                        {% assign m = material_catalog | where: "id", material_id | first %}
+                      {% endif %}
                       {% if m %}
                         {% assign has_material = true %}
                         {% assign href = m.file %}

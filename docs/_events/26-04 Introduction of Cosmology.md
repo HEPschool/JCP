@@ -1,5 +1,6 @@
 ---
 layout: event
+event_id: "26-04-Cosmology"
 title: "Introduction of Cosmology"
 date: 2026-04-18 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"

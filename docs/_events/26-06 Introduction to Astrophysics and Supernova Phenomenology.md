@@ -1,5 +1,6 @@
 ---
 layout: event
+event_id: "26-06-Astro"
 title: "Introduction to Astrophysics and Supernova Phenomenology"
 date: 2026-06-27 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"

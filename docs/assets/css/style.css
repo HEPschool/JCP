@@ -66,6 +66,25 @@ a{color:var(--brand)}
 .card{border:1px solid #eee;border-radius:12px;padding:1rem;margin:1rem 0}
 .grid{display:grid;gap:1rem}
 .grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.materials-list{display:grid;gap:1rem;margin:1rem 0}
+.material-card{margin:0}
+.material-card-header{
+  position:relative;isolation:isolate;overflow:hidden;
+  margin:-1rem -1rem 0;padding:1rem;border-radius:11px 11px 0 0;
+  background:var(--bg);
+}
+.material-card-header.has-hero::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background-image:var(--material-card-hero);background-position:center;background-size:cover;
+  opacity:.5;
+}
+.material-card-date{display:block;color:var(--muted);font-size:.95rem}
+.material-card-title{margin:.2rem 0 .35rem;font-size:1.35rem}
+.material-card-title a{color:inherit;text-decoration:none}
+.material-card-title a:hover{text-decoration:underline;text-underline-offset:.16em}
+.material-card-speaker{margin:0}
+.material-card-resources{margin-top:.5rem}
+.material-card-links{margin:.4rem 0 0}
 .section{margin:2rem 0}
 .meeting-meta{margin-bottom:1rem}
 .meeting-textbook{margin-top:.25rem}

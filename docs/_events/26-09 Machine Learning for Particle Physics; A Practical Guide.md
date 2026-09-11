@@ -1,5 +1,6 @@
 ---
 layout: event
+event_id: "26-09-ML"
 title: "Machine Learning for Particle Physics: A Practical Guide"
 date: 2026-09-19 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"

@@ -1,5 +1,6 @@
 ---
 layout: event
+event_id: "26-05-HiggsAndUnitarity"
 title: "Higgs and Unitarity"
 date: 2026-05-30 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
@@ -22,19 +23,19 @@ timetable:
     title: "Crush Course on Quantum Field Theory"
     speaker: "SeongSik Kim"
     material_id:
-      - "HiggsAndUnitarity_Note"
+      - "HiggsAndUnitarity_EngNote"
       - "HiggsAndUnitarity_KorNote"
   - time: "14:00 - 14:40"
     title: "Unitarity Bound"
     speaker: "SeongSik Kim"
     material_id:
-      - "HiggsAndUnitarity_Note"
+      - "HiggsAndUnitarity_EngNote"
       - "HiggsAndUnitarity_KorNote"
   - time: "14:40 - 15:10"
     title: "Higgs Mechanism"
     speaker: "SeongSik Kim"
     material_id:
-      - "HiggsAndUnitarity_Note"
+      - "HiggsAndUnitarity_EngNote"
       - "HiggsAndUnitarity_KorNote"
   - time: "15:10 - 15:30"
     title: "Break"
@@ -43,14 +44,14 @@ timetable:
     title: "Amplitude Part 1 - without Higgs"
     speaker: "SeongSik Kim"
     material_id:
-      - "HiggsAndUnitarity_Note"
+      - "HiggsAndUnitarity_EngNote"
       - "HiggsAndUnitarity_KorNote"
       - "HiggsAndUnitarity_Mathematica"
   - time: "16:30 - 17:00"
     title: "Amplitude Part 2 - Higgs and LQT Bound"
     speaker: "SeongSik Kim"
     material_id:
-      - "HiggsAndUnitarity_Note"
+      - "HiggsAndUnitarity_EngNote"
       - "HiggsAndUnitarity_KorNote"
       - "HiggsAndUnitarity_Mathematica"
   - time: "17:00 - 17:20"
@@ -60,7 +61,7 @@ timetable:
     title: "Goldstone Equivalence Theorem"
     speaker: "SeongSik Kim"
     material_id:
-      - "HiggsAndUnitarity_Note"
+      - "HiggsAndUnitarity_EngNote"
       - "HiggsAndUnitarity_KorNote"
   - time: "18:00 - 19:00"
     title: "Banquet"

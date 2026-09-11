@@ -118,10 +118,10 @@ Material은 docs/assets/materials 폴더에 자료 파일을 업로드하고, do
 3. docs/_data/materials.yml 파일을 열어 강연 정보와 해당 강연의 material 목록을 입력합니다.  
 
 ```yml
-- lecture_id: "lecture_1" # 강연 카드를 구분하는 고유값
-  event_id: "event_2025_12" # Event의 .md 파일에 입력한 event_id와 동일한 값
-  title: "Lecture 1: Introduction" # 강연 카드에 표시되는 강연 주제
-  speaker: "Lecturer_1" # 강연 카드에 표시되는 강연자
+- lecture_id: "25-12-LecID-1" # 강연 카드를 구분하는 고유값
+  event_id: "25-12-TITLE" # Event의 .md 파일에 입력한 event_id와 동일한 값
+  title: "YOUR_TITLE (Lectur 1)" # 강연 카드에 표시되는 강연 주제
+  speaker: "Lecturer 1" # 강연 카드에 표시되는 강연자
   date: 2025-12-25 09:30 +0900 # 강연 카드의 날짜 및 정렬 기준
   materials:
     - id: "material_1" # Event 상세 페이지의 material_id에서 사용하는 고유값
@@ -131,14 +131,14 @@ Material은 docs/assets/materials 폴더에 자료 파일을 업로드하고, do
       title: "Slides"
       file: "/assets/materials/lecture_1_slides.pdf"
 
-- lecture_id: "lecture_2"
-  event_id: "event_2025_12" # 같은 Event에 속한 강연은 동일한 event_id 사용
-  title: "Lecture 2: Something"
-  speaker: "Lecturer_2"
+- lecture_id: "25-12-LecID-2"
+  event_id: "25-12-TITLE" # 같은 Event에 속한 강연은 동일한 event_id 사용
+  title: "YOUR_TITLE (Lectur 2)"
+  speaker: "Lecturer 2"
   date: 2025-12-25 11:00 +0900
   materials:
     - id: "material_2"
-      title: "Note" # 서로 다른 강연에서는 동일한 자료명을 사용해도 됩니다.
+      title: "Note" # 서로 다른 강연 카드에서는 동일한 자료명을 사용해도 됩니다.
       file: "/assets/materials/lecture_2_note.pdf"
 ```
 
@@ -151,7 +151,7 @@ date는 페이지에서 2025.12.25 (Thu) 형태로 표시됩니다.
 event_id가 일치하지 않거나 Event에 존재하지 않으면 카드의 title 링크와 hero image가 생성되지 않으므로, 두 파일의 event_id가 정확히 일치하는지 확인해주시기 바랍니다.  
 
 material의 title은 Materials 페이지에 표시되는 자료명으로, Note, Slides, Code, Notebook, Supplementary Material 등과 같이 간단하게 입력하는 것을 권장합니다.  
-서로 다른 강연에서는 동일한 material title을 사용할 수 있습니다.
+서로 다른 강연 카드에서는 동일한 material title을 사용할 수 있습니다.
 material을 구분하고 Event 상세 페이지와 연결할 때는 title이 아닌 id를 사용하므로, 각 material의 id는 전체 docs/_data/materials.yml 안에서 중복되지 않도록 입력해야 합니다.  
 material의 id는 Event 등록·관리시 timetable 내의 material_id 설정에 사용되며, material의 id를 material_id에 입력하면 Event 상세 페이지 시간표에서 해당 파일이 해당 일정에 함께 표시됩니다.  
 

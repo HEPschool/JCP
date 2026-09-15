@@ -47,7 +47,7 @@ participants: # Optional: 참가자 명단이 필요하지 않다면 이 항목 
 photos: # Optional: 사진이 없다면 이 항목 전체를 삭제합니다.
   - "assets/img/photos/photo1.jpg"
 hero: # Optional: 상세 페이지 상단에 표시되는 이미지와 문구
-  image: "/assets/img/heros/event_default.jpg"
+  image: "/assets/img/heros/online_default.jpg"
   lines:
     - text: "YOUR TITLE"
       style: title
@@ -64,6 +64,8 @@ docs/_online 폴더에 .md 파일이 생성되면 Online Meeting 페이지에 �
 Online Meeting 페이지에는 date 값을 기준으로 정렬된 순서로 일정이 표시됩니다.  
 기본적으로 현재 연도의 일정이 표시되며, Select year 버튼에서 과거 및 미래 연도를 선택할 수 있습니다.  
 Online Meeting 일정은 Home의 Upcoming Event banner와 상단의 Upcoming Event 링크에는 포함되지 않습니다.  
+hero 설정을 위해서는 docs/assets/img/heros 폴더에 사진을 업로드하고, image: "" 값을 올바르게 수정해주시기 바랍니다.  
+가급적 hero 항목을 완전히 설정해주시고, 적절한 image가 없는 경우 /assets/img/heros/online_default.jpg를 사용해주시기 바랍니다.
 
 ## Online Meeting Recording 등록·관리
 

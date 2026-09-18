@@ -1,11 +1,11 @@
 ---
 layout: online
-title: "Feynman Rules"
+title: "Spin 1 and Gauge Invariance"
 date: 2026-09-22 19:00 +0900
 series: "2026 Fall Joint Meeting"
 speaker: "In Jung Kim"
 note: "Joint Study"
-textbook: "Spin 1 and Gauge Invariance"
+textbook: "Matthew D. Schwartz, Quantum Field Theory and the Standard Model"
 # video:
 #   url: ""
 #   display: "embed"

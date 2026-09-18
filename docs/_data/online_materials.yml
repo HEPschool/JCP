@@ -3,10 +3,10 @@
   date: 2026-09-01
   file: "/assets/materials/online/2026 Fall - Field Theory and Second Quantization.pdf"
   id: "online_2026Fall_QFT_1"
-- title: "Finite Groups I"
+- title: "Finite Groups Part I"
   speaker: "Sangjin Mun"
   date: 2026-09-04
-  file: "/assets/materials/online/2026 Fall - Finite Groups I.pdf"
+  file: "/assets/materials/online/2026 Fall - Finite Groups Part I.pdf"
   id: "online_2026Fall_GT_1"
 - title: "Cross Sections and Decay Rates"
   speaker: "In Jung Kim"
@@ -23,3 +23,8 @@
   date: 2026-09-15
   file: "/assets/materials/online/2026 Fall - Feynman Rules.pdf"
   id: "online_2026Fall_QFT_3"
+- title: "Finite Groups Part II"
+  speaker: "Sangjin Mun"
+  date: 2026-09-04
+  file: "/assets/materials/online/2026 Fall - Finite Groups Part II.pdf"
+  id: "online_2026Fall_GT_2"

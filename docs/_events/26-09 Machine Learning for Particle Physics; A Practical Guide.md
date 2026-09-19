@@ -12,9 +12,7 @@ overview: >
 
   This lecture provides a practical, hands-on introduction for students in particle theory with little or no prior background in machine learning. We begin with the fundamentals of neural networks (perceptrons, activation functions, loss functions, and gradient-based optimization via backpropagation), focusing on what is actually being optimized and why it works. <br><br>
 
-  We then move on to the two most basic architectures, deep neural networks and convolutional neural networks. A hands-on session follows, in which participants implement and train both. <br><br>
-
-  We close with a brief introduction to the transformer, the architecture underlying the large language models many of us now use every day.
+  We then move on to the two most basic architectures, deep neural networks and convolutional neural networks. A hands-on session follows, in which participants implement and train both.
 timetable:
   - time: "12:00 - 12:10"
     title: "Opening remarks"
@@ -28,13 +26,16 @@ timetable:
   - time: "13:30 - 14:30"
     title: "Building blocks of machine learning"
     speaker: "Yongik Jang"
-    material_id:
-      - ""
+    material_id: 
+      - "ML_Repository"
+      - "ML_Slides"
   - time: "14:30 - 15:30"
     title: "Hands-on I"
     speaker: "Yongik Jang"
     material_id:
-      - ""
+      - "ML_Repository"
+      - "ML_HandsOn1"
+      - "ML_HandsOn1_Sol"
   - time: "15:30 - 16:00"
     title: "Break"
     speaker: ""
@@ -42,12 +43,15 @@ timetable:
     title: "DNN and CNN"
     speaker: "Yongik Jang"
     material_id:
-      - ""
+      - "ML_Repository"
+      - "ML_Slides"
   - time: "17:00 - 18:00"
     title: "Hands-on II"
     speaker: "Yongik Jang"
     material_id:
-      - ""
+      - "ML_Repository"
+      - "ML_HandsOn2"
+      - "ML_HandsOn2_Sol"
   - time: "18:00 - 20:00"
     title: "Banquet"
     speaker: ""

@@ -15,7 +15,7 @@ timetable:
   - time: "19:00 - 21:00"
     title: "Spin 1 and Gauge Invariance"
     speaker: "In Jung Kim"
-    material_id: "online_2026Fall_QFT_3"
+    material_id: "online_2026Fall_QFT_4"
 participants: 
   - name: In Jung Kim
     affiliation: Chungnam National University

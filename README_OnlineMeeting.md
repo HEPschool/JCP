@@ -6,7 +6,6 @@ README_OnlineMeeting에서는 Online Meeting 및 관련 Material 등록·관리 
 
 등록·관리 과정에서 입력한 값들은 홈페이지 및 repository에 표시됩니다.  
 입력된 값들과 업로드한 파일들은 홈페이지 및 repository 주소를 아는 모든 사용자들에 의해 열람/다운로드가 가능합니다.  
-Materials 페이지에 표시되지 않는 파일도 정확한 주소를 알고 있다면 직접 접근할 수 있습니다.  
 민감한 정보/자료 등록 및 업로드 시 주의해주시기 바랍니다.  
 등록·관리에 앞서, 관리자에게 repository 편집 권한을 요청하시기 바랍니다.  
 
@@ -99,9 +98,11 @@ Online Meeting Material은 docs/assets/materials/online 폴더에 파일을 업�
   id: "online_material_1"
 ```
 
-Online Meeting Material의 id에는 일반 Material과 쉽게 구분할 수 있도록 `online_` 접두사를 사용합니다.  
+Online Meeting Material의 id에는 일반 Material과 쉽게 구분할 수 있도록 online_ 접두사를 사용합니다.  
 등록된 Online Meeting Material은 Materials 페이지에는 표시되지 않으며, Online Meeting 상세 페이지의 시간표를 통해서만 연결됩니다.  
+Materials 페이지에 표시되지 않더라도, 정확한 주소를 알고 있다면 직접 접근할 수 있습니다.  
 파일은 홈페이지 접속이 가능한 누구나 직접 열람·다운로드할 수 있으므로, 열람을 제한하려면 파일에 비밀번호를 설정하는 등 별도의 조치를 취하시기 바랍니다.  
+파일에 비밀번호를 설정하는 경우, email 등 자료 열람을 위한 연락 수단을 페이지에 포함해주실 것을 강하게 권장드립니다.  
 
 Online Meeting의 .md 파일에서 timetable 내 material_id에 자료의 id를 입력하면 해당 시간표에 자료 버튼이 표시됩니다.  
 material_id에는 하나의 id 또는 여러 개의 id를 다음과 같이 입력할 수 있습니다.  

@@ -4,51 +4,70 @@
   date: 2025-11-08
   intro: "The student lecturer of 'Introduction to Dark Matter' on Nov 8, 2025."
   photo: ""
+
 - name: "Daeyeong Jeong"
   affiliation: "Particle physics and Cosmology Lab, Chungnam National University"
   email: "jeong.physics@gmail.com"
   date: 2025-11-08
   intro: "The student lecturer of 'Introduction to Dark Matter' on Nov 8, 2025."
   photo: ""
+
+
+
 - name: "Chang Hyeon Lee"
   affiliation: "Chungnam National University"
   email: ""
   date: 2026-01-31
   intro: "The student lecturer of 'The Strong CP Problem and QCD Axion' on Jan 31, 2026."
   photo: ""
+
 - name: "Gyuri Lee"
   affiliation: "Chungnam National University"
   email: ""
   date: 2026-03-21
   intro: "The student lecturer of 'Non-perturbative effects in Quantum Field Theory' on Mar 21, 2026."
   photo: ""
+
 - name: "Beom Su Kim"
   affiliation: "Jeonbuk National University"
   email: ""
   date: 2026-04-18
   intro: "The student lecturer of 'Introduction of Cosmology' on Apr 18, 2026."
   photo: ""
+
 - name: "SeongSik Kim"
   affiliation: "Chungnam National University"
   email: ""
   date: 2026-05-30
   intro: "The invited lecturer of 'Higgs and Unitarity' on May 30, 2026."
   photo: ""
+
 - name: "Ju Hyeong Kang"
   affiliation: "Pusan National University"
-  email: ""
+  email: "kas6306@pusan.ac.kr"
   date: 2026-06-27
   intro: "The student lecturer of 'Introduction to Astrophysics and Supernova Phenomenology' on Jun 27, 2026."
   photo: "/assets/img/lecturers/JHKang.jpg"
+
 - name: "Yongik Jang"
   affiliation: "Kyungpook National University"
   email: ""
   date: 2026-09-19
   intro: "The student lecturer of 'Machine Learning for Particle Physics: A Practical Guide' on Sep 19, 2026."
   photo: ""
+
 - name: "Seong-ha Kim"
   affiliation: "Chungnam National University"
   email: ""
   date: 2026-11-30
   intro: ""
+  photo: ""
+
+
+
+- name: "Yurang Ko"
+  affiliation: "Kyungpook National University"
+  email: ""
+  date: 2027-02-27
+  intro: "The student lecturer of 'TBA' on Feb 27, 2027."
   photo: ""

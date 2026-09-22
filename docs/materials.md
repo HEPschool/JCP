@@ -8,7 +8,8 @@ hero:
 ---
 # Materials
 
-You can view the event details by clicking a title. If you require access to the encrypted materials, please contact the author.
+You can view the event details by clicking a title. <br>
+If you require access to the encrypted materials, please contact the author.
 
 <div class="year-filter">
   <button id="materials-prev-toggle" class="btn small year-filter-btn" type="button"

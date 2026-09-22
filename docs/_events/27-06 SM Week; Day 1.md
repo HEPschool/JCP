@@ -8,7 +8,14 @@ speaker: "TBA"
 address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
 note: "School"
 overview: >
-  TBA
+  <nav class="buttons" aria-label="SM Week days" style="align-items:center;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;">
+    <strong>2027 SM Week:</strong>
+    <span class="btn small disabled" aria-current="page">Day 1</span>
+    <a class="btn small" href="/JCP/events/27-06-sm-week-day-2/">Day 2</a>
+    <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
+    <a class="btn small" href="/JCP/events/27-07-sm-week-day-4/">Day 4</a>
+    <a class="btn small" href="/JCP/events/27-07-sm-week-day-5/">Day 5</a>
+  </nav>
 timetable:
   - time: "09:00 - 12:00"
     title: "Registration"

@@ -4,12 +4,12 @@ event_id: "27-06-SM2"
 title: "SM Week: Day 2"
 date: 2027-06-29 09:00 +0900
 location: "Chungnam National University Imhae Center, Boryeong, Korea"
-speaker: "TBA"
+speaker: "Sangjin Mun, Ju Hyeong Kang, and Yongik Jang"
 address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
-note: "School"
+note: "Student-led School"
 overview: >
-  <nav class="buttons" aria-label="SM Week days" style="align-items:center;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;">
-    <strong>2027 SM Week:</strong>
+  <div><strong>2027 SM Week:</strong></div>
+  <nav class="buttons" aria-label="SM Week days">
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-1/">Day 1</a>
     <span class="btn small disabled" aria-current="page">Day 2</span>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
@@ -19,25 +19,25 @@ overview: >
 timetable:
   - time: "09:00 - 10:30"
     title: "Session 4: Broken Symmetries 2"
-    speaker: "TBA"
+    speaker: "Sangjin Mun"
   - time: "10:30 - 11:00"
     title: "Break"
     speaker: ""
   - time: "11:00 - 12:30"
     title: "Session 5: The Strong Force 1"
-    speaker: "TBA"
+    speaker: "Ju Hyeong Kang"
   - time: "12:30 - 14:00"
     title: "Lunch"
     speaker: ""
   - time: "14:00 - 15:30"
     title: "Session 6: The Strong Force 2"
-    speaker: "TBA"
+    speaker: "Ju Hyeong Kang"
   - time: "15:30 - 16:00"
     title: "Break"
     speaker: ""
   - time: "16:00 - 17:30"
     title: "Session 7: The Strong Force 3"
-    speaker: "TBA"
+    speaker: "Yongik Jang"
   - time: "17:30 - 19:00"
     title: "Dinner"
     speaker: ""

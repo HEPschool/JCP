@@ -4,12 +4,12 @@ event_id: "27-07-SM4"
 title: "SM Week: Day 4"
 date: 2027-07-01 09:00 +0900
 location: "Chungnam National University Imhae Center, Boryeong, Korea"
-speaker: "TBA"
+speaker: "Yurang Ko and TBA"
 address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
-note: "School"
+note: "Student-led School"
 overview: >
-  <nav class="buttons" aria-label="SM Week days" style="align-items:center;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;">
-    <strong>2027 SM Week:</strong>
+  <div><strong>2027 SM Week:</strong></div>
+  <nav class="buttons" aria-label="SM Week days">
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-1/">Day 1</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-2/">Day 2</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
@@ -19,13 +19,13 @@ overview: >
 timetable:
   - time: "09:00 - 10:30"
     title: "Session 13: Electroweak Interactions 2"
-    speaker: "TBA"
+    speaker: "Yurang Ko"
   - time: "10:30 - 11:00"
     title: "Break"
     speaker: ""
   - time: "11:00 - 12:30"
     title: "Session 14: Electroweak Interactions 3"
-    speaker: "TBA"
+    speaker: "Yurang Ko"
   - time: "12:30 - 14:00"
     title: "Lunch"
     speaker: ""

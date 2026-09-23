@@ -4,12 +4,12 @@ event_id: "27-06-SM1"
 title: "SM Week: Day 1"
 date: 2027-06-28 09:00 +0900
 location: "Chungnam National University Imhae Center, Boryeong, Korea"
-speaker: "TBA"
+speaker: "TBA and Sangjin Mun"
 address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
-note: "School"
+note: "Student-led School"
 overview: >
-  <nav class="buttons" aria-label="SM Week days" style="align-items:center;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;">
-    <strong>2027 SM Week:</strong>
+  <div><strong>2027 SM Week:</strong></div>
+  <nav class="buttons" aria-label="SM Week days">
     <span class="btn small disabled" aria-current="page">Day 1</span>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-2/">Day 2</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
@@ -25,7 +25,7 @@ timetable:
     speaker: ""
   - time: "14:00 - 15:00"
     title: "Opening remarks"
-    speaker: "TBA"
+    speaker: "Chang Hyeon Lee"
   - time: "15:00 - 16:30"
     title: "Session 1: Symmetries 1"
     speaker: "TBA"
@@ -40,7 +40,7 @@ timetable:
     speaker: ""
   - time: "20:00 - 21:30"
     title: "Session 3: Broken Symmetries 1"
-    speaker: "TBA"
+    speaker: "Sangjin Mun"
   - time: "21:30 - 23:00"
     title: "Discussion"
     speaker: ""

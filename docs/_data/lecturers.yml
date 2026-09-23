@@ -69,5 +69,47 @@
   affiliation: "Kyungpook National University"
   email: ""
   date: 2027-02-27
-  intro: "The student lecturer of 'TBA' on Feb 27, 2027."
+  intro: "The student lecturer of 'TBA' on Feb 27, 2027. & SM Week: Day 3 & 4"
+  photo: ""
+
+- name: "In Jung Kim"
+  affiliation: "Chungnam National University"
+  email: ""
+  date: 2027-03-27
+  intro: "The student lecturer of 'TBA' on Mar 27, 2027."
+  photo: ""
+
+- name: "Sangjin Mun"
+  affiliation: "Pusan National University"
+  email: "kas6306@pusan.ac.kr"
+  date: 2027-06-28
+  intro: "SM Week: Day 1 & 2"
+  photo: ""
+
+- name: "Ju Hyeong Kang"
+  affiliation: "Pusan National University"
+  email: "kas6306@pusan.ac.kr"
+  date: 2027-06-29
+  intro: "SM Week: Day 2"
+  photo: ""
+
+- name: "Yongik Jang"
+  affiliation: "Kyungpook National University"
+  email: ""
+  date: 2027-06-29
+  intro: "SM Week: Day 2 & 3"
+  photo: ""
+
+- name: "Chang Hyeon Lee"
+  affiliation: "Chungnam National University"
+  email: ""
+  date: 2027-06-30
+  intro: "SM Week: Day 3"
+  photo: ""
+
+- name: "SeongSik Kim"
+  affiliation: "Chungnam National University"
+  email: ""
+  date: 2027-07-02
+  intro: "SM Week: Day 5"
   photo: ""

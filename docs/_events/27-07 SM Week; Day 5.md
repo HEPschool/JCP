@@ -4,7 +4,7 @@ event_id: "27-07-SM5"
 title: "SM Week: Day 5"
 date: 2027-07-02 09:00 +0900
 location: "Chungnam National University Imhae Center, Boryeong, Korea"
-speaker: "TBA"
+speaker: "SeongSik Kim"
 address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
 note: "Student-led School"
 overview: >

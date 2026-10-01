@@ -39,3 +39,9 @@
   date: 2026-09-22
   file: "/assets/materials/online/2026 Fall - Spin 1 and Gauge Invariance.pdf"
   id: "online_2026Fall_QFT_4"
+
+- title: "Lie Groups"
+  speaker: "Sangjin Mun"
+  date: 2026-10-01
+  file: "/assets/materials/online/2026 Fall - Lie Groups.pdf"
+  id: "online_2026Fall_GT_3"

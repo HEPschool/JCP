@@ -15,7 +15,7 @@ timetable:
   - time: "17:00 - 19:00"
     title: "Lie Groups"
     speaker: "Sangjin Mun"
-    material_id: ""
+    material_id: "online_2026Fall_GT_3"
 participants: 
   - name: Sangjin Mun
     affiliation: Pusan National University

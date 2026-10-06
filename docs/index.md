@@ -11,7 +11,7 @@ hero:
       style: subtitle
     - text: "JCP HEP School"
       style: title
-    - text: "Jeonbuk, Chungnam and Pusan National University"
+    - text: "Jeonbuk, Chungnam, and Pusan National University"
       style: note
     - text: "Hosted by the Institute for Sciences of the Universe"
       style: note

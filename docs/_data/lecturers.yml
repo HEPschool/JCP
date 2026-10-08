@@ -19,7 +19,7 @@
   email: ""
   date: 2026-01-31
   intro: "The student lecturer of 'The Strong CP Problem and QCD Axion' on Jan 31, 2026."
-  photo: ""
+  photo: "/assets/img/lecturers/2026_CHLee.jpg"
 
 - name: "Gyuri Lee"
   affiliation: "Chungnam National University"
@@ -47,7 +47,7 @@
   email: "kas6306@pusan.ac.kr"
   date: 2026-06-27
   intro: "The student lecturer of 'Introduction to Astrophysics and Supernova Phenomenology' on Jun 27, 2026."
-  photo: "/assets/img/lecturers/JHKang.jpg"
+  photo: "/assets/img/lecturers/2026_JHKang.jpg"
 
 - name: "Yongik Jang"
   affiliation: "Kyungpook National University"

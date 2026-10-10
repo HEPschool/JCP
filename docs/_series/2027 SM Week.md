@@ -7,7 +7,7 @@ period:
   start: "2027-06-28"
   end: "2027-07-02"
 color: "#FF1493"
-calendar_id: "2027_sm_week"
+program_id: "2027_sm_week"
 address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
 map_embed: >
   <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357085d4d9d9308d%3A0xfc0323226a166d82!2z7Lap64Ko64yA7ZWZ6rWQIOyehO2VtOyImOugqOybkA!5e0!3m2!1sko!2skr!4v1790083927457!5m2!1sko!2skr"
@@ -17,6 +17,10 @@ hero:
   lines:
     - text: "2027 SM Week"
       style: title
+    - text: "June 28 – July 2, 2027"
+      style: subtitle
+    - text: "Student-organized school on the Standard Model"
+      style: "text"
 ---
 
 **2027 SM Week** is a five-day, student-organized school that brings together graduate students to study the Standard Model as a coherent whole. Through student-led lectures, worked calculations, problem-solving sessions and discussion, the school connects the strong and electroweak interactions with symmetries, anomalies, flavor physics and neutrinos.

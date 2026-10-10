@@ -12,6 +12,10 @@ hero:
   lines:
     - text: "JCP HEP School: <br> Student Lecture"
       style: title
+    # - text: "Aug. 22 2025 – Present"
+    #   style: subtitle
+    # - text: "Graduate student lectures on high-energy physics and particle phenomenology"
+    #   style: "text"
 ---
 
 **JCP HEP School:  Student Lecture** is a recurring JCP HEP School program in which graduate students prepare and deliver introductory lectures on their own research fields. Each lecture brings together the physical motivation, core concepts, standard tools and broader research landscape of a topic in high-energy physics or a related area.

@@ -15,7 +15,7 @@ period:
   start: "2025-08-22"
   end: "present"
 color: "#4F46E5"
-calendar_id: "example_program" # Optional: 캘린더 자료의 program_id를 입력합니다.
+program_id: "example_program" # Optional: 캘린더 자료의 program_id를 입력합니다.
 hero:
   image: "/assets/img/heros/lecture/lecture_default.jpg"
   title: "Student Lecture"
@@ -150,7 +150,7 @@ program:
 ...
 ```
 
-program_id는 캘린더 자료를 찾는 고유 식별자이며, 다른 자료 파일과 중복되지 않도록 지정합니다.
+program_id는 캘린더 자료를 찾는 고유 식별자이며, 다른 자료 파일과 중복되지 않도록 지정합니다. 연결할 Series 문서에는 같은 값을 입력합니다.
 행사를 연결하는 series_id와는 별도의 항목입니다.
 permalink는 자료 문서의 출력 경로를 소개 페이지와 구분하여 주소 충돌을 방지합니다.
 예시의 /series/programs/:slug.yml을 그대로 사용합니다.
@@ -187,22 +187,23 @@ start와 end의 분은 00, 10, 20, 30, 40, 50 중 하나로 입력합니다.
 ### Series에 연결
 
 해당 Series의 .md 파일 front matter(처음 두 --- 사이)에 다음 한 줄을 추가합니다.
-calendar_id에는 자료 파일의 program_id를 정확히 입력합니다.
+program_id에는 자료 파일의 program_id를 정확히 입력합니다.
 
 ```yaml
-calendar_id: "example_program"
+program_id: "example_program"
 ```
 
 Informations 탭에서 Calendar가 최상단에 표시되며, 그 아래에 행사 리스트와 선택 항목들이 표시됩니다.
 마크다운 본문에 별도 include를 추가할 필요는 없습니다.
 기존 본문에 week_program.html include를 넣었다면 이를 삭제하여 중복 표시를 방지합니다.
-calendar_id를 생략하거나 비워 두면 캘린더를 표시하지 않습니다. 일치하는 자료 파일이 없어도 표시하지 않습니다.
-Series 문서에는 calendar_id를, 캘린더 자료 문서에는 program_id를 사용합니다.
+program_id를 생략하거나 비워 두면 캘린더를 표시하지 않습니다.
+Series 문서와 캘린더 자료 문서 모두 program_id를 사용합니다.
 url이 있는 날짜 제목은 Event 페이지로 연결되며, /JCP 등 사이트의 baseurl은 자동으로 적용됩니다.
 url을 생략한 날짜는 링크 없이 표시됩니다.
 날짜 수에 따라 열 수가 바뀌며, 좁은 화면에서는 가로로 스크롤할 수 있습니다.
 
-program_id가 있는 자료 문서는 일반 Series 카드 목록에서 제외됩니다.
+program 데이터가 있는 캘린더 자료 문서는 일반 Series 카드 목록에서 제외됩니다.
+캘린더를 연결하는 program_id만 있는 Series 소개 문서는 카드 목록에 표시됩니다.
 
 ## Series 셀 색상
 

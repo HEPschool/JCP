@@ -12,6 +12,10 @@ hero:
   lines:
     - text: "JCP HEP School: <br> Invited Lecture"
       style: title
+    # - text: "May 20 2026 – Present"
+    #   style: subtitle
+    # - text: "Explore research topics with invited speakers"
+    #   style: "text"
 ---
 
 **JCP HEP School: Invited Lecture** brings external speakers to JCP HEP School to teach subjects that students are interested in exploring. Topics grow out of the students' research interests, questions and learning needs, including unfamiliar research areas and methods they would like to understand more deeply.

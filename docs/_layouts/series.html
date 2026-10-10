@@ -21,16 +21,16 @@ layout: default
 
   <div id="series-details-panel" class="series-panel" role="tabpanel"
        aria-labelledby="series-tab-details" tabindex="0" data-series-panel="details">
-    {% assign calendar_id = page.calendar_id | default: "" | strip %}
-    {% if calendar_id != "" %}
-      {% assign calendar_document = site.series | where: "program_id", calendar_id | first %}
-      {% assign series_calendar = calendar_document.program %}
-      {% if series_calendar %}
-        <section class="section" aria-labelledby="series-calendar-heading">
-          <h2 id="series-calendar-heading">Program at a glance</h2>
-          {% assign calendar_description = series_calendar.description | default: "" | strip %}
-          {% if calendar_description != "" %}<p>{{ calendar_description | escape }}</p>{% endif %}
-          {% include week_program.html program=series_calendar %}
+    {% assign program_id = page.program_id | default: "" | strip %}
+    {% if program_id != "" %}
+      {% assign program_document = site.series | where_exp: "item", "item.program != nil" | where: "program_id", program_id | first %}
+      {% assign series_program = program_document.program %}
+      {% if series_program %}
+        <section class="section" aria-labelledby="series-program-heading">
+          <h2 id="series-program-heading">Program at a glance</h2>
+          {% assign program_description = series_program.description | default: "" | strip %}
+          {% if program_description != "" %}<p>{{ program_description | escape }}</p>{% endif %}
+          {% include week_program.html program=series_program %}
         </section>
       {% endif %}
     {% endif %}

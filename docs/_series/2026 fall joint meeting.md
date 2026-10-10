@@ -27,6 +27,10 @@ hero:
   lines:
     - text: "2026 Fall Joint Meeting"
       style: title
+    # - text: "Sep. 1 2026 – Present"
+    #   style: subtitle
+    # - text: "Joint online study of quantum field theory and group theory"
+    #   style: "text"
 ---
 
 **2026 Fall Joint Meeting** brings together graduate students from Chungnam National University, Kyungpook National University, and Pusan National University for weekly study meetings on Zoom. The program covers quantum field theory and group theory.

@@ -1,7 +1,7 @@
 {% assign today = site.time | date: "%Y-%m-%d" %}
 {% assign open_ends = "|present|ongoing|tbd|미정" | split: "|" %}
 {% assign sort_keys = "" | split: "" %}
-{% assign series_pages = site.series | where_exp: "item", "item.program_id == nil" %}
+{% assign series_pages = site.series | where_exp: "item", "item.program == nil" %}
 {% for series_page in series_pages %}
   {% assign start_date = series_page.period.start | date: "%Y-%m-%d" %}
   {% assign end_value = series_page.period.end | default: "" | strip | downcase %}

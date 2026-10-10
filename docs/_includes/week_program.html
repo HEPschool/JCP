@@ -1,6 +1,6 @@
 {%- assign program = include.program -%}
 {%- if include.id -%}
-  {%- assign program_document = site.series | where: 'program_id', include.id | first -%}
+  {%- assign program_document = site.series | where_exp: 'item', 'item.program != nil' | where: 'program_id', include.id | first -%}
   {%- assign program = program_document.program -%}
 {%- endif -%}
 {%- if program -%}

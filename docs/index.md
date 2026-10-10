@@ -3,7 +3,7 @@ layout: default
 permalink: /
 title: Home
 hero:
-  image: "/assets/img/heros/gargantua.jpg"  # Optional
+  image: "/assets/img/heros/home_gargantua.jpg"
   lines:
     - text: "Since August 22, 2025"
       style: overline

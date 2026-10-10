@@ -54,7 +54,7 @@ map_embed: >
   <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357085d4d9d9308d%3A0xfc0323226a166d82!2z7Lap64Ko64yA7ZWZ6rWQIOyehO2VtOyImOugqOybkA!5e0!3m2!1sko!2skr!4v1790083927457!5m2!1sko!2skr"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 hero:
-  image: "/assets/img/heros/SM_Week.png"
+  image: "/assets/img/heros/lecture/2027_SM_Week.png"
   lines:
     - text: "SM Week: Day 2"
       style: title

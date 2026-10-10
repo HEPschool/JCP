@@ -81,12 +81,12 @@ participants:
   - name: Gun Wook Jeong
     affiliation: Jeonbuk National University
 photos:
-  - "/assets/img/photos/ML_groupphoto1.jpg"
-  - "/assets/img/photos/ML_groupphoto2.jpg"
-  - "/assets/img/photos/ML_lecture1.jpg"
-  - "/assets/img/photos/ML_lecture2.jpg"
+  - "/assets/img/photos/2026_ML_groupphoto1.jpg"
+  - "/assets/img/photos/2026_ML_groupphoto2.jpg"
+  - "/assets/img/photos/2026_ML_lecture1.jpg"
+  - "/assets/img/photos/2026_ML_lecture2.jpg"
 hero:
-  image: "/assets/img/heros/event_default.jpg"
+  image: "/assets/img/heros/lecture/lecture_default.jpg"
   lines:
     - text: "Machine Learning for Particle Physics: A Practical Guide"
       style: title

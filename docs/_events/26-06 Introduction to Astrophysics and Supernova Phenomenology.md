@@ -94,10 +94,10 @@ participants:
   - name: Chan Youn Won
     affiliation: Chungbuk National University
 photos:
-  - "/assets/img/photos/AstroNSN_groupphoto.jpg"
-  - "/assets/img/photos/AstroNSN_lecture.jpg"
+  - "/assets/img/photos/2026_AstroNSN_groupphoto.jpg"
+  - "/assets/img/photos/2026_AstroNSN_lecture.jpg"
 hero:
-  image: "/assets/img/heros/SN1987A.jpg"
+  image: "/assets/img/heros/lecture/2026_AstroNSN_SN1987A.jpg"
   lines:
     - text: "Introduction to Astrophysics and Supernova Phenomenology"
       style: title

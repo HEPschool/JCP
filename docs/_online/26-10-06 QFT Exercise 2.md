@@ -62,7 +62,7 @@ participants:
   - name: Chang Hyeon Lee
     affiliation: Chungnam National University
 hero:
-  image: "/assets/img/heros/online_default.jpg"
+  image: "/assets/img/heros/online/online_default.jpg"
   lines:
     - text: "QFT Exercise 2"
       style: title

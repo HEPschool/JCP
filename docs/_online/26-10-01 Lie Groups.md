@@ -46,7 +46,7 @@ participants:
   - name: Daeyeong Jeong
     affiliation: Chungnam National University
 hero:
-  image: "/assets/img/heros/online_default.jpg"
+  image: "/assets/img/heros/online/online_default.jpg"
   lines:
     - text: "Lie Groups"
       style: title

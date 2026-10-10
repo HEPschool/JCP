@@ -76,9 +76,9 @@ participants:
   - name: Chaeyeong Kim
     affiliation: Chungbuk National University
 photos:
-  - "/assets/img/photos/NonPert_groupphoto.jpg"
+  - "/assets/img/photos/2026_NonPert_groupphoto.jpg"
 hero:
-  image: "/assets/img/heros/event_default.jpg"
+  image: "/assets/img/heros/lecture/lecture_default.jpg"
   lines:
     - text: "Non-perturbative effects in Quantum Field Theory"
       style: title

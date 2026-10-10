@@ -3,7 +3,7 @@ layout: default
 permalink: /schedule/
 title: Schedule
 hero:
-  image: "/assets/img/heros/schedule.jpg"  # Optional
+  image: "/assets/img/heros/schedule.jpg"
   title: "Schedule"
 ---
 # Schedule

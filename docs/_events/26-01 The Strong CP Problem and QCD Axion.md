@@ -70,9 +70,10 @@ participants:
   - name: Seongsik Kim
     affiliation: Chungnam National University
 photos:
-  - "/assets/img/photos/StrongCP_groupphoto.jpg"
+  - "/assets/img/photos/2026_StrongCP_groupphoto.jpg"
+  - "/assets/img/photos/2026_StrongCP_lecture.jpg"
 hero:
-  image: "/assets/img/heros/event_default.jpg"
+  image: "/assets/img/heros/lecture/lecture_default.jpg"
   lines:
     - text: "The Strong CP Problem and QCD Axion"
       style: title

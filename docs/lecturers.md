@@ -3,7 +3,7 @@ layout: default
 permalink: /lecturers/
 title: Lecturers
 hero:
-  image: "/assets/img/heros/talk.jpg"  # Optional
+  image: "/assets/img/heros/lecturers_talk.jpg"
   title: "Lecturers"
 ---
 # Lecturers

@@ -94,10 +94,10 @@ participants:
   - name: Min-Gyun Park
     affiliation: Chungnam National University
 photos:
-  - "/assets/img/photos/HiggsNUnitarity_groupphoto.jpg"
-  - "/assets/img/photos/HiggsNUnitarity_lecture.jpg"
+  - "/assets/img/photos/2026_HiggsNUnitarity_groupphoto.jpg"
+  - "/assets/img/photos/2026_HiggsNUnitarity_lecture.jpg"
 hero:
-  image: "/assets/img/heros/event_default.jpg"
+  image: "/assets/img/heros/lecture/lecture_default.jpg"
   lines:
     - text: "Higgs and Unitarity"
       style: title

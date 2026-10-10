@@ -3,7 +3,7 @@ layout: default
 permalink: /materials/
 title: Materials
 hero:
-  image: "/assets/img/heros/books.jpg"  # Optional
+  image: "/assets/img/heros/materials_books.jpg"
   title: "Materials"
 ---
 # Materials

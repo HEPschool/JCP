@@ -87,7 +87,7 @@ photos: # 사진 위치를 아래와 같이 나열합니다. 만약 photo가 없
   - "assets/img/photos/photo1.jpg"
   - "assets/img/photos/photo2.jpg"
 hero: # 상세 페이지 상단에 표시되는 이미지와 문구를 지정합니다.
-  image: "/assets/img/heros/your_hero.png" # 이미지가 등록되어 있지 않으면, 아래의 텍스트 설정과 무관하게 페이지 상단에 이미지·문구가 출력되지 않습니다.
+  image: "/assets/img/heros/lecture/your_hero.png" # 이미지가 등록되어 있지 않으면, 아래의 텍스트 설정과 무관하게 페이지 상단에 이미지·문구가 출력되지 않습니다.
   lines: # 각 문구는 입력 순서에 맞춰 상단->하단 순서로 표시됩니다.
     - text: "YOUR TITLE"
       style: title # 사용 가능한 style은 title, subtitle, text, note, overline 입니다.
@@ -98,8 +98,8 @@ hero: # 상세 페이지 상단에 표시되는 이미지와 문구를 지정합
 ---
 ```
 
-hero 설정을 위해서는 docs/assets/img/heros 폴더에 사진을 업로드하고, image: "" 값을 올바르게 수정해주시기 바랍니다.  
-가급적 hero 항목을 완전히 설정해주시고, 적절한 image가 없는 경우 /assets/img/heros/event_default.jpg를 사용해주시기 바랍니다.  
+hero 설정을 위해서는 docs/assets/img/heros/lecture 폴더에 사진을 업로드하고, image: "" 값을 올바르게 수정해주시기 바랍니다.  
+가급적 hero 항목을 완전히 설정해주시고, 적절한 image가 없는 경우 /assets/img/heros/lecture/lecture_default.jpg를 사용해주시기 바랍니다.  
 Materials 페이지에 강연 카드를 등록하기 위해서는, event_id를 다른 Event와 중복되지 않는 값으로 입력해주시기 바랍니다.  
 Material 정보에 동일한 event_id를 입력하면 강연 카드의 title이 해당 Event 상세 페이지로 연결되며, Event의 hero image가 카드 상단의 배경으로 자동 표시됩니다.  
 하나의 Event에 여러 강연 카드가 연결되는 경우에는 각 강연 정보에 동일한 event_id를 사용할 수 있습니다.  

@@ -62,7 +62,7 @@ participants:
   - name: Ju Hyeong Kang
     affiliation: Pusan National University
 hero:
-  image: "/assets/img/heros/online_default.jpg"
+  image: "/assets/img/heros/online/online_default.jpg"
   lines:
     - text: "Finite Groups III"
       style: title

@@ -77,10 +77,10 @@ participants:
   - name: Seong-Ha Kim
     affiliation: Chungnam National University
 photos:
-  - "/assets/img/photos/DM_groupphoto.jpg"
-  - "/assets/img/photos/DM_discussion.jpg"
+  - "/assets/img/photos/2025_DM_groupphoto.jpg"
+  - "/assets/img/photos/2025_DM_discussion.jpg"
 hero:
-  image: "/assets/img/heros/The_Bullet_Cluster.jpg"
+  image: "/assets/img/heros/lecture/2025_DM_The_Bullet_Cluster.jpg"
   lines:
     - text: "Introduction to Dark Matter"
       style: title

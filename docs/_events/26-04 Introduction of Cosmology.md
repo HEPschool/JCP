@@ -64,9 +64,9 @@ participants:
   - name: Eunhye Cho
     affiliation: Chungnam National University
 photos:
-  - "/assets/img/photos/Cosmology_groupphoto.jpg"
+  - "/assets/img/photos/2026_Cosmology_groupphoto.jpg"
 hero:
-  image: "/assets/img/heros/cosmology.jpg"
+  image: "/assets/img/heros/lecture/2026_Cosmology_Universe.jpg"
   lines:
     - text: "Introduction of Cosmology"
       style: title

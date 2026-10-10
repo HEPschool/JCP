@@ -26,7 +26,7 @@ Presurvey: 강연 진행을 위한 사전 설문 조사 (Speaker의 요청이 �
 
 name은 설문 조사의 이름으로, 해당 설정값이 Home 화면의 설문조사 단추 위에 표시됩니다.  
 url은 설문 조사 참여 링크로, Google forms 등의 설문 조사 링크를 입력합니다.  
-enabled는 설문 조사 진행 여부를 설정하는 항목으로, true면 Home 화면의 단추가 하늘색으로 활성화되고, false면 단추가 회색으로 비활성화 됩니다.  
+enabled는 설문 조사 진행 여부를 설정하는 항목으로, true면 Home 화면의 단추가 활성화되고, false면 단추가 비활성화 됩니다.  
 topic은 안내 문구를 위한 설정값으로, topic이 입력되어 있고 enabled: true 인 경우, 아래와 같은 안내 문구가 Home 화면의 단추 하단에 표시됩니다.  
   
 ✅ (name) for (topic) is now open.  
@@ -185,3 +185,19 @@ Banner에 표시되는 항목들의 세부 설정은 docs/_includes/upcoming.htm
 Series는 docs/_series 폴더의 .md 파일로 관리합니다.
 Series별 캘린더 자료는 docs/_series/programs 폴더의 .yml 파일로 관리합니다.
 등록 형식, 기간 분류, 행사 연결, 캘린더 작성 및 색상 설정은 [Series guide](README_Series.md)를 참고하세요.
+
+## 단추 스타일
+
+사이트의 단추는 docs/assets/css/style.css의 공통 .btn 스타일을 사용합니다.
+행사 상세 페이지와 Materials의 자료 링크도 같은 스타일을 사용하며, 작은 단추에는 small 클래스를 추가합니다.
+
+| 상태 | 표시 |
+| --- | --- |
+| 선택된 단추 | 강조색 배경과 흰 글자 |
+| 선택 가능한 단추 | 기본 배경과 강조색 글자·테두리 |
+| 비활성 단추 | 회색 배경과 낮은 불투명도; 클릭 불가 |
+
+선택 상태는 aria-selected 또는 aria-pressed로, 펼침 상태는 aria-expanded로 지정합니다.
+현재 행사 페이지는 aria-current="page"로 지정하며, disabled 클래스를 붙이지 않습니다.
+비활성 상태는 disabled 속성, disabled 클래스 또는 aria-disabled="true"로 지정하며 선택·펼침 색상보다 우선합니다.
+모든 클릭 가능한 단추에는 공통 hover, 누르는 동안의 색상 변화와 키보드 포커스 표시를 적용합니다.

@@ -7,21 +7,6 @@ period:
   start: "2026-09-01"
   end: "present"
 color: "#C98F53"
-participants: 
-  - name: Yurang Ko
-    affiliation: Kyungpook National University
-  - name: Yoogeun Kim
-    affiliation: Kyungpook National University
-  - name: Chang Hyeon Lee
-    affiliation: Chungnam National University
-  - name: In Jung Kim
-    affiliation: Chungnam National University
-  - name: Daeyeong Jeong
-    affiliation: Chungnam National University
-  - name: Ju Hyeong Kang
-    affiliation: Pusan National University
-  - name: Sangjin Mun
-    affiliation: Pusan National University
 hero:
   image: "/assets/img/heros/series/2026_Fall_Joint_Meeting.jpg"
   lines:

@@ -13,7 +13,7 @@ overview: >
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-1/">Day 1</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-2/">Day 2</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
-    <span class="btn small disabled" aria-current="page">Day 4</span>
+    <span class="btn small" aria-current="page">Day 4</span>
     <a class="btn small" href="/JCP/events/27-07-sm-week-day-5/">Day 5</a>
   </nav>
 timetable:

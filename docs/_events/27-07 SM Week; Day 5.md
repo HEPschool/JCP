@@ -14,7 +14,7 @@ overview: >
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-2/">Day 2</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
     <a class="btn small" href="/JCP/events/27-07-sm-week-day-4/">Day 4</a>
-    <span class="btn small disabled" aria-current="page">Day 5</span>
+    <span class="btn small" aria-current="page">Day 5</span>
   </nav>
 timetable:
   - time: "09:00 - 10:30"

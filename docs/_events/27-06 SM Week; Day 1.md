@@ -10,7 +10,7 @@ series: "2027 SM Week"
 overview: >
   <div><strong>2027 SM Week:</strong></div>
   <nav class="buttons" aria-label="SM Week days">
-    <span class="btn small disabled" aria-current="page">Day 1</span>
+    <span class="btn small" aria-current="page">Day 1</span>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-2/">Day 2</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
     <a class="btn small" href="/JCP/events/27-07-sm-week-day-4/">Day 4</a>

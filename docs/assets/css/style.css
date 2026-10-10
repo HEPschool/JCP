@@ -33,13 +33,13 @@ body{
 .nav a.next-event{font-weight:inherit}
 .nav a.next-event strong,
 .nav a.next-event b{font-weight:inherit}
-.nav-toggle.btn{display:none}
-.nav-toggle.btn[hidden]{display:none}
+.nav-toggle{display:none}
 @media (max-width: 860px){
   .brand{flex:1 1 auto;min-width:0;}
-  .nav-toggle.btn{
+  .nav-toggle{
     display:inline-flex;align-items:center;justify-content:center;
-    margin-left:.75rem;font-family:inherit;
+    margin-left:.75rem;padding:.4rem .7rem;border:1px solid #e5e8eb;border-radius:.45rem;
+    background:#f4f6f8;color:#223;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer;
   }
   .nav{flex:0 0 100%;flex-direction:column;align-items:stretch;padding-top:.35rem;}
   .site-header.nav-enhanced .nav:not(.is-open){display:none;}
@@ -335,6 +335,7 @@ a:focus{outline:2px solid var(--brand); outline-offset:2px}
   }
   body{background:var(--bg); color:var(--fg)}
   .site-header{background:#1a1a1a;border-bottom:1px solid #222}
+  .nav-toggle{background:#161616;color:var(--fg);border-color:#2a3240}
   .card{border-color:#222;background:#161616}
   .embed{border-color:#222}
   .hero{background:#101318;border-bottom:1px solid #222}

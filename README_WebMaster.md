@@ -188,8 +188,9 @@ Series별 캘린더 자료는 docs/_series/programs 폴더의 .yml 파일로 관
 
 ## 단추 스타일
 
-사이트의 단추는 docs/assets/css/style.css의 공통 .btn 스타일을 사용합니다.
+콘텐츠 영역의 단추는 docs/assets/css/style.css의 공통 .btn 스타일을 사용합니다.
 행사 상세 페이지와 Materials의 자료 링크도 같은 스타일을 사용하며, 작은 단추에는 small 클래스를 추가합니다.
+좁은 화면에서 표시되는 상단 Menu 단추는 .nav-toggle 스타일을 사용합니다.
 
 | 상태 | 표시 |
 | --- | --- |
@@ -200,4 +201,4 @@ Series별 캘린더 자료는 docs/_series/programs 폴더의 .yml 파일로 관
 선택 상태는 aria-selected 또는 aria-pressed로, 펼침 상태는 aria-expanded로 지정합니다.
 현재 행사 페이지는 aria-current="page"로 지정하며, disabled 클래스를 붙이지 않습니다.
 비활성 상태는 disabled 속성, disabled 클래스 또는 aria-disabled="true"로 지정하며 선택·펼침 색상보다 우선합니다.
-모든 클릭 가능한 단추에는 공통 hover, 누르는 동안의 색상 변화와 키보드 포커스 표시를 적용합니다.
+클릭 가능한 .btn 단추에는 공통 hover, 누르는 동안의 색상 변화와 키보드 포커스 표시를 적용합니다.

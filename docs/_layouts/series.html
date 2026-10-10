@@ -1,24 +1,55 @@
 ---
 layout: default
 ---
-<article class="series-detail">
+<article class="series-detail" data-series-detail>
   <header class="section">
     <h1>{{ page.title | escape }}</h1>
     <p class="series-detail-period">{% include series_period.html series=page %}</p>
   </header>
 
-  <div class="series-content">{{ content }}</div>
+  <div class="series-detail-tabs" role="tablist" aria-label="Series information" hidden>
+    <button id="series-tab-about" class="btn small series-detail-tab is-active" type="button"
+            role="tab" aria-selected="true" aria-controls="series-about-panel"
+            data-series-tab="about">About</button>
+    <button id="series-tab-details" class="btn small series-detail-tab" type="button"
+            role="tab" aria-selected="false" aria-controls="series-details-panel" tabindex="-1"
+            data-series-tab="details">Informations</button>
+  </div>
 
-  {% assign series_events = site.events | where: "series", page.series_id %}
-  {% assign series_online = site.online | where: "series", page.series_id %}
-  {% assign series_meetings = series_events | concat: series_online %}
-  <section class="section" aria-labelledby="series-events-heading">
-    <h2 id="series-events-heading">Events</h2>
-    {% include meeting_schedule.html
-       items=series_meetings
-       id_prefix="series-events"
-       year_filter=false
-       show_series=false
-       empty_message="No events have been added to this series yet." %}
-  </section>
+  <div id="series-about-panel" class="series-panel series-content" role="tabpanel"
+       aria-labelledby="series-tab-about" tabindex="0" data-series-panel="about">{{ content }}</div>
+
+  <div id="series-details-panel" class="series-panel" role="tabpanel"
+       aria-labelledby="series-tab-details" tabindex="0" data-series-panel="details">
+    {% assign calendar_id = page.calendar_id | default: "" | strip %}
+    {% if calendar_id != "" %}
+      {% assign calendar_document = site.series | where: "program_id", calendar_id | first %}
+      {% assign series_calendar = calendar_document.program %}
+      {% if series_calendar %}
+        <section class="section" aria-labelledby="series-calendar-heading">
+          <h2 id="series-calendar-heading">Program at a glance</h2>
+          {% assign calendar_description = series_calendar.description | default: "" | strip %}
+          {% if calendar_description != "" %}<p>{{ calendar_description | escape }}</p>{% endif %}
+          {% include week_program.html program=series_calendar %}
+        </section>
+      {% endif %}
+    {% endif %}
+
+    {% assign series_events = site.events | where: "series", page.series_id %}
+    {% assign series_online = site.online | where: "series", page.series_id %}
+    {% assign series_meetings = series_events | concat: series_online %}
+    <section class="section" aria-labelledby="series-events-heading">
+      <h2 id="series-events-heading">Events</h2>
+      {% include meeting_schedule.html
+         items=series_meetings
+         id_prefix="series-events"
+         year_filter=false
+         show_series=false
+         empty_message="No events have been added to this series yet." %}
+    </section>
+
+    {% include meeting_extras.html show_venue=true %}
+  </div>
 </article>
+
+<script src="{{ '/assets/js/series_detail.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

@@ -7,6 +7,11 @@ period:
   start: "2027-06-28"
   end: "2027-07-02"
 color: "#FF1493"
+calendar_id: "2027_sm_week"
+address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
+map_embed: >
+  <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357085d4d9d9308d%3A0xfc0323226a166d82!2z7Lap64Ko64yA7ZWZ6rWQIOyehO2VtOyImOugqOybkA!5e0!3m2!1sko!2skr!4v1790083927457!5m2!1sko!2skr"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 hero:
   image: "/assets/img/heros/series/2027_SM_Week.png"
   lines:
@@ -14,7 +19,7 @@ hero:
       style: title
 ---
 
-**2027 SM Week** is a five-day, student-organised school that brings together graduate students to study the Standard Model as a coherent whole. Through student-led lectures, worked calculations, problem-solving sessions and discussion, the school connects the strong and electroweak interactions with symmetries, anomalies, flavour physics and neutrinos.
+**2027 SM Week** is a five-day, student-organized school that brings together graduate students to study the Standard Model as a coherent whole. Through student-led lectures, worked calculations, problem-solving sessions and discussion, the school connects the strong and electroweak interactions with symmetries, anomalies, flavor physics and neutrinos.
 
 ## School at a glance
 
@@ -22,26 +27,26 @@ hero:
 | --- | --- |
 | Venue | Chungnam National University Imhae Center, Boryeong, Korea |
 | Audience | Graduate students in particle theory and phenomenology |
-| Format | 17 lectures totalling 25.5 hours, three practice sessions, and group discussion |
+| Format | 17 lectures totaling 25.5 hours, three practice sessions, and group discussion |
 | Language | Lectures in Korean; lecture notes in English |
 | Main reference | David Tong's [The Standard Model lecture notes](https://davidtong.org/teaching/standard-model/) |
 
 ## What we aim to learn
 
-Graduate research often concentrates on a specialised topic, leaving few opportunities to revisit the complete structure of the Standard Model. This school provides time to reconstruct that structure together and understand how individual research topics fit into it.
+Graduate research often concentrates on a specialized topic, leaving few opportunities to revisit the complete structure of the Standard Model. This school provides time to reconstruct that structure together and understand how individual research topics fit into it.
 
-- Build a connected understanding of QCD, electroweak theory, flavour and neutrino physics.
+- Build a connected understanding of QCD, electroweak theory, flavor and neutrino physics.
 - Trace the physical questions and general principles that lead to the Standard Model, rather than learning its ingredients in isolation.
 - Strengthen the ability to explain physical ideas through derivations, calculations and discussion.
 - Create opportunities for scientific exchange and lasting research connections between students at different universities.
 
 ## How the school works
 
-The lectures start from familiar ideas in classical mechanics, electromagnetism, quantum mechanics and special relativity. Physical questions motivate the next steps: general principles, quantum field theory structures, and their realisation in the Standard Model. Symmetry, spontaneous symmetry breaking, gauge theory, anomalies and flavour mixing are introduced through this progression, with explicit links to phenomenology and representative derivations and calculations.
+The lectures start from familiar ideas in classical mechanics, electromagnetism, quantum mechanics and special relativity. Physical questions motivate the next steps: general principles, quantum field theory structures, and their realization in the Standard Model. Symmetry, spontaneous symmetry breaking, gauge theory, anomalies and flavor mixing are introduced through this progression, with explicit links to phenomenology and representative derivations and calculations.
 
 To help participants prepare and review, each topic is accompanied by two resources:
 
-- **Preliminary Note:** prerequisites, definitions, notation, key formulae and suggested review resources, distributed before the school.
+- **Preliminary Note:** prerequisites, definitions, notation, key formulas and suggested review resources, distributed before the school.
 - **Lecture Note:** an English account of the lecture's logical development, equations, worked examples and references, provided before the corresponding lecture and available for later review.
 
 The intended learning sequence is **preparation, reading, lecture, practice and discussion**. Participants can review the prerequisites beforehand, follow the reasoning during lectures, and then test their understanding through calculations and explanations to one another.
@@ -58,14 +63,8 @@ The lectures follow Chapters 1-7 of Tong's notes. Each lecture lasts 90 minutes.
 | Chapter 3: The Strong Force, Part II (lectures III-IV) | Yongik Jang | Kyungpook National University |
 | Chapter 4: Anomalies | Chang Hyeon Lee | Chungnam National University |
 | Chapter 5: Electroweak Interactions | Yurang Ko | Kyungpook National University |
-| Chapter 6: Flavour | To be announced | |
+| Chapter 6: Flavor | To be announced | |
 | Chapter 7: Neutrinos | SeongSik Kim | Chungnam National University |
-
-## Program at a glance
-
-The overview below shows the flow of the five-day programm. Gaps between blocks are breaks. Select a date heading to view that day's Event page and detailed timetable.
-
-{% include week_programme.html id="2027_sm_week" %}
 
 ## Practice and discussion
 
@@ -74,7 +73,7 @@ The three practice sessions use Tong's official problem sheets and representativ
 | Session | Main topics |
 | --- | --- |
 | Practice I | Symmetries, spontaneous symmetry breaking, Yang-Mills theory and QCD |
-| Practice II | Anomalies, electroweak symmetry breaking, flavour mixing and the Standard Model gauge structure |
+| Practice II | Anomalies, electroweak symmetry breaking, flavor mixing and the Standard Model gauge structure |
 | Practice III | Neutrino oscillations and the connections between the different parts of the Standard Model |
 
 Tuesday and Thursday practice sessions proceed from individual or group problem solving to blackboard presentations, comparison of solutions, discussion and Q&A. The emphasis is on understanding the calculation and comparing approaches, as well as obtaining an answer.

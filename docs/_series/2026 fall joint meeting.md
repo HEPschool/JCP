@@ -7,6 +7,21 @@ period:
   start: "2026-09-01"
   end: "present"
 color: "#C98F53"
+participants: 
+  - name: Yurang Ko
+    affiliation: Kyungpook National University
+  - name: Yoogeun Kim
+    affiliation: Kyungpook National University
+  - name: Chang Hyeon Lee
+    affiliation: Chungnam National University
+  - name: In Jung Kim
+    affiliation: Chungnam National University
+  - name: Daeyeong Jeong
+    affiliation: Chungnam National University
+  - name: Ju Hyeong Kang
+    affiliation: Pusan National University
+  - name: Sangjin Mun
+    affiliation: Pusan National University
 hero:
   image: "/assets/img/heros/series/2026_Fall_Joint_Meeting.jpg"
   lines:
@@ -14,7 +29,7 @@ hero:
       style: title
 ---
 
-**2026 Fall Joint Meeting** brings together graduate students from Chungnam National University, Kyungpook National University, and Pusan National University for weekly study meetings on Zoom. The programme covers quantum field theory and group theory.
+**2026 Fall Joint Meeting** brings together graduate students from Chungnam National University, Kyungpook National University, and Pusan National University for weekly study meetings on Zoom. The program covers quantum field theory and group theory.
 
 ## Study topics
 
@@ -31,4 +46,4 @@ Through student-led presentations and discussion, the series aims to strengthen 
 
 ## Presentation materials
 
-Presenters prepare materials for their sessions. These materials are available on each presentation's individual event page. Use the event schedule below to find a session and access its presentation materials.
+Presenters prepare materials for their sessions. These materials are available on each presentation's individual event page. Use the **Informations** tab to find a session and access its presentation materials.

@@ -183,5 +183,5 @@ Banner에 표시되는 항목들의 세부 설정은 docs/_includes/upcoming.htm
 ## Series 등록·관리
 
 Series는 docs/_series 폴더의 .md 파일로 관리합니다.
-Series별 캘린더 자료는 docs/_series/programmes 폴더의 .yml 파일로 관리합니다.
+Series별 캘린더 자료는 docs/_series/programs 폴더의 .yml 파일로 관리합니다.
 등록 형식, 기간 분류, 행사 연결, 캘린더 작성 및 색상 설정은 [Series guide](README_Series.md)를 참고하세요.

@@ -31,12 +31,12 @@ An invited lecture can offer an introduction to a research field, a tutorial on 
 
 Invited speakers share their expertise through explanations, examples and discussion. A lecture may connect foundational ideas with research applications, work through a useful calculation, or explain how to interpret an important result or figure.
 
-The intended audience is graduate students in high-energy physics and related fields, including those approaching the subject from a different specialisation. The scope and depth of each lecture depend on its topic and the students' learning interests.
+The intended audience is graduate students in high-energy physics and related fields, including those approaching the subject from a different specialization. The scope and depth of each lecture depend on its topic and the students' learning interests.
 
 Questions about basic concepts, physical interpretation and possible applications are an important part of the session. Discussion gives participants an opportunity to clarify unfamiliar ideas, ask about their own research questions, and learn about useful papers and further reading.
 
 ## Events and materials
 
-Browse the Events list below for past and upcoming Invited Lectures. Each event page introduces the lecture and its speaker and provides the venue and detailed timetable.
+Open the **Details** tab to browse past and upcoming Invited Lectures. Each event page introduces the lecture and its speaker and provides the venue and detailed timetable.
 
 Available slides, notes and supplementary resources are collected on the [Materials page]({{ '/materials/' | relative_url }}) for review and further study.

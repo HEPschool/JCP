@@ -1,0 +1,54 @@
+{%- assign program = include.program -%}
+{%- if include.id -%}
+  {%- assign program_document = site.series | where: 'program_id', include.id | first -%}
+  {%- assign program = program_document.program -%}
+{%- endif -%}
+{%- if program -%}
+{%- assign first_minute = program.start_hour | times: 60 -%}
+{%- assign grid_rows = program.end_hour | minus: program.start_hour | times: 6 -%}
+<div class="week-program" role="region" aria-label="{{ program.title | escape }} weekly timetable" tabindex="0">
+  <div class="week-program-grid" style="--program-days:{{ program.days.size }};--program-rows:{{ grid_rows }};">
+    <div class="program-time-heading">KST</div>
+    {% for day in program.days %}
+    <div class="program-day-heading">
+      {% if day.url and day.url != '' %}<a href="{{ day.url | relative_url }}">{% endif %}
+        {{ day.date | date: "%A" }}<span>{{ day.date | date: "%B %d" }}</span>
+      {% if day.url and day.url != '' %}</a>{% endif %}
+    </div>
+    {% endfor %}
+    <div class="program-time-axis" aria-hidden="true">
+      {% for hour in (program.start_hour..program.end_hour) %}
+      <span style="--program-hour:{{ hour | minus: program.start_hour }};">{% if hour < 10 %}0{% endif %}{{ hour }}:00</span>
+      {% endfor %}
+    </div>
+    {% for day in program.days %}
+    <div class="program-day" role="list" aria-label="{{ day.date | date: '%A, %B %d' }}">
+      {% for session in day.sessions %}
+      {% assign start_parts = session.start | split: ':' %}
+      {% assign end_parts = session.end | split: ':' %}
+      {% assign start_minute = start_parts[0] | times: 60 | plus: start_parts[1] %}
+      {% assign end_minute = end_parts[0] | times: 60 | plus: end_parts[1] %}
+      {% assign start_row = start_minute | minus: first_minute | divided_by: 10 | plus: 1 %}
+      {% assign end_row = end_minute | minus: first_minute | divided_by: 10 | plus: 1 %}
+      {% assign duration = end_minute | minus: start_minute %}
+      <div class="program-session program-{{ session.kind }}{% if duration <= 30 %} program-short{% endif %}" role="listitem"
+           style="grid-row:{{ start_row }}/{{ end_row }};" title="{{ session.start }}-{{ session.end }} KST: {{ session.title | escape }}">
+        <span class="program-session-time">{{ session.start }}-{{ session.end }} KST: </span>
+        <strong>{{ session.title | escape }}</strong>
+        {% if session.speaker %}<span>{{ session.speaker | escape }}</span>{% endif %}
+        {% if session.detail %}<span>{{ session.detail | escape }}</span>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="program-legend" aria-label="Program color key">
+  <span class="program-legend-item program-lecture">Lectures</span>
+  <span class="program-legend-item program-practice">Practice</span>
+  <span class="program-legend-item program-discussion">Discussion</span>
+  <span class="program-legend-item program-meal">Meals</span>
+  <span class="program-legend-item program-ceremony">Arrival / opening / closing</span>
+  <span class="program-legend-item program-social">Banquet</span>
+</div>
+{% endif %}

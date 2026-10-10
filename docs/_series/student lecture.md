@@ -2,7 +2,7 @@
 layout: series
 series_id: "Student Lecture"
 title: "JCP HEP School: Student Lecture"
-subtitle: "Graduate student lectures on high-energy physics and related fields"
+subtitle: "Graduate student lectures on high-energy physics and particle phenomenology"
 period:
   start: "2025-08-22"
   end: "present"
@@ -14,9 +14,9 @@ hero:
       style: title
 ---
 
-**JCP HEP School:  Student Lecture** is a recurring JCP HEP School programme in which graduate students prepare and deliver introductory lectures on their own research fields. Each lecture brings together the physical motivation, core concepts, standard tools and broader research landscape of a topic in high-energy physics or a related area.
+**JCP HEP School:  Student Lecture** is a recurring JCP HEP School program in which graduate students prepare and deliver introductory lectures on their own research fields. Each lecture brings together the physical motivation, core concepts, standard tools and broader research landscape of a topic in high-energy physics or a related area.
 
-The series is built around learning from one another. Preparing a lecture gives the speaker an opportunity to revisit the foundations of their research, while participants gain a route into subjects beyond their immediate specialisation.
+The series is built around learning from one another. Preparing a lecture gives the speaker an opportunity to revisit the foundations of their research, while participants gain a route into subjects beyond their immediate specialization.
 
 ## Learning from one another
 
@@ -25,7 +25,7 @@ Our aim is to build a shared language across research areas and universities. Le
 - Understand the main questions that motivate a research field and why they matter.
 - Become familiar with its basic concepts, canonical models and commonly used methods.
 - Learn how representative calculations, plots and physical results are obtained and interpreted.
-- Recognise current challenges and identify useful references for exploring the topic further.
+- Recognize current challenges and identify useful references for exploring the topic further.
 
 ## What to expect from a lecture
 
@@ -48,4 +48,4 @@ The series follows a monthly workshop format, with extended lectures and time fo
 Talks are primarily in Korean, with slides and notes prepared in English for later review and reuse. Available slides and notes can be found on the
 [Materials page]({{ '/materials/' | relative_url }}).
 
-Browse the Events list below for past and upcoming Student Lectures. Select an event to find its topic, speaker, venue and detailed timetable.
+Open the **Informations** tab to browse past and upcoming Student Lectures. Select an event to find its topic, speaker, venue and detailed timetable.

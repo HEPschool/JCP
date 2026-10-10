@@ -30,13 +30,13 @@ timetable:
     title: "Lunch"
     speaker: ""
   - time: "14:00 - 15:30"
-    title: "Session 15: Flavour 1"
+    title: "Session 15: Flavor 1"
     speaker: "TBA"
   - time: "15:30 - 16:00"
     title: "Break"
     speaker: ""
   - time: "16:00 - 17:30"
-    title: "Session 16: Flavour 2"
+    title: "Session 16: Flavor 2"
     speaker: "TBA"
   - time: "17:30 - 19:00"
     title: "Dinner"
@@ -58,7 +58,7 @@ hero:
   lines:
     - text: "SM Week: Day 4"
       style: title
-    - text: "Electroweak Interactions and Flavour"
+    - text: "Electroweak Interactions and Flavor"
       style: subtitle
     - text: "2027.07.01 (Thu)"
       style: text

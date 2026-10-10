@@ -12,12 +12,24 @@ series_id: "Student Lecture"
 title: "Student Lecture"
 subtitle: "Brief event description"
 period:
-  start: "2025-11-08"
+  start: "2025-08-22"
   end: "present"
 color: "#4F46E5"
+calendar_id: "example_program" # Optional: 캘린더 자료의 program_id를 입력합니다.
 hero:
   image: "/assets/img/heros/lecture/lecture_default.jpg"
   title: "Student Lecture"
+address: "Venue address" # Optional: 상세 페이지에서 표시되는 주소
+map_embed: > # Optional: 상세 페이지에 표시되는 지도. src="" 부분에 구글 지도에서 원하는 위치를 찍고, 공유-지도 퍼가기-src="" 부분의 링크를 복사하여 붙여넣습니다.
+  <iframe src="YOUR_MAP_EMBED_URL" title="Venue map"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+participants: # Optional: 참가자 명단을 생성합니다. 이름-소속의 표 형태로 표시되며, 소속 기준 정렬 후 이름 기준 정렬하여 순서대로 표시됩니다. 참가자 명단 표시를 원하지 않는다면, 아래의 각 항목을 완전하게 삭제하여 "Participants" section이 생성되지 않도록 합니다.
+  - name: "Student Name"
+    affiliation: "University Name"
+  - name: "Another Student"
+photos: # Optional: 사진 위치를 아래와 같이 나열합니다. 만약 photo가 없다면, 아래의 각 항목을 완전하게 삭제하여 "Photo" section이 생성되지 않도록 합니다.
+  - "/assets/img/photos/example_group_photo.jpg"
+  - "/assets/img/photos/example_lecture_photo.jpg"
 ---
 
 Description introducing the series written in Markdown.
@@ -47,6 +59,16 @@ subtitle은 카드 제목 아래에 표시되는 선택 항목입니다.
 상세 페이지의 기간은 제목 아래에 본문과 같은 색상의 큰 글씨로 표시됩니다.
 Hero 이미지가 없으면 카드에는 제목, 기간과 선택한 문구가 표시됩니다.
 가급적 hero 항목을 완전히 설정해주시고, 적절한 image가 없는 경우 /assets/img/heros/series/series_default.jpg를 사용해주시기 바랍니다.
+
+## 상세 페이지 화면 전환
+
+상세 페이지에서는 제목과 기간 아래의 버튼으로 두 화면을 전환할 수 있습니다.
+
+- About: 기본 화면이며, front matter 아래에 작성한 마크다운 본문을 표시합니다.
+- Informations: 연결된 캘린더가 있으면 맨 위에 표시하며, 행사 리스트, 장소, 참가자, 사진 순서로 표시합니다.
+
+마크다운 본문과 자동으로 생성되는 자료는 각각의 화면에 표시됩니다.
+JavaScript가 비활성화된 경우에는 두 화면의 내용이 한 페이지에 이어서 표시됩니다.
 
 ## 기간과 표시 순서
 
@@ -81,26 +103,28 @@ Schedule과 Online Meeting의 Series 셀은 해당 Series 상세 페이지로 �
 나머지 행 영역과 행사 제목은 행사 상세 페이지로 연결됩니다.
 해당 Series 문서가 없으면 배경색 없이 분류명만 표시됩니다.
 
-Series 상세 페이지의 최하단에는 두 컬렉션에서 series가 일치하는 모든 행사가 표시됩니다.
+Series 상세 페이지의 Informations 화면에는 두 컬렉션에서 series가 일치하는 모든 행사가 표시됩니다.
+연결된 캘린더가 있으면 그 바로 아래에, 없으면 화면 최상단에 행사 리스트를 표시합니다.
 날짜가 오래된 순서이며, 연도 필터와 Series 열은 표시하지 않습니다.
 이벤트가 없는 Series도 만들 수 있으며, 하단에 안내 문구가 표시됩니다.
 
 ## 캘린더 형태의 일정 오버뷰
 
-여러 날에 걸친 Series는 날짜를 가로축, 시간을 세로축으로 표시하는 캘린더를 본문에 넣을 수 있습니다.
-Series별 캘린더 자료는 docs/_series/programmes/의 .yml 파일로 관리합니다.
+여러 날에 걸친 Series는 날짜를 가로축, 시간을 세로축으로 표시하는 캘린더를 Informations 탭 최상단에 넣을 수 있습니다.
+Series별 캘린더 자료는 docs/_series/programs/의 .yml 파일로 관리합니다.
 사이트 공통 자료를 저장하는 docs/_data와 구분하여 관리합니다.
 
 ### 캘린더 파일 작성
 
-docs/_series/programmes/example_program.yml을 만들고 아래 형식으로 작성합니다.
+docs/_series/programs/example_program.yml을 만들고 아래 형식으로 작성합니다.
 
 ```yaml
 ---
-programme_id: "example_program"
-permalink: /series/programmes/:slug.yml
-programme:
+program_id: "example_program"
+permalink: /series/programs/:slug.yml
+program:
   title: "Example Program"
+  description: "A brief guide to the program overview." # Optional: Calendar 제목 아래에 표시할 안내 문구
   start_hour: 9
   end_hour: 18
   days:
@@ -126,15 +150,16 @@ programme:
 ...
 ```
 
-programme_id는 캘린더 자료를 찾는 고유 식별자이며, 다른 자료 파일과 중복되지 않도록 지정합니다.
+program_id는 캘린더 자료를 찾는 고유 식별자이며, 다른 자료 파일과 중복되지 않도록 지정합니다.
 행사를 연결하는 series_id와는 별도의 항목입니다.
 permalink는 자료 문서의 출력 경로를 소개 페이지와 구분하여 주소 충돌을 방지합니다.
-예시의 /series/programmes/:slug.yml을 그대로 사용합니다.
-programme 아래에 캘린더 제목, 시간 범위, 날짜와 세션을 작성합니다.
+예시의 /series/programs/:slug.yml을 그대로 사용합니다.
+program 아래에 캘린더 제목, 시간 범위, 날짜와 세션을 작성합니다.
 
 | 항목 | 작성 방법 |
 | --- | --- |
 | title | 캘린더 이름 |
+| description | 선택 항목; Calendar 제목 아래에 표시할 안내 문구를 일반 텍스트로 입력 |
 | start_hour, end_hour | 캘린더의 시작·종료 시각을 정수로 입력; 예: 9, 18 |
 | days | 표시할 날짜를 오래된 순서로 작성; 입력 순서대로 열이 표시됨 |
 | date | 따옴표로 감싼 YYYY-MM-DD |
@@ -159,21 +184,25 @@ start와 end의 분은 00, 10, 20, 30, 40, 50 중 하나로 입력합니다.
 | ceremony | 등록·개회·폐회 |
 | social | 만찬 등 교류 행사 |
 
-### Series 본문에 삽입
+### Series에 연결
 
-해당 Series의 .md 파일 본문의 원하는 위치에 다음 한 줄을 추가합니다.
-id에는 자료 파일의 programme_id를 정확히 입력합니다.
+해당 Series의 .md 파일 front matter(처음 두 --- 사이)에 다음 한 줄을 추가합니다.
+calendar_id에는 자료 파일의 program_id를 정확히 입력합니다.
 
-```liquid
-{% include week_programme.html id="example_program" %}
+```yaml
+calendar_id: "example_program"
 ```
 
-캘린더 자료가 없는 Series는 이 include를 넣지 않으면 됩니다.
+Informations 탭에서 Calendar가 최상단에 표시되며, 그 아래에 행사 리스트와 선택 항목들이 표시됩니다.
+마크다운 본문에 별도 include를 추가할 필요는 없습니다.
+기존 본문에 week_program.html include를 넣었다면 이를 삭제하여 중복 표시를 방지합니다.
+calendar_id를 생략하거나 비워 두면 캘린더를 표시하지 않습니다. 일치하는 자료 파일이 없어도 표시하지 않습니다.
+Series 문서에는 calendar_id를, 캘린더 자료 문서에는 program_id를 사용합니다.
 url이 있는 날짜 제목은 Event 페이지로 연결되며, /JCP 등 사이트의 baseurl은 자동으로 적용됩니다.
 url을 생략한 날짜는 링크 없이 표시됩니다.
 날짜 수에 따라 열 수가 바뀌며, 좁은 화면에서는 가로로 스크롤할 수 있습니다.
 
-programme_id가 있는 자료 문서는 일반 Series 카드 목록에서 제외됩니다.
+program_id가 있는 자료 문서는 일반 Series 카드 목록에서 제외됩니다.
 
 ## Series 셀 색상
 

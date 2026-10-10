@@ -1,8 +1,10 @@
 ---
-programme_id: "2027_sm_week"
-permalink: /series/programmes/:slug.yml
-programme:
+program_id: "2027_sm_week"
+permalink: /series/programs/:slug.yml
+program:
   title: 2027 SM Week
+  description: >
+    Select a date heading to view that day's Event page and detailed timetable. Gaps between blocks are breaks. 
   start_hour: 9
   end_hour: 22
   days:
@@ -43,8 +45,8 @@ programme:
         - {start: "09:00", end: "10:30", title: Electroweak II, speaker: Yurang Ko, kind: lecture}
         - {start: "10:50", end: "12:20", title: Electroweak III, speaker: Yurang Ko, kind: lecture}
         - {start: "12:20", end: "13:50", title: Lunch, kind: meal}
-        - {start: "13:50", end: "15:20", title: Flavour I, speaker: To be announced, kind: lecture}
-        - {start: "15:40", end: "17:10", title: Flavour II, speaker: To be announced, kind: lecture}
+        - {start: "13:50", end: "15:20", title: Flavor I, speaker: To be announced, kind: lecture}
+        - {start: "15:40", end: "17:10", title: Flavor II, speaker: To be announced, kind: lecture}
         - {start: "17:10", end: "18:40", title: Dinner, kind: meal}
         - {start: "18:40", end: "20:40", title: Practice II, detail: Problem solving, kind: practice}
         - {start: "21:00", end: "22:00", title: Solutions / Discussion, kind: discussion}

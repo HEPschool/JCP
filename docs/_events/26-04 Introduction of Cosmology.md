@@ -6,7 +6,7 @@ date: 2026-04-18 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
 speaker: "Beom Su Kim"
 address: "Room 440, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
-note: "Student Lecture"
+series: "Student Lecture"
 overview: >
   There is no quantum field theory in this lecture. This is a lecture that introduces cosmology based on what you need to know when you encounter cosmology. Therefore, the content may be quite easy, but I would greatly appreciate it if anyone who has done cosmology once would listen to it for reminding, and those who have never done it before would listen to it for introduction.
 timetable:

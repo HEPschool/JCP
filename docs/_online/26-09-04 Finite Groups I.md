@@ -4,7 +4,6 @@ title: "Finite Groups I"
 date: 2026-09-04 19:00 +0900
 series: "2026 Fall Joint Meeting"
 speaker: "Sangjin Mun"
-note: "Joint Study"
 textbook: "Howard Georgi, Lie Algebras in Particle Physics"
 # video:
 #   url: ""

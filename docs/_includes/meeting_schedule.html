@@ -2,14 +2,16 @@
 {% assign meeting_items = include.items | default: empty_array | sort: "date" %}
 {% assign id_prefix = include.id_prefix | default: "meeting" %}
 
-<div id="{{ id_prefix }}-year-view" data-year-view>
+<div id="{{ id_prefix }}-year-view" data-meeting-view>
+  {% unless include.year_filter == false %}
   <div class="year-filter">
     <button id="{{ id_prefix }}-prev-toggle" class="btn small year-filter-btn" type="button"
             aria-expanded="false" aria-controls="{{ id_prefix }}-year-filter">Select year</button>
     <span id="{{ id_prefix }}-current-year" class="year-filter-current" aria-live="polite"></span>
   </div>
   <div id="{{ id_prefix }}-year-filter" class="year-scroll" hidden></div>
-  <p id="{{ id_prefix }}-empty" class="year-filter-empty" hidden>{{ include.empty_message }}</p>
+  {% endunless %}
+  <p id="{{ id_prefix }}-empty" class="year-filter-empty"{% if meeting_items.size > 0 or include.year_filter != false %} hidden{% endif %}>{{ include.empty_message }}</p>
 
   <table id="{{ id_prefix }}-table" class="schedule-table">
     <thead>
@@ -17,20 +19,23 @@
         <th>Date/Time</th>
         <th>Title</th>
         <th>Speaker</th>
-        <th>{{ include.context_label }}</th>
-        <th>Note</th>
+        {% if include.context_key %}<th>{{ include.context_label }}</th>{% endif %}
+        {% unless include.show_series == false %}<th>Series</th>{% endunless %}
       </tr>
     </thead>
     <tbody>
       {% for meeting in meeting_items %}
-        {% assign context_value = meeting[include.context_key] %}
-        <tr data-year="{{ meeting.date | date: '%Y' }}"
-            onclick="location.href='{{ meeting.url | relative_url }}'" style="cursor:pointer">
+        <tr class="meeting-row" data-year="{{ meeting.date | date: '%Y' }}"
+            data-event-url="{{ meeting.url | relative_url }}">
           <td data-label="Date/Time">{{ meeting.date | date: "%Y.%m.%d (%a) %H:%M" }}</td>
-          <td data-label="Title">{{ meeting.title }}</td>
+          <td data-label="Title"><a class="meeting-title-link" href="{{ meeting.url | relative_url }}">{{ meeting.title | escape }}</a></td>
           <td data-label="Speaker">{{ meeting.speaker | default: "TBD" }}</td>
-          <td data-label="{{ include.context_label }}">{{ context_value }}</td>
-          <td data-label="Note">{{ meeting.note | default: "" }}</td>
+          {% if include.context_key %}
+            <td data-label="{{ include.context_label }}">{{ meeting[include.context_key] }}</td>
+          {% endif %}
+          {% unless include.show_series == false %}
+            {% include series_cell.html key=meeting.series %}
+          {% endunless %}
         </tr>
       {% endfor %}
     </tbody>
@@ -46,9 +51,22 @@
     var currentYearText = document.getElementById(idPrefix + "-current-year");
     var table = document.getElementById(idPrefix + "-table");
     var emptyNote = document.getElementById(idPrefix + "-empty");
-    if (!view || !filterRoot || !table || !toggleBtn || !currentYearText) return;
+    if (!view || !table) return;
 
-    var currentYear = String(new Date().getFullYear());
+    table.addEventListener("click", function (event) {
+      if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      if (event.target.closest("a, button, input, select, textarea")) return;
+      if (window.getSelection && window.getSelection().toString()) return;
+      var row = event.target.closest("tr[data-event-url]");
+      if (!row || !table.contains(row)) return;
+      var seriesCell = event.target.closest("[data-series-cell]");
+      var seriesLink = seriesCell && seriesCell.querySelector("a");
+      window.location.assign(seriesLink ? seriesLink.href : row.getAttribute("data-event-url"));
+    });
+
+    if (!filterRoot || !toggleBtn || !currentYearText) return;
+
+    var currentYear = String(new Date(Date.now() + 9 * 60 * 60 * 1000).getUTCFullYear());
     var rows = Array.prototype.slice.call(table.querySelectorAll("tbody tr[data-year]"));
     var years = Array.from(new Set(rows.map(function (row) {
       return row.getAttribute("data-year");

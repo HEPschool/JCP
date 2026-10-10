@@ -6,7 +6,7 @@ date: 2025-11-08 13:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
 speaker: "Haebarg Kang and Daeyeong Jeong"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
-note: "Student Lecture"
+series: "Student Lecture"
 overview: >
   Lecture: Introduction to Dark Matter makes the foundation for understanding dark matter research. <br><br>
 

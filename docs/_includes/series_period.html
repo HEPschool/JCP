@@ -1,0 +1,4 @@
+{%- assign period_start = include.series.period.start | date: "%Y.%m.%d" -%}
+{%- assign period_end = include.series.period.end | default: "" | strip | downcase -%}
+{%- assign open_ends = "|present|ongoing|tbd|미정" | split: "|" -%}
+{{- period_start }} – {% if open_ends contains period_end %}Present{% else %}{{ include.series.period.end | date: "%Y.%m.%d" }}{% endif %}

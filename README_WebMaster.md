@@ -95,6 +95,7 @@ lang: en
 baseurl: /repo_name # GitHub Repository 이름을 입력합니다.
 url: https://org_name.github.io # org_name 부분에 Organization 이름을 입력합니다.
 markdown: kramdown
+theme: null
 timezone: Asia/Seoul
 plugins:
 - jekyll-seo-tag
@@ -106,6 +107,8 @@ future: true
 nav:
 - name: Home
   url: /
+- name: Series
+  url: /series/
 - name: Schedule
   url: /schedule/
 - name: Lecturers
@@ -115,6 +118,9 @@ nav:
 - name: Online Meeting
   url: /online/
 collections:
+  series:
+    output: true
+    permalink: /series/:slug/
   events:
     output: true
     permalink: /events/:slug/
@@ -123,6 +129,9 @@ collections:
     permalink: /online/:slug/
 nav_next_label: Upcoming Event
 ```
+
+사이트 자체 레이아웃과 CSS를 사용하므로 theme: null을 유지합니다.
+GitHub Pages의 기본 테마를 켜면 테마 CSS가 사이트 CSS와 같은 경로에 생성될 수 있습니다.
 
 신규 페이지 추가 시, nav: 하위 항목에 해당 페이지의 name 및 url을 추가합니다. (개별 페이지 설정·관리 (기초)를 참고하세요.)  
 홈페이지 상단 네비게이션 바에 표시되는 각 페이지 순서는, nav에 설정된 순서를 따릅니다.  
@@ -141,7 +150,7 @@ favicon은 페이지 방문 시, 웹 브라우저의 탭 항목에 표시되는 
 <link rel="apple-touch-icon" href="{{ '/assets/favicon/favicon_180.png' | relative_url }}">
 ```
 
-설치형 웹 앱 아이콘은 `site.webmanifest`에 등록합니다.
+설치형 웹 앱 아이콘은 site.webmanifest에 등록합니다.
 
 기본 설정된 favicon은 ${e^-}{e^+}\to{\mu^-}{\mu^+}$ 과정의 Feynman diagram을 Weinberg angle만큼 돌린 그림입니다.  
 
@@ -152,7 +161,7 @@ docs/_includes/footer.html 파일을 수정하여 표시되는 문구를 설정�
 
 ## 개별 페이지 설정·관리 (기초)
 
-기본 설정된 페이지는 Home, Upcoming Event, Schedule, Lecturers, Materials, Online Meeting 총 6가지 입니다.  
+기본 설정된 페이지는 Home, Upcoming Event, Series, Schedule, Lecturers, Materials, Online Meeting 총 7가지 입니다.
 Upcoming Event를 제외한 각 페이지들은 docs/ 폴더의 각 .md 파일에서 설정·관리할 수 있습니다.(Home 페이지는 index.md 파일에서 설정·관리)  
 Upcoming Event의 경우, 등록된 일정 중 가장 가까운 일정(당일을 포함)의 상세 페이지를 자동으로 표시합니다.  
 기초적인 페이지 설정·관리는 markdown 문법을 따라 파일을 작성·수정하여 할 수 있습니다.  
@@ -167,6 +176,12 @@ Banner에 표시되는 항목들의 세부 설정은 docs/_includes/upcoming.htm
 
 ## 페이지 레이아웃 설정·관리  
 
-각 페이지들의 기본 레이아웃은 docs/_layouts 폴더의 default.html, event.html, online.html 파일에 설정되어 있습니다.  
-모든 페이지들은 default.html의 레이아웃을 따르며, 각 Event와 Online Meeting의 상세 페이지는 각각 event.html과 online.html을 추가적으로 따릅니다.  
+각 페이지들의 기본 레이아웃은 docs/_layouts 폴더의 default.html, event.html, online.html, series.html 파일에 설정되어 있습니다.
+모든 페이지들은 default.html의 레이아웃을 따르며, 각 Event, Online Meeting, Series의 상세 페이지는 각각 event.html, online.html, series.html을 추가적으로 따릅니다.
 필요 시 해당 파일들을 적절히 수정하여 사용하거나, 신규 레이아웃 파일을 추가하여 사용할 수 있습니다.  
+
+## Series 등록·관리
+
+Series는 docs/_series 폴더의 .md 파일로 관리합니다.
+Series별 캘린더 자료는 docs/_series/programmes 폴더의 .yml 파일로 관리합니다.
+등록 형식, 기간 분류, 행사 연결, 캘린더 작성 및 색상 설정은 [Series guide](README_Series.md)를 참고하세요.

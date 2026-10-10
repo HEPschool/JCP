@@ -1,0 +1,16 @@
+{% assign series_page = include.series %}
+{% assign hero_image = series_page.hero.image | default: "" | strip %}
+{% assign card_subtitle = series_page.subtitle | default: "" | strip %}
+<article class="card series-card" data-series-card
+         data-start="{{ series_page.period.start | date: '%Y-%m-%d' }}"
+         data-end="{{ series_page.period.end | default: '' | escape }}"
+         data-title="{{ series_page.title | escape }}"
+         data-series-id="{{ series_page.series_id | escape }}">
+  <a class="series-card-link{% if hero_image != '' %} has-hero{% endif %}"
+     href="{{ series_page.url | relative_url }}">
+    {% if hero_image != '' %}{% include image.html src=hero_image class="card-hero-image" %}{% endif %}
+    <span class="series-card-period">{% include series_period.html series=series_page %}</span>
+    <h3 class="series-card-title">{{ series_page.title | escape }}</h3>
+    {% if card_subtitle != '' %}<p class="series-card-subtitle">{{ card_subtitle | escape }}</p>{% endif %}
+  </a>
+</article>

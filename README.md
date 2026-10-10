@@ -10,4 +10,5 @@ For upcoming events, past lectures, and presentation materials, visit the [JCP H
 
 - [Lecturer guide](README_Lecturer.md)
 - [Online meeting guide](README_OnlineMeeting.md)
+- [Series guide](README_Series.md)
 - [Webmaster guide](README_WebMaster.md)

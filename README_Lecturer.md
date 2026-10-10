@@ -42,7 +42,7 @@ date: 2025-12-25 01:23 +0900
 location: "EVENT LOCATION" # Schedule 페이지에서 표시되는 주소
 speaker: "EVENT Speakers"
 address: "Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea" # 상세 페이지에서 표시되는 주소
-note: "Lecture, Offline, TBA" # Schedule 페이지에서 표시되는 Note
+series: "Student Lecture" # 해당 Series 문서의 series_id와 같은 값을 입력합니다.
 overview: > # 상세 페이지에서 표시되는 Overview. Lecture/Special Talk에 대해 간단하게 기술해주세요.
   Brief overview for Lecture/Special talk: Your_TITLE 
 timetable: # timetable은 아래와 같은 형태로 기술됩니다.
@@ -104,6 +104,10 @@ Materials 페이지에 강연 카드를 등록하기 위해서는, event_id를 �
 Material 정보에 동일한 event_id를 입력하면 강연 카드의 title이 해당 Event 상세 페이지로 연결되며, Event의 hero image가 카드 상단의 배경으로 자동 표시됩니다.  
 하나의 Event에 여러 강연 카드가 연결되는 경우에는 각 강연 정보에 동일한 event_id를 사용할 수 있습니다.  
 docs/_events 폴더에 .md 파일이 생성되면, Schedule 페이지에 일정 등록 및 상세 페이지가 생성됩니다.  
+series에는 연결할 Series의 series_id를 입력합니다.
+Schedule의 Series 셀을 클릭하면 해당 Series 상세 페이지로 이동하고, 나머지 행 영역을 클릭하면 Event 상세 페이지로 이동합니다.
+기본적으로 학생 강연은 Student Lecture, 초청 강연은 Invited Lecture 입니다.
+Series의 등록, 기간 및 라벨 색상 설정 방법은 [Series guide](README_Series.md)를 참고하세요.
 Schedule 페이지에는 date 값을 기준으로 정렬된 순서로 일정이 표시되며, 각 일정을 클릭하여 상세 페이지에 접근할 수 있습니다.  
 .md 파일에 입력된 date 값을 기준으로, 페이지 방문 시점에서 같거나 미래의 일정 중, 가장 가까운 일정이 Upcoming Event 페이지에 자동으로 표시됩니다.  
 Upcoming Event 페이지에 표시되는 일정의 banner가 자동으로 Home 페이지에 생성되어 표시됩니다.  

@@ -1,0 +1,7 @@
+{%- assign image_src = include.src | default: "" | strip -%}
+<img src="{{ image_src | relative_url | escape }}"
+     alt="{{ include.alt | default: '' | escape }}"
+     loading="{{ include.loading | default: 'lazy' }}" decoding="async"{% if include.fetchpriority %}
+     fetchpriority="{{ include.fetchpriority }}"{% endif %}{% if include.class %}
+     class="{{ include.class | escape }}"{% endif %}{% if include.style %}
+     style="{{ include.style | escape }}"{% endif %}>

@@ -4,7 +4,6 @@ title: "Cross Sections and Decay Rates"
 date: 2026-09-08 19:00 +0900
 series: "2026 Fall Joint Meeting"
 speaker: "In Jung Kim"
-note: "Joint Study"
 textbook: "Matthew D. Schwartz, Quantum Field Theory and the Standard Model"
 # video:
 #   url: ""

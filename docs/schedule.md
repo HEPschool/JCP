@@ -8,7 +8,8 @@ hero:
 ---
 # Schedule
 
-You can view the details of each event by clicking on it.
+You can view the event details by clicking a title. <br>
+Select a Series to explore the series.
 
 {% include meeting_schedule.html
    items=site.events

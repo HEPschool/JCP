@@ -4,7 +4,6 @@ title: "Lie Groups"
 date: 2026-10-01 17:00 +0900
 series: "2026 Fall Joint Meeting"
 speaker: "Sangjin Mun"
-note: "Joint Study"
 textbook: "Howard Georgi, Lie Algebras in Particle Physics"
 # video:
 #   url: ""

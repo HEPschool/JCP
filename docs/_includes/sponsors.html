@@ -25,10 +25,12 @@
         <li class="sponsors-item">
           {%- if s.url -%}
             <a href="{{ s.url }}" target="_blank" rel="noopener">
-              <img src="{{ s.logo | relative_url }}" alt="{{ s.name }} logo">
+              {% assign logo_alt = s.name | append: " logo" %}
+              {% include image.html src=s.logo alt=logo_alt %}
             </a>
           {%- else -%}
-            <img src="{{ s.logo | relative_url }}" alt="{{ s.name }} logo">
+            {% assign logo_alt = s.name | append: " logo" %}
+            {% include image.html src=s.logo alt=logo_alt %}
           {%- endif -%}
         </li>
       {%- endif -%}

@@ -6,7 +6,7 @@ date: 2027-06-29 09:00 +0900
 location: "Chungnam National University Imhae Center, Boryeong, Korea"
 speaker: "Sangjin Mun, Ju Hyeong Kang, and Yongik Jang"
 address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
-note: "Student-led School"
+series: "2027 SM Week"
 overview: >
   <div><strong>2027 SM Week:</strong></div>
   <nav class="buttons" aria-label="SM Week days">

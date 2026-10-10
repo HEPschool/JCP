@@ -6,7 +6,7 @@ date: 2026-12-26 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
 speaker: "SeongSik Kim"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
-note: "Invited Lecture"
+series: "Invited Lecture"
 overview: >
   Renormalization Group
 timetable:

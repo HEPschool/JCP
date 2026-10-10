@@ -20,9 +20,8 @@ Online Meeting은 docs/_online 폴더에 .md 파일을 생성·수정하여 등�
 layout: online # 이 항목은 수정하지 않습니다.
 title: "YOUR_TITLE"
 date: 2026-12-25 14:00 +0900
-series: "MEETING SERIES" # Online Meeting 페이지에서 미팅을 구분하는 명칭
+series: "SERIES NAME" # 해당 Series 문서의 series_id와 같은 값을 입력합니다.
 speaker: "SPEAKER NAME"
-note: "Online, Internal Meeting" # Online Meeting 페이지에서 표시되는 Note
 textbook: "TEXTBOOK TITLE" # Optional: 상세 페이지 상단에 표시되는 교재
 video: # Optional: 녹화 영상이 없다면 이 항목 전체를 삭제합니다.
   url: "https://www.youtube.com/watch?v=VIDEO_ID"
@@ -57,7 +56,9 @@ hero: # Optional: 상세 페이지 상단에 표시되는 이미지와 문구
 ---
 ```
 
-series에는 Online Meeting의 운영 주체/성질 등을 기준으로 미팅을 구분하는 명칭을 입력합니다.  
+series에는 연결할 Series의 series_id를 입력합니다.
+Series 셀을 클릭하면 해당 Series 상세 페이지로 이동하고, 나머지 행 영역을 클릭하면 Online Meeting 상세 페이지로 이동합니다.
+Series의 등록, 기간 및 라벨 색상 설정 방법은 [Series guide](README_Series.md)를 참고하세요.
 textbook에는 미팅에서 사용한 교재를 입력하며, 해당 값이 없다면 교재 정보는 표시되지 않습니다.  
 docs/_online 폴더에 .md 파일이 생성되면 Online Meeting 페이지에 일정 및 상세 페이지가 생성됩니다.  
 Online Meeting 페이지에는 date 값을 기준으로 정렬된 순서로 일정이 표시됩니다.  

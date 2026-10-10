@@ -3,7 +3,8 @@
 {% if img != '' %}
 <section class="hero">
   <div class="hero-media">
-    <img src="{{ img | relative_url }}" alt="{{ hero.alt | default: page.title | default: site.title }}">
+    {% assign hero_alt = hero.alt | default: page.title | default: site.title %}
+    {% include image.html src=img alt=hero_alt loading="eager" fetchpriority="high" %}
   </div>
   <div class="hero-overlay">
     <div class="hero-lines">

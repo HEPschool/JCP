@@ -1,0 +1,17 @@
+{%- assign linked_series = site.series | where: "series_id", include.key | first -%}
+{%- assign series_color = linked_series.color | default: "" | strip | downcase -%}
+{%- assign color_prefix = series_color | slice: 0, 1 -%}
+{%- assign color_digits = series_color | slice: 1, 6 -%}
+{%- assign invalid_digits = color_digits | remove: "0" | remove: "1" | remove: "2" | remove: "3" | remove: "4" | remove: "5" | remove: "6" | remove: "7" | remove: "8" | remove: "9" | remove: "a" | remove: "b" | remove: "c" | remove: "d" | remove: "e" | remove: "f" -%}
+{%- unless series_color.size == 7 and color_prefix == "#" and invalid_digits == "" -%}
+  {%- assign series_color = "" -%}
+{%- endunless -%}
+<td class="series-cell" data-label="Series" data-series-cell{% if series_color != "" %} style="--series-color: {{ series_color }};"{% endif %}>
+  {%- if linked_series -%}
+    <a class="series-link" href="{{ linked_series.url | relative_url }}">{{ linked_series.series_id | escape }}</a>
+  {%- elsif include.key and include.key != "" -%}
+    <span class="series-name">{{ include.key | escape }}</span>
+  {%- else -%}
+    <span class="muted">—</span>
+  {%- endif -%}
+</td>

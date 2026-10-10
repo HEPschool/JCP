@@ -4,7 +4,6 @@ title: "Field Theory and Second Quantization"
 date: 2026-09-01 19:00 +0900
 series: "2026 Fall Joint Meeting"
 speaker: "Yurang Ko"
-note: "Joint Study"
 textbook: "Matthew D. Schwartz, Quantum Field Theory and the Standard Model"
 # video:
 #   url: ""

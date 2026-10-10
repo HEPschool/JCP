@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="series-detail">
+  <header class="section">
+    <h1>{{ page.title | escape }}</h1>
+    <p class="series-detail-period">{% include series_period.html series=page %}</p>
+  </header>
+
+  <div class="series-content">{{ content }}</div>
+
+  {% assign series_events = site.events | where: "series", page.series_id %}
+  {% assign series_online = site.online | where: "series", page.series_id %}
+  {% assign series_meetings = series_events | concat: series_online %}
+  <section class="section" aria-labelledby="series-events-heading">
+    <h2 id="series-events-heading">Events</h2>
+    {% include meeting_schedule.html
+       items=series_meetings
+       id_prefix="series-events"
+       year_filter=false
+       show_series=false
+       empty_message="No events have been added to this series yet." %}
+  </section>
+</article>

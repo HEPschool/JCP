@@ -25,7 +25,8 @@ If you require access to the encrypted materials, please contact the author.
     {% assign event_page = site.events | where: "event_id", lecture.event_id | first %}
     {% assign hero_image = event_page.hero.image | default: "" | strip %}
     <article class="card material-card" data-year="{{ lecture.date | date: '%Y' }}">
-      <header class="material-card-header{% if hero_image != '' %} has-hero{% endif %}"{% if hero_image != '' %} style="--material-card-hero: url('{{ hero_image | relative_url }}');"{% endif %}>
+      <header class="material-card-header{% if hero_image != '' %} has-hero{% endif %}">
+        {% if hero_image != '' %}{% include image.html src=hero_image class="card-hero-image" %}{% endif %}
         <time class="material-card-date" datetime="{{ lecture.date | date: '%Y-%m-%d' }}">
           {{ lecture.date | date: "%Y.%m.%d (%a)" }}
         </time>

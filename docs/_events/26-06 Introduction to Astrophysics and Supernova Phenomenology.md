@@ -6,7 +6,7 @@ date: 2026-06-27 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
 speaker: "Ju Hyeong Kang"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
-note: "Student Lecture"
+series: "Student Lecture"
 overview: >
   Student Lecture: Introduction to Astrophysics and Supernova Phenomenology <br><br>
 

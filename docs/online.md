@@ -8,11 +8,10 @@ hero:
 ---
 # Online Meeting
 
-You can view the details of each online meeting by clicking on it.
+You can view the event details by clicking a title. <br>
+Select a Series to explore the series.
 
 {% include meeting_schedule.html
    items=site.online
    id_prefix="online"
-   context_key="series"
-   context_label="Series"
    empty_message="No online meetings available for the selected year." %}

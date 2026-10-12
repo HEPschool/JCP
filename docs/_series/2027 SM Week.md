@@ -61,13 +61,13 @@ The lectures follow Chapters 1-7 of Tong's notes. Each lecture lasts 90 minutes.
 
 | Topic | Lecturer | Affiliation |
 | --- | --- | --- |
-| Chapter 1: Symmetries | To be announced | |
+| Chapter 1: Symmetries | TBA | TBA |
 | Chapter 2: Broken Symmetries | Sangjin Mun | Pusan National University |
-| Chapter 3: The Strong Force, Part I (lectures I-II) | Ju Hyeong Kang | Pusan National University |
-| Chapter 3: The Strong Force, Part II (lectures III-IV) | Yongik Jang | Kyungpook National University |
+| Chapter 3: The Strong Force, Part I | Ju Hyeong Kang | Pusan National University |
+| Chapter 3: The Strong Force, Part II | Yongik Jang | Kyungpook National University |
 | Chapter 4: Anomalies | Chang Hyeon Lee | Chungnam National University |
 | Chapter 5: Electroweak Interactions | Yurang Ko | Kyungpook National University |
-| Chapter 6: Flavor | To be announced | |
+| Chapter 6: Flavor | TBA | TBA |
 | Chapter 7: Neutrinos | SeongSik Kim | Chungnam National University |
 
 ## Practice and discussion

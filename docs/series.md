@@ -8,7 +8,7 @@ hero:
 ---
 # Series
 
-Select a card to learn about each series.
+You can view the series details by clicking a title.
 
 <div data-series-view>
   {% include series_group.html status="ongoing" title="Ongoing Series" empty_message="No series are currently in progress." %}

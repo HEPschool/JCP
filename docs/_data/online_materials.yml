@@ -45,3 +45,9 @@
   date: 2026-10-01
   file: "/assets/materials/online/2026 Fall - Lie Groups.pdf"
   id: "online_2026Fall_GT_3"
+
+- title: "Feynman Rules"
+  speaker: "Yurang Ko"
+  date: 2026-10-13
+  file: "/assets/materials/online/2026 Fall - scalar QED.pdf"
+  id: "online_2026Fall_QFT_5"

@@ -14,7 +14,7 @@ timetable:
   - time: "19:00 - 21:00"
     title: "Scalar QED"
     speaker: "Yurang Ko"
-    material_id: ""
+    material_id: "online_2026Fall_QFT_5"
 participants: 
   - name: Yurang Ko
     affiliation: Kyungpook National University

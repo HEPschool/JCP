@@ -259,6 +259,7 @@ span.btn[aria-current="page"]{cursor:default;}
 .hero-line.subtitle{font-size:clamp(1.25rem,3.2vw,2rem);font-weight:700}
 .hero-line.text{font-size:clamp(0.75rem,2.7vw,1.25rem);font-weight:600}
 .hero-line.note{opacity:.95}
+@media (min-width:1000px){ .hero-line.note{font-size:1.125rem;}}
 .hero-line.italic{font-style:italic}
 
 /* Poster */

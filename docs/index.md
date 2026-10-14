@@ -11,8 +11,6 @@ hero:
       style: subtitle
     - text: "JCP HEP School"
       style: title
-    - text: "Jeonbuk, Chungnam, and Pusan National University"
-      style: note
     - text: "Hosted by the Institute for Sciences of the Universe"
       style: note
 ---
@@ -20,9 +18,11 @@ hero:
 
 # {{ site.title }}
 
-## A Monthly Workshop for Graduate Students in High-Energy Phenomenology
+## A Student-Organized Program for Learning and Exchange in High-Energy Physics
 
-JCP HEP School is a monthly workshop organized by graduate students in high-energy phenomenology. Through graduate-level introductory lectures, we explore the basic ideas, standard tools, and recent developments across a wide range of research topics. Speakers have a chance to revisit the foundations of their own field, while participants can learn about areas beyond their immediate research. We hope these meetings provide a common ground for exchanging ideas and building connections across fields.
+**JCP HEP School** is a student-organized program that brings together graduate students in high-energy physics and related fields. Through student-led lectures, invited lectures, intensive schools, and online study meetings, we explore foundational concepts, theoretical methods, and research topics across different areas of physics. These activities offer opportunities to revisit familiar ideas, explore subjects beyond one's immediate specialization, and deepen understanding through calculations and discussion. By learning and discussing together, students from different research backgrounds and universities can also exchange perspectives and build academic connections.
+
+The name **JCP** derives from the university affiliations of its founding student organizers: Jeonbuk National University, Chungnam National University, and Pusan National University.
 
 &nbsp;
 

@@ -23,7 +23,7 @@ hero:
       style: "text"
 ---
 
-**2027 SM Week** is a five-day, student-organized school that brings together graduate students to study the Standard Model as a coherent whole. Through student-led lectures, worked calculations, problem-solving sessions and discussion, the school connects the strong and electroweak interactions with symmetries, anomalies, flavor physics and neutrinos.
+**2027 SM Week** is a five-day, student-organized school that brings together graduate students to study the Standard Model as a coherent whole. Through student-led lectures, worked calculations, problem-solving sessions, and discussion, the school explores how symmetries, anomalies, the strong and electroweak interactions, flavor physics, and neutrinos fit together.
 
 ## School at a glance
 
@@ -37,27 +37,27 @@ hero:
 
 ## What we aim to learn
 
-Graduate research often concentrates on a specialized topic, leaving few opportunities to revisit the complete structure of the Standard Model. This school provides time to reconstruct that structure together and understand how individual research topics fit into it.
+Graduate research often focuses on specialized topics, leaving limited opportunities to revisit the Standard Model as a whole. We aim to provide an opportunity for students to study its structure together and understand how individual research topics fit into the broader picture.
 
-- Build a connected understanding of QCD, electroweak theory, flavor and neutrino physics.
-- Trace the physical questions and general principles that lead to the Standard Model, rather than learning its ingredients in isolation.
-- Strengthen the ability to explain physical ideas through derivations, calculations and discussion.
-- Create opportunities for scientific exchange and lasting research connections between students at different universities.
+- Develop an integrated understanding of QCD, electroweak theory, flavor physics, and neutrino physics.
+- Trace the physical questions and general principles that motivate the Standard Model, rather than studying its components in isolation.
+- Strengthen the ability to explain physical ideas through derivations, calculations, and discussion.
+- Create opportunities for academic exchange and continued interaction among students from different universities.
 
 ## How the school works
 
-The lectures start from familiar ideas in classical mechanics, electromagnetism, quantum mechanics and special relativity. Physical questions motivate the next steps: general principles, quantum field theory structures, and their realization in the Standard Model. Symmetry, spontaneous symmetry breaking, gauge theory, anomalies and flavor mixing are introduced through this progression, with explicit links to phenomenology and representative derivations and calculations.
+The lectures build on familiar ideas from classical mechanics, electromagnetism, quantum mechanics, and special relativity, developing the field-theoretic concepts needed to understand the Standard Model. We aim to connect physical motivations with symmetry principles, gauge theory, and their realization in the strong and electroweak interactions. Topics such as spontaneous symmetry breaking, anomalies, and flavor mixing are explored through representative derivations, calculations, and phenomenological examples.
 
-To help participants prepare and review, each topic is accompanied by two resources:
+To support preparation and review, two types of notes are planned for each topic:
 
-- **Preliminary Note:** prerequisites, definitions, notation, key formulas and suggested review resources, distributed before the school.
-- **Lecture Note:** an English account of the lecture's logical development, equations, worked examples and references, provided before the corresponding lecture and available for later review.
+- **Preliminary Note:** a review on prerequisites, definitions, notation, key formulas, and suggested references, distributed before the school.
+- **Lecture Note:** an English account of the lecture's logical development, including equations, worked examples, and references, provided before the corresponding lecture and available for later review.
 
-The intended learning sequence is **preparation, reading, lecture, practice and discussion**. Participants can review the prerequisites beforehand, follow the reasoning during lectures, and then test their understanding through calculations and explanations to one another.
+The intended learning process combines **preparation, advance reading, lectures, problem solving, and discussion**. Participants are encouraged to review the background material beforehand, follow the reasoning during lectures, and deepen their understanding by working through problems and discussing different approaches with one another.
 
 ## Syllabus and lecturers
 
-The lectures follow Chapters 1-7 of Tong's notes. Each lecture lasts 90 minutes.
+The syllabus follows Chapters 1-7 of Tong's notes. The topics below group the 17 lectures by chapter, with each lecture lasting 90 minutes.
 
 | Topic | Lecturer | Affiliation |
 | --- | --- | --- |
@@ -72,7 +72,7 @@ The lectures follow Chapters 1-7 of Tong's notes. Each lecture lasts 90 minutes.
 
 ## Practice and discussion
 
-The three practice sessions use Tong's official problem sheets and representative problems selected by the lecturers. They are intended to turn the lecture material into calculations that participants can carry out and explain.
+The three practice sessions draw on Tong's problem sheets and representative problems selected by the lecturers. They are intended to help participants move beyond following calculations to working through and explaining the reasoning themselves.
 
 | Session | Main topics |
 | --- | --- |
@@ -80,8 +80,8 @@ The three practice sessions use Tong's official problem sheets and representativ
 | Practice II | Anomalies, electroweak symmetry breaking, flavor mixing and the Standard Model gauge structure |
 | Practice III | Neutrino oscillations and the connections between the different parts of the Standard Model |
 
-Tuesday and Thursday practice sessions proceed from individual or group problem solving to blackboard presentations, comparison of solutions, discussion and Q&A. The emphasis is on understanding the calculation and comparing approaches, as well as obtaining an answer.
+The Tuesday and Thursday practice sessions combine individual or group problem solving with blackboard presentations, comparison of solutions, discussion, and Q&A. The emphasis is on understanding the reasoning behind each calculation and comparing different approaches, rather than simply obtaining the final answer.
 
-The final session brings together the gauge group **SU(3)<sub>c</sub> x SU(2)<sub>L</sub> x U(1)<sub>Y</sub>**, field content and gauge representations, symmetry breaking, fermion masses, CKM and PMNS mixing, and anomaly cancellation. It offers a chance to connect the week's topics into one picture.
+The final practice session brings together the Standard Model gauge group SU(3)<sub>c</sub> × SU(2)<sub>L</sub> × U(1)<sub>Y</sub>, field content and gauge representations, symmetry breaking, fermion masses, CKM and PMNS mixing, and anomaly cancellation. The goal is to connect these elements into a unified picture of the Standard Model.
 
-The Wednesday banquet and evening discussion provide additional time for informal scientific exchange and conversations across universities.
+The Wednesday banquet and evening discussion also provide opportunities for informal scientific exchange and interaction among students from different universities.

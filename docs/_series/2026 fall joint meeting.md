@@ -31,8 +31,8 @@ The participating universities share presentation responsibilities:
 
 Presentations are given by master's students in the early stages of their studies. Participants range from master's students to doctoral students, bringing together different levels of experience in a shared study setting.
 
-Through student-led presentations and discussion, the series aims to strengthen participants' understanding of the foundations of quantum field theory and group theory across the three universities.
+Through student-led presentations and discussions, the series aims to deepen participants’ understanding of the foundations of quantum field theory and group theory while fostering academic exchange and collaboration among students from the three universities.
 
 ## Presentation materials
 
-Presenters prepare materials for their sessions. These materials are available on each presentation's individual event page. Use the **Informations** tab to find a session and access its presentation materials.
+Presenters prepare materials for their sessions. These materials are available on each presentation's individual event page. Use the **Informations** tab to find each session and access its presentation materials.

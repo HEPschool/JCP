@@ -18,29 +18,29 @@ hero:
     #   style: "text"
 ---
 
-**JCP HEP School: Invited Lecture** brings external speakers to JCP HEP School to teach subjects that students are interested in exploring. Topics grow out of the students' research interests, questions and learning needs, including unfamiliar research areas and methods they would like to understand more deeply.
+**JCP HEP School: Invited Lecture** is a lecture series featuring invited researchers who introduce topics that students are interested in exploring. The choice of topics is guided by students' research interests, questions, and learning needs, including unfamiliar research areas and methods they would like to understand more deeply.
 
-The series provides an opportunity to learn directly from researchers working on these subjects, discuss the reasoning behind their approaches, and connect new ideas with the participants' own research.
+The series offers students an opportunity to learn directly from researchers with expertise in these areas, discuss the reasoning behind their approaches, and connect new ideas to their own research.
 
 ## Learning guided by students' interests
 
-An invited lecture can offer an introduction to a research field, a tutorial on an important technique, or a closer look at a particular theoretical question. The emphasis is on helping students develop the background and understanding needed to engage with the topic.
+An invited lecture may introduce a research field, provide a tutorial on an important technique, or examine a particular theoretical question in greater depth. Our aim is to help students develop the background and understanding needed to engage with these subjects.
 
-- Explore research questions and methods that participants want to learn about.
+- Explore research questions and methods of interest to participants.
 - Understand the physical motivation, essential concepts and assumptions behind a subject.
-- Learn how researchers use standard tools and representative calculations in practice.
-- Discuss the current research landscape, open questions and directions for further study.
+- Learn how researchers apply standard tools and work through representative calculations.
+- Gain insight into the current research landscape, open questions, and directions for further study.
 
 ## What to expect
 
-Invited speakers share their expertise through explanations, examples and discussion. A lecture may connect foundational ideas with research applications, work through a useful calculation, or explain how to interpret an important result or figure.
+Our aim is to offer lectures that make expert knowledge accessible while emphasizing the reasoning behind it. Depending on the topic, a speaker may connect foundational ideas with research applications, work through a representative calculation, or explain how to interpret an important result or figure.
 
-The intended audience is graduate students in high-energy physics and related fields, including those approaching the subject from a different specialization. The scope and depth of each lecture depend on its topic and the students' learning interests.
+The series is intended for graduate students in high-energy physics and related fields, including those approaching a topic from a different specialization. The scope and depth of each lecture may vary according to the subject and students' interests.
 
-Questions about basic concepts, physical interpretation and possible applications are an important part of the session. Discussion gives participants an opportunity to clarify unfamiliar ideas, ask about their own research questions, and learn about useful papers and further reading.
+We encourage questions about basic concepts, physical interpretation, and possible applications. We hope these discussions will help participants clarify unfamiliar ideas, explore connections to their own research, and discover relevant papers and resources for further study.
 
 ## Events and materials
 
-Open the **Details** tab to browse past and upcoming Invited Lectures. Each event page introduces the lecture and its speaker and provides the venue and detailed timetable.
+Past and upcoming Invited Lectures are listed under the **Informations** tab. Each event page provides the lecture topic, speaker, venue, and detailed timetable.
 
-Available slides, notes and supplementary resources are collected on the [Materials page]({{ '/materials/' | relative_url }}) for review and further study.
+Available slides, lecture notes, and supplementary resources are collected on the [Materials page]({{ '/materials/' | relative_url }}) for later reference and further study.

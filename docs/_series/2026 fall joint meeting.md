@@ -2,7 +2,7 @@
 layout: series
 series_id: "2026 Fall Joint Meeting"
 title: "2026 Fall Joint Meeting"
-subtitle: "Joint online study of quantum field theory and group theory"
+subtitle: "Joint online study on quantum field theory and group theory"
 period:
   start: "2026-09-01"
   end: "present"

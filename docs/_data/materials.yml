@@ -112,3 +112,13 @@
     - id: "ML_Extra_HandsOn"
       title: "Extra Hands-on (PINN)"
       file: "/assets/materials/Machine Learning for Particle Physics; Extra Hands-on PINN.ipynb"
+
+# - lecture_id: "26-11-PS"
+#   event_id: "26-11-PS"
+#   title: "Introduction to Particle Simulation"
+#   speaker: "Seong-Ha Kim"
+#   date: 2026-11-28 12:00 +0900
+#   materials:
+#     - id: ""
+#       title: ""
+#       file: ""

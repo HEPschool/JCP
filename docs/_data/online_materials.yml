@@ -51,3 +51,9 @@
   date: 2026-10-13
   file: "/assets/materials/online/2026 Fall - scalar QED.pdf"
   id: "online_2026Fall_QFT_5"
+
+- title: "SU(2)"
+  speaker: "Sangjin Mun"
+  date: 2026-10-16
+  file: "/assets/materials/online/2026 Fall - SU(2).pdf"
+  id: "online_2026Fall_GT_4"

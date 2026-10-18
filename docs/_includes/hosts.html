@@ -1,0 +1,56 @@
+{%- assign data = site.data.hosts -%}
+{%- if data and data.size > 0 -%}
+<section class="section" aria-labelledby="{{ include.id | default: 'hosts-home' }}">
+  <h2 id="{{ include.id | default: 'hosts-home' }}">{{ include.title | default: 'Host' }}</h2>
+  {%- assign hosts = data -%}
+  {%- if include.order_by -%}
+    {%- assign hosts = data | sort: include.order_by -%}
+  {%- endif -%}
+  {%- assign has_logos = false -%}
+  {%- for host in hosts -%}
+    {%- if host.logo and host.logo != "" -%}
+      {%- assign has_logos = true -%}{%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign has_names = false -%}
+  {%- for host in hosts -%}
+    {%- if host.logo == nil or host.logo == "" -%}
+      {%- assign has_names = true -%}{%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if has_logos -%}
+  <ul class="hosts hosts-logos">
+    {%- for host in hosts -%}
+      {%- if host.logo and host.logo != "" -%}
+        <li class="hosts-item">
+          {%- if host.url -%}
+            <a href="{{ host.url }}" target="_blank" rel="noopener">
+              {% assign logo_alt = host.name | append: " logo" %}
+              {% include image.html src=host.logo alt=logo_alt %}
+            </a>
+          {%- else -%}
+            {% assign logo_alt = host.name | append: " logo" %}
+            {% include image.html src=host.logo alt=logo_alt %}
+          {%- endif -%}
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+  {%- if has_names -%}
+  <ul class="hosts hosts-names">
+    {%- for host in hosts -%}
+      {%- if host.logo == nil or host.logo == "" -%}
+        <li class="hosts-item">
+          {%- if host.url -%}
+            <a href="{{ host.url }}" target="_blank" rel="noopener">{{ host.name }}</a>
+          {%- else -%}
+            {{ host.name }}
+          {%- endif -%}
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+</section>
+{%- endif -%}

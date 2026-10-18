@@ -38,6 +38,6 @@ The name **JCP** originated from the affiliations of student organizers and earl
 
 {% include organizers.html %}
 
-{% include sponsors.html title="Host" %}
+{% include hosts.html title="Host" %}
 
 {% include specialthanks.html %}

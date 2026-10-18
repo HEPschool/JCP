@@ -68,21 +68,21 @@ Home 화면에 표시되는 Organizers는 docs/_data/organizers.yml 파일을 �
 표시되는 순서는 docs/_data/organizers.yml 파일에 입력된 순서를 따릅니다.  
 동일한 방식으로, Special Thanks 등록·관리를 수행할 수 있습니다.  
 
-## Sponsors 등록·관리
+## Host 등록·관리
 
-Home 화면에 표시되는 Sponsors는 docs/_data/sponsors.yml 파일을 수정하여 등록·관리할 수 있습니다.
+Home 화면에 표시되는 Host는 docs/_data/hosts.yml 파일을 수정하여 등록·관리할 수 있습니다.
 
 ```yml
-- name: "sponsor name"
-  logo: "/assets/img/sponsors/sponsor_logo.png"
+- name: "host name"
+  logo: "/assets/img/hosts/host_logo.png"
 ```
 
-Sponsors를 등록하는 경우, docs/index.md 파일 내에 원하는 위치에 {% include sponsors.html %} 를 추가하시기 바랍니다.  
+Host를 등록하는 경우, docs/index.md 파일 내에 원하는 위치에 {% include hosts.html %} 를 추가하시기 바랍니다.  
 logo: "" 항목에 로고 이미지가 등록되어 있다면, 해당 로고 이미지만 표시됩니다.  
 로고 이미지가 등록되어 있지 않다면, name: "" 항목의 이름이 표시됩니다.  
-표시되는 순서는 로고 이미지가 등록된 스폰서 -> 로고 이미지가 등록되지 않은 스폰서이며, 로고 이미지는 한 줄로 나열하고, 스폰서 이름은 한 줄에 하나씩 표시됩니다.  
-로고 이미지 및 스폰서 이름 안에서의 순서는 docs/_data/sponsors.yml 파일에 입력된 순서를 따릅니다.  
-표시 방식의 세부 설정은 docs/_includes/sponsors.html 파일을 수정하여 조정할 수 있습니다.  
+표시되는 순서는 로고 이미지가 등록된 Host -> 로고 이미지가 등록되지 않은 Host이며, 로고 이미지는 한 줄로 나열하고, Host 이름은 한 줄에 하나씩 표시됩니다.  
+로고 이미지 및 Host 이름 안에서의 순서는 docs/_data/hosts.yml 파일에 입력된 순서를 따릅니다.  
+표시 방식의 세부 설정은 docs/_includes/hosts.html 파일을 수정하여 조정할 수 있습니다.  
 
 ## 홈페이지 기초 설정·관리
 

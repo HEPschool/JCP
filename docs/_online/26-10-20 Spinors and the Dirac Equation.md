@@ -58,6 +58,8 @@ participants:
     affiliation: Kyungpook National University
   - name: Daeyeong Jeong
     affiliation: Chungnam National University
+  - name: Yongik Jang
+    affiliation: Kyungpook National University
 hero:
   image: "/assets/img/heros/online/online_default.jpg"
   lines:

@@ -63,10 +63,18 @@ Home 화면에 표시되는 Organizers는 docs/_data/organizers.yml 파일을 �
 ```yml
 - name: "organizer name"
   affiliation: "organizer affiliation"
+  start_date: "2025-08-22"
+  end_date: "present"
 ```
 
-표시되는 순서는 docs/_data/organizers.yml 파일에 입력된 순서를 따릅니다.  
-동일한 방식으로, Special Thanks 등록·관리를 수행할 수 있습니다.  
+활동 시작일과 종료일은 start_date, end_date에 "YYYY-MM-DD" 형식으로 입력합니다.
+현재 활동 중이면 end_date: "present"로 설정하고, 활동을 마쳤다면 end_date: "2026-12-25"처럼 종료일을 입력합니다.
+두 값이 모두 입력되면 2025.08.22 – Present 또는 2025.08.22 – 2026.12.25 형식으로 표시됩니다.
+한쪽이라도 비어 있으면 기간을 표시하지 않습니다.
+
+명단이 표시되는 순서는 docs/_data/organizers.yml 파일에 입력된 순서를 따릅니다.  
+동일한 방식으로, Special Thanks 등록·관리를 수행할 수 있습니다.
+단, Special Thanks에 대해서는 활동 시작일과 종료일을 설정할 수 없습니다.  
 
 ## Host 등록·관리
 

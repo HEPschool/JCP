@@ -8,13 +8,33 @@
       {%- assign people = data | sort: include.order_by -%}
     {%- endif -%}
     {%- for p in people -%}
+      {%- assign start_date = p.start_date | default: '' | strip -%}
+      {%- assign end_date = p.end_date | default: '' | strip -%}
+      {%- assign end_status = end_date | downcase -%}
       <li class="organizers-item">
-        {%- if p.url -%}
-          <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>
-        {%- else -%}
-          {{ p.name }}
+        <span class="organizers-person">
+          <span class="organizers-name">
+            {%- if p.url -%}
+              <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>
+            {%- else -%}
+              {{ p.name }}
+            {%- endif -%}
+          </span>
+          {%- if p.affiliation and p.affiliation != "" -%}
+            <span class="organizers-affiliation">{{ p.affiliation }}</span>
+          {%- endif -%}
+        </span>
+        {%- if start_date != '' and end_date != '' -%}
+          <span class="organizers-period">
+            <time datetime="{{ start_date | escape }}">{{ start_date | date: "%Y.%m.%d" | escape }}</time>
+            <span>&ndash;</span>
+            {% if end_status == 'present' %}
+              <span>Present</span>
+            {% else %}
+              <time datetime="{{ end_date | escape }}">{{ end_date | date: "%Y.%m.%d" | escape }}</time>
+            {% endif %}
+          </span>
         {%- endif -%}
-        {%- if p.affiliation and p.affiliation != "" -%} {{ include.sep | default: ' - ' }} {{ p.affiliation }}{%- endif -%}
       </li>
     {%- endfor -%}
   </ul>

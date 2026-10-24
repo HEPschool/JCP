@@ -271,7 +271,14 @@ img.poster{max-width:100%;height:auto;display:block;margin:0 auto;}
   margin: .5rem 0 0;
   padding-left: 0;
 }
-.organizers-item + .organizers-item{margin-top: .25rem;}
+.organizers-item + .organizers-item{margin-top: .75rem;}
+.organizers-person{display:block;overflow-wrap:anywhere;}
+.organizers-name{display:block;font-weight:700;}
+.organizers-affiliation{display:block;color:var(--muted);}
+.organizers-period{
+  display:flex;align-items:baseline;gap:.4em;
+  color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;
+}
 
 /* Hosts */
 .hosts{
@@ -312,7 +319,10 @@ img.poster{max-width:100%;height:auto;display:block;margin:0 auto;}
   margin: .5rem 0 0;
   padding-left: 0;
 }
-.specialthanks-item + .specialthanks-item{margin-top: .25rem;}
+.specialthanks-item{overflow-wrap:anywhere;}
+.specialthanks-item + .specialthanks-item{margin-top: .75rem;}
+.specialthanks-name{display:block;font-weight:700;}
+.specialthanks-affiliation{display:block;color:var(--muted);}
 
 /* Embeds */
 .embed{

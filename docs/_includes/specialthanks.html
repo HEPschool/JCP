@@ -9,12 +9,16 @@
     {%- endif -%}
     {%- for p in people -%}
       <li class="specialthanks-item">
-        {%- if p.url -%}
-          <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>
-        {%- else -%}
-          {{ p.name }}
+        <span class="specialthanks-name">
+          {%- if p.url -%}
+            <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>
+          {%- else -%}
+            {{ p.name }}
+          {%- endif -%}
+        </span>
+        {%- if p.affiliation and p.affiliation != "" -%}
+          <span class="specialthanks-affiliation">{{ p.affiliation }}</span>
         {%- endif -%}
-        {%- if p.affiliation and p.affiliation != "" -%} {{ include.sep | default: ' - ' }} {{ p.affiliation }}{%- endif -%}
       </li>
     {%- endfor -%}
   </ul>

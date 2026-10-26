@@ -4,7 +4,6 @@ lang: en
 baseurl: /JCP
 url: https://HEPschool.github.io
 markdown: kramdown
-# Use our own layouts and CSS instead of the GitHub Pages default theme.
 theme: null
 timezone: Asia/Seoul
 safe: true

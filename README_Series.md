@@ -47,8 +47,10 @@ Contents 2
 
 series_id는 다른 Series와 중복되지 않는 연결 기준입니다.  
 행사 파일의 series에 정확히 같은 값을 입력합니다.  
+
 Schedule과 Online Meeting 표에는 series_id가 표시되며, Series 카드와 상세 페이지에는 title이 표시됩니다.  
 제목을 바꾸더라도 series_id를 유지하면 행사 연결은 유지됩니다.  
+
 파일 이름은 상세 페이지의 주소로 사용됩니다.  
 예를 들어 student lecture.md는 /JCP/series/student-lecture/로 연결됩니다.  
 
@@ -57,6 +59,7 @@ subtitle은 카드 제목 아래에 표시되는 선택 항목입니다.
 
 소개, 목표, 계획, 일정표 등 상세 페이지 내용은 front matter 아래의 마크다운 본문에 자유롭게 작성합니다.  
 상세 페이지의 기간은 제목 아래에 본문과 같은 색상의 큰 글씨로 표시됩니다.  
+
 Hero 이미지가 없으면 카드에는 제목, 기간과 선택한 문구가 표시됩니다.  
 가급적 hero 항목을 완전히 설정해주시고, 적절한 image가 없는 경우 /assets/img/heros/series/series_default.jpg를 사용해주시기 바랍니다.  
 
@@ -89,7 +92,7 @@ Series 기간은 period.start와 period.end에 입력합니다.
 같은 날짜이면 제목, 그다음 series_id로 정렬합니다.  
 분류는 페이지 방문 시 한국 시간(Asia/Seoul)의 날짜를 기준으로 갱신됩니다.  
 JavaScript가 비활성화되어 있으면 빌드 시점의 분류와 정렬이 표시됩니다.  
-Series 기간은 직접 관리하며, 마지막 행사 날짜를 자동으로 종료일로 사용하지 않습니다.  
+Series 기간은 수동으로 직접 입력 및 관리하며, 마지막 행사 날짜를 자동으로 종료일로 사용하지 않습니다.  
 
 ## 행사 연결과 일정표
 
@@ -196,10 +199,9 @@ program_id: "example_program"
 ```
 
 Informations 탭에서 Calendar가 최상단에 표시되며, 그 아래에 행사 리스트와 선택 항목들이 표시됩니다.  
-마크다운 본문에 별도 include를 추가할 필요는 없습니다.  
-기존 본문에 week_program.html include를 넣었다면 이를 삭제하여 중복 표시를 방지합니다.  
 program_id를 생략하거나 비워 두면 캘린더를 표시하지 않습니다.  
 Series 문서와 캘린더 자료 문서 모두 program_id를 사용합니다.  
+
 url이 있는 날짜 제목은 Event 페이지로 연결되며, /JCP 등 사이트의 baseurl은 자동으로 적용됩니다.  
 url을 생략한 날짜는 링크 없이 표시됩니다.  
 날짜 수에 따라 열 수가 바뀌며, 좁은 화면에서는 가로로 스크롤할 수 있습니다.  
@@ -220,4 +222,5 @@ Schedule과 Online Meeting의 Series 셀 전체 배경에 해당 색상을 적�
 셀의 왼쪽 40%는 지정 색상을 유지하고, 이후 오른쪽 끝까지 점차 옅어집니다.  
 배경의 기본 불투명도는 15%이며, 글자는 투명하게 만들지 않습니다.  
 농도는 docs/assets/css/style.css의 .series-cell에서 --series-opacity를 조절합니다.  
-color를 생략하거나 빈 값으로 두면 배경색을 적용하지 않습니다. 형식이 올바르지 않은 색상도 배경색 없이 표시됩니다.  
+color를 생략하거나 빈 값으로 두면 배경색을 적용하지 않습니다.  
+형식이 올바르지 않은 색상도 배경색 없이 표시됩니다.  

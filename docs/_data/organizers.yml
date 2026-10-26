@@ -1,13 +1,13 @@
-# Dates use YYYY-MM-DD. Set end_date to "present" for an ongoing term.
-# The period is displayed only when both fields are filled in.
 - name: "Chang Hyeon Lee"
   affiliation: "Chungnam National University"
   start_date: "2025-08-22"
   end_date: "present"
+
 - name: "Daeyeong Jeong"
   affiliation: "Chungnam National University"
   start_date: "2025-08-22"
   end_date: "present"
+
 - name: "Ju Hyeong Kang"
   affiliation: "Pusan National University"
   start_date: "2025-08-22"

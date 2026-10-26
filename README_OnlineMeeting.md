@@ -56,16 +56,16 @@ hero: # Optional: 상세 페이지 상단에 표시되는 이미지와 문구
 ---
 ```
 
-series에는 연결할 Series의 series_id를 입력합니다.
-Series 셀을 클릭하면 해당 Series 상세 페이지로 이동하고, 나머지 행 영역을 클릭하면 Online Meeting 상세 페이지로 이동합니다.
-Series의 등록, 기간 및 라벨 색상 설정 방법은 [Series guide](README_Series.md)를 참고하세요.
+series에는 연결할 Series의 series_id를 입력합니다.  
+Series 셀을 클릭하면 해당 Series 상세 페이지로 이동하고, 나머지 행 영역을 클릭하면 Online Meeting 상세 페이지로 이동합니다.  
+Series의 등록, 기간 및 라벨 색상 설정 방법은 [Series guide](README_Series.md)를 참고하세요.  
 textbook에는 미팅에서 사용한 교재를 입력하며, 해당 값이 없다면 교재 정보는 표시되지 않습니다.  
 docs/_online 폴더에 .md 파일이 생성되면 Online Meeting 페이지에 일정 및 상세 페이지가 생성됩니다.  
 Online Meeting 페이지에는 date 값을 기준으로 정렬된 순서로 일정이 표시됩니다.  
 기본적으로 현재 연도의 일정이 표시되며, Select year 버튼에서 과거 및 미래 연도를 선택할 수 있습니다.  
 Online Meeting 일정은 Home의 Upcoming Event banner와 상단의 Upcoming Event 링크에는 포함되지 않습니다.  
 hero 설정을 위해서는 docs/assets/img/heros/online 폴더에 사진을 업로드하고, image: "" 값을 올바르게 수정해주시기 바랍니다.  
-가급적 hero 항목을 완전히 설정해주시고, 적절한 image가 없는 경우 /assets/img/heros/online/online_default.jpg를 사용해주시기 바랍니다.
+가급적 hero 항목을 완전히 설정해주시고, 적절한 image가 없는 경우 /assets/img/heros/online/online_default.jpg를 사용해주시기 바랍니다.  
 
 ## Online Meeting Recording 등록·관리
 

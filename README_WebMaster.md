@@ -28,9 +28,9 @@ name은 설문 조사의 이름으로, 해당 설정값이 Home 화면의 설문
 url은 설문 조사 참여 링크로, Google forms 등의 설문 조사 링크를 입력합니다.  
 enabled는 설문 조사 진행 여부를 설정하는 항목으로, true면 Home 화면의 단추가 활성화되고, false면 단추가 비활성화 됩니다.  
 topic은 안내 문구를 위한 설정값으로, topic이 입력되어 있고 enabled: true 인 경우, 아래와 같은 안내 문구가 Home 화면의 단추 하단에 표시됩니다.  
-  
+
 ✅ (name) for (topic) is now open.  
-  
+
 위 문구는 docs/_includes/surveys.html 파일의 아래 부분을 수정하여 조정할 수 있습니다.  
 
 ```html
@@ -67,18 +67,21 @@ Home 화면에 표시되는 Organizers는 docs/_data/organizers.yml 파일을 �
   end_date: "present"
 ```
 
-활동 시작일과 종료일은 start_date, end_date에 "YYYY-MM-DD" 형식으로 입력합니다.
-현재 활동 중이면 end_date: "present"로 설정하고, 활동을 마쳤다면 end_date: "2026-12-25"처럼 종료일을 입력합니다.
-두 값이 모두 입력되면 2025.08.22 – Present 또는 2025.08.22 – 2026.12.25 형식으로 표시됩니다.
-한쪽이라도 비어 있으면 기간을 표시하지 않습니다.
+활동 시작일과 종료일은 start_date, end_date에 "YYYY-MM-DD" 형식으로 입력합니다.  
+현재 활동 중이면 end_date: "present"로 설정하고, 활동을 마쳤다면 end_date: "2026-12-25"처럼 종료일을 입력합니다.  
+두 값이 모두 입력되면 2025.08.22 – Present 또는 2025.08.22 – 2026.12.25 형식으로 표시됩니다.  
+한쪽이라도 비어 있으면 기간을 표시하지 않습니다.  
 
 명단이 표시되는 순서는 docs/_data/organizers.yml 파일에 입력된 순서를 따릅니다.  
-동일한 방식으로, Special Thanks 등록·관리를 수행할 수 있습니다.
+활동 중인 organizer는 활동 시작일이 이른 순서로, 활동을 마친 organizer는 활동 중인 organizer 뒤에 활동 시작일이 이른 순서로 정렬해두는 것을 권장합니다.  
+각 범주 안에서의 정렬 순서에는 정해진 기준이 없으나, 소속 기관 순서, 이름의 가나다 또는 abc 순서, 혹은 특정 proposal 등에서의 표기된 순서를 따를 수 있습니다.  
+
+동일한 방식으로, Special Thanks 등록·관리를 수행할 수 있습니다.  
 단, Special Thanks에 대해서는 활동 시작일과 종료일을 설정할 수 없습니다.  
 
 ## Host 등록·관리
 
-Home 화면에 표시되는 Host는 docs/_data/hosts.yml 파일을 수정하여 등록·관리할 수 있습니다.
+Home 화면에 표시되는 Host는 docs/_data/hosts.yml 파일을 수정하여 등록·관리할 수 있습니다.  
 
 ```yml
 - name: "host name"
@@ -138,8 +141,8 @@ collections:
 nav_next_label: Upcoming Event
 ```
 
-사이트 자체 레이아웃과 CSS를 사용하므로 theme: null을 유지합니다.
-GitHub Pages의 기본 테마를 켜면 테마 CSS가 사이트 CSS와 같은 경로에 생성될 수 있습니다.
+사이트 자체 레이아웃과 CSS를 사용하므로 theme: null을 유지합니다.  
+GitHub Pages의 기본 테마를 켜면 테마 CSS가 사이트 CSS와 같은 경로에 생성될 수 있습니다.  
 
 신규 페이지 추가 시, nav: 하위 항목에 해당 페이지의 name 및 url을 추가합니다. (개별 페이지 설정·관리 (기초)를 참고하세요.)  
 홈페이지 상단 네비게이션 바에 표시되는 각 페이지 순서는, nav에 설정된 순서를 따릅니다.  
@@ -158,7 +161,7 @@ favicon은 페이지 방문 시, 웹 브라우저의 탭 항목에 표시되는 
 <link rel="apple-touch-icon" href="{{ '/assets/favicon/favicon_180.png' | relative_url }}">
 ```
 
-설치형 웹 앱 아이콘은 site.webmanifest에 등록합니다.
+설치형 웹 앱 아이콘은 site.webmanifest에 등록합니다. 
 
 기본 설정된 favicon은 ${e^-}{e^+}\to{\mu^-}{\mu^+}$ 과정의 Feynman diagram을 Weinberg angle만큼 돌린 그림입니다.  
 
@@ -169,7 +172,7 @@ docs/_includes/footer.html 파일을 수정하여 표시되는 문구를 설정�
 
 ## 개별 페이지 설정·관리 (기초)
 
-기본 설정된 페이지는 Home, Upcoming Event, Series, Schedule, Lecturers, Materials, Online Meeting 총 7가지 입니다.
+기본 설정된 페이지는 Home, Upcoming Event, Series, Schedule, Lecturers, Materials, Online Meeting 총 7가지 입니다.  
 Upcoming Event를 제외한 각 페이지들은 docs/ 폴더의 각 .md 파일에서 설정·관리할 수 있습니다.(Home 페이지는 index.md 파일에서 설정·관리)  
 Upcoming Event의 경우, 등록된 일정 중 가장 가까운 일정(당일을 포함)의 상세 페이지를 자동으로 표시합니다.  
 기초적인 페이지 설정·관리는 markdown 문법을 따라 파일을 작성·수정하여 할 수 있습니다.  
@@ -182,23 +185,23 @@ Upcoming Event 페이지 표시와 동일한 메커니즘으로, Home 페이지�
 Banner는 기본적으로 최상단에 "Upcoming Event" 문구를 표시하고, event의 .md 파일에서 title, location, date, speaker를 순서대로 읽어들여 표시합니다.  
 Banner에 표시되는 항목들의 세부 설정은 docs/_includes/upcoming.html을 수정하여 변경할 수 있습니다.  
 
-## 페이지 레이아웃 설정·관리  
+## 페이지 레이아웃 설정·관리
 
-각 페이지들의 기본 레이아웃은 docs/_layouts 폴더의 default.html, event.html, online.html, series.html 파일에 설정되어 있습니다.
-모든 페이지들은 default.html의 레이아웃을 따르며, 각 Event, Online Meeting, Series의 상세 페이지는 각각 event.html, online.html, series.html을 추가적으로 따릅니다.
+각 페이지들의 기본 레이아웃은 docs/_layouts 폴더의 default.html, event.html, online.html, series.html 파일에 설정되어 있습니다.  
+모든 페이지들은 default.html의 레이아웃을 따르며, 각 Event, Online Meeting, Series의 상세 페이지는 각각 event.html, online.html, series.html을 추가적으로 따릅니다.  
 필요 시 해당 파일들을 적절히 수정하여 사용하거나, 신규 레이아웃 파일을 추가하여 사용할 수 있습니다.  
 
 ## Series 등록·관리
 
-Series는 docs/_series 폴더의 .md 파일로 관리합니다.
-Series별 캘린더 자료는 docs/_series/programs 폴더의 .yml 파일로 관리합니다.
-등록 형식, 기간 분류, 행사 연결, 캘린더 작성 및 색상 설정은 [Series guide](README_Series.md)를 참고하세요.
+Series는 docs/_series 폴더의 .md 파일로 관리합니다.  
+Series별 캘린더 자료는 docs/_series/programs 폴더의 .yml 파일로 관리합니다.  
+등록 형식, 기간 분류, 행사 연결, 캘린더 작성 및 색상 설정은 [Series guide](README_Series.md)를 참고하세요.  
 
 ## 단추 스타일
 
-콘텐츠 영역의 단추는 docs/assets/css/style.css의 공통 .btn 스타일을 사용합니다.
-행사 상세 페이지와 Materials의 자료 링크도 같은 스타일을 사용하며, 작은 단추에는 small 클래스를 추가합니다.
-좁은 화면에서 표시되는 상단 Menu 단추는 .nav-toggle 스타일을 사용합니다.
+콘텐츠 영역의 단추는 docs/assets/css/style.css의 공통 .btn 스타일을 사용합니다.  
+행사 상세 페이지와 Materials의 자료 링크도 같은 스타일을 사용하며, 작은 단추에는 small 클래스를 추가합니다.  
+좁은 화면에서 표시되는 상단 Menu 단추는 .nav-toggle 스타일을 사용합니다.  
 
 | 상태 | 표시 |
 | --- | --- |
@@ -206,7 +209,7 @@ Series별 캘린더 자료는 docs/_series/programs 폴더의 .yml 파일로 관
 | 선택 가능한 단추 | 기본 배경과 강조색 글자·테두리 |
 | 비활성 단추 | 회색 배경과 낮은 불투명도; 클릭 불가 |
 
-선택 상태는 aria-selected 또는 aria-pressed로, 펼침 상태는 aria-expanded로 지정합니다.
-현재 행사 페이지는 aria-current="page"로 지정하며, disabled 클래스를 붙이지 않습니다.
-비활성 상태는 disabled 속성, disabled 클래스 또는 aria-disabled="true"로 지정하며 선택·펼침 색상보다 우선합니다.
-클릭 가능한 .btn 단추에는 공통 hover, 누르는 동안의 색상 변화와 키보드 포커스 표시를 적용합니다.
+선택 상태는 aria-selected 또는 aria-pressed로, 펼침 상태는 aria-expanded로 지정합니다.  
+현재 행사 페이지는 aria-current="page"로 지정하며, disabled 클래스를 붙이지 않습니다.  
+비활성 상태는 disabled 속성, disabled 클래스 또는 aria-disabled="true"로 지정하며 선택·펼침 색상보다 우선합니다.  
+클릭 가능한 .btn 단추에는 공통 hover, 누르는 동안의 색상 변화와 키보드 포커스 표시를 적용합니다.  

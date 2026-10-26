@@ -100,15 +100,20 @@ hero: # 상세 페이지 상단에 표시되는 이미지와 문구를 지정합
 
 hero 설정을 위해서는 docs/assets/img/heros/lecture 폴더에 사진을 업로드하고, image: "" 값을 올바르게 수정해주시기 바랍니다.  
 가급적 hero 항목을 완전히 설정해주시고, 적절한 image가 없는 경우 /assets/img/heros/lecture/lecture_default.jpg를 사용해주시기 바랍니다.  
+
 Materials 페이지에 강연 카드를 등록하기 위해서는, event_id를 다른 Event와 중복되지 않는 값으로 입력해주시기 바랍니다.  
 Material 정보에 동일한 event_id를 입력하면 강연 카드의 title이 해당 Event 상세 페이지로 연결되며, Event의 hero image가 카드 상단의 배경으로 자동 표시됩니다.  
+
 하나의 Event에 여러 강연 카드가 연결되는 경우에는 각 강연 정보에 동일한 event_id를 사용할 수 있습니다.  
 docs/_events 폴더에 .md 파일이 생성되면, Schedule 페이지에 일정 등록 및 상세 페이지가 생성됩니다.  
-series에는 연결할 Series의 series_id를 입력합니다.
-Schedule의 Series 셀을 클릭하면 해당 Series 상세 페이지로 이동하고, 나머지 행 영역을 클릭하면 Event 상세 페이지로 이동합니다.
-기본적으로 학생 강연은 Student Lecture, 초청 강연은 Invited Lecture 입니다.
-Series의 등록, 기간 및 라벨 색상 설정 방법은 [Series guide](README_Series.md)를 참고하세요.
+
+series에는 연결할 Series의 series_id를 입력합니다.  
+Schedule의 Series 셀을 클릭하면 해당 Series 상세 페이지로 이동하고, 나머지 행 영역을 클릭하면 Event 상세 페이지로 이동합니다.  
+기본적으로 학생 강연은 Student Lecture, 초청 강연은 Invited Lecture 입니다.  
+
+Series의 등록, 기간 및 라벨 색상 설정 방법은 [Series guide](README_Series.md)를 참고하세요.  
 Schedule 페이지에는 date 값을 기준으로 정렬된 순서로 일정이 표시되며, 각 일정을 클릭하여 상세 페이지에 접근할 수 있습니다.  
+
 .md 파일에 입력된 date 값을 기준으로, 페이지 방문 시점에서 같거나 미래의 일정 중, 가장 가까운 일정이 Upcoming Event 페이지에 자동으로 표시됩니다.  
 Upcoming Event 페이지에 표시되는 일정의 banner가 자동으로 Home 페이지에 생성되어 표시됩니다.  
 Banner는 hero 항목에 설정된 image와 동일한 image를 사용하며, image가 설정되어 있어야 정상적으로 표시됩니다.  
@@ -146,16 +151,19 @@ Material은 docs/assets/materials 폴더에 자료 파일을 업로드하고, do
       file: "/assets/materials/lecture_2_note.pdf"
 ```
 
-Materials 페이지에는 material별 항목이 아닌 강연별 카드가 표시됩니다.  
+Materials 페이지에는 각 강연의 materials 들이 포함된 강연별 카드가 표시됩니다.  
 각 카드에는 date, title, speaker와 해당 강연의 material 목록이 표시되며, date를 기준으로 각 연도 안에서 과거에서 현재 순서로 정렬됩니다.  
-date는 페이지에서 2025.12.25 (Thu) 형태로 표시됩니다.
+
+date는 페이지에서 2025.12.25 (Thu) 형태로 표시됩니다.  
 같은 날짜에 여러 강연이 있다면 정확한 정렬을 위해 강연 시작 시각과 +0900 시간대를 함께 입력해주시기 바랍니다.  
-카드의 title을 클릭하면 event_id가 일치하는 Event 상세 페이지로 이동합니다.
+
+카드의 title을 클릭하면 event_id가 일치하는 Event 상세 페이지로 이동합니다.  
 연결된 Event에 hero image가 설정되어 있다면 해당 image가 카드의 date, title, speaker 영역에 반투명 배경으로 자동 표시됩니다.  
 event_id가 일치하지 않거나 Event에 존재하지 않으면 카드의 title 링크와 hero image가 생성되지 않으므로, 두 파일의 event_id가 정확히 일치하는지 확인해주시기 바랍니다.  
 
 material의 title은 Materials 페이지에 표시되는 자료명으로, Note, Slides, Code, Notebook, Supplementary Material 등과 같이 간단하게 입력하는 것을 권장합니다.  
-서로 다른 강연 카드에서는 동일한 material title을 사용할 수 있습니다.
+서로 다른 강연 카드에서는 동일한 material title을 사용할 수 있습니다.  
+
 material을 구분하고 Event 상세 페이지와 연결할 때는 title이 아닌 id를 사용하므로, 각 material의 id는 전체 docs/_data/materials.yml 안에서 중복되지 않도록 입력해야 합니다.  
 material의 id는 Event 등록·관리시 timetable 내의 material_id 설정에 사용되며, material의 id를 material_id에 입력하면 Event 상세 페이지 시간표에서 해당 파일이 해당 일정에 함께 표시됩니다.  
 

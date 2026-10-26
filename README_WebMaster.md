@@ -12,9 +12,11 @@ README_WebMaster에서는 홈페이지 전반의 관리, Survey 등록·관리, 
 ## Survey 등록·관리
 
 Home 화면에 노출되는 Survey의 기본 항목들은 Subscription, Registration, Presurvey 총 3가지 입니다.  
-Subscription: JCP Newsletter 구독 신청  
-Registration: 강연 참석 여부 설문 조사  
-Presurvey: 강연 진행을 위한 사전 설문 조사 (Speaker의 요청이 있는 경우 진행. Speaker가 항목을 준비하고, 관리자가 설정하여 게시합니다.)  
+
+- Subscription: JCP Newsletter 구독 신청 (JCP Newsletter와 관련한 상세 사항들은 기존 organizer에게 문의해주시기 바랍니다.)  
+- Registration: 강연 참석 여부 설문 조사  (강연 일자 및 장소 확정 시, 관리자가 설정하여 게시합니다.)
+- Presurvey: 강연 진행을 위한 사전 설문 조사 (Speaker의 요청이 있는 경우 진행. Speaker가 항목을 준비하고, 관리자가 설정하여 게시합니다.)  
+
 각 Survey의 정보는 docs/_data/surveys.yml 파일을 수정하여 등록·관리할 수 있습니다.  
 
 ```yml
@@ -161,7 +163,7 @@ favicon은 페이지 방문 시, 웹 브라우저의 탭 항목에 표시되는 
 <link rel="apple-touch-icon" href="{{ '/assets/favicon/favicon_180.png' | relative_url }}">
 ```
 
-설치형 웹 앱 아이콘은 site.webmanifest에 등록합니다. 
+설치형 웹 앱 아이콘은 site.webmanifest에 등록합니다.  
 
 기본 설정된 favicon은 ${e^-}{e^+}\to{\mu^-}{\mu^+}$ 과정의 Feynman diagram을 Weinberg angle만큼 돌린 그림입니다.  
 

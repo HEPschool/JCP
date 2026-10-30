@@ -9,7 +9,7 @@ textbook: "Howard Georgi, Lie Algebras in Particle Physics"
 #   url: ""
 #   display: "embed"
 overview: >
-Brief overview for the online meeting: YOUR_TITLE:TBA <br>
+  None.
 timetable:
   - time: "19:00 - 21:00"
     title: "Tensor Operators and the Wigner-Eckart Theorem"

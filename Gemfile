@@ -16,3 +16,5 @@ gem "addressable", ">= 2.9.0", "< 3.0"
 gem "concurrent-ruby", ">= 1.3.7", "< 2.0"
 gem "uri", ">= 1.0.4", "< 2.0"
 gem "tzinfo-data", platforms: [:windows]
+
+gem "logger", "~> 1.7"

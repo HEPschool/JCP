@@ -12,6 +12,8 @@ README_WebMaster에서는 홈페이지 전반의 관리, Survey 등록·관리, 
 ## Survey 등록·관리
 
 Home 화면에 노출되는 Survey의 기본 항목들은 Subscription, Registration, Presurvey 총 3가지 입니다.  
+다른 설문 조사들이 필요하다면, docs/_data/surveys.yml 파일을 수정하여 새로운 설문 조사들을 등록·관리할 수 있습니다.  
+Survey 기본 항목들의 역할은 다음과 같습니다.  
 
 - Subscription: JCP Newsletter 구독 신청 (JCP Newsletter와 관련한 상세 사항들은 기존 organizer에게 문의해주시기 바랍니다.)  
 - Registration: 강연 참석 여부 설문 조사  (강연 일자 및 장소 확정 시, 관리자가 설정하여 게시합니다.)
@@ -25,6 +27,8 @@ Home 화면에 노출되는 Survey의 기본 항목들은 Subscription, Registra
   url: "https://your.google.forms.link" # 설문 조사 링크(Google forms 등)
   enabled: false # 설문 조사 진행 여부 (true/false)
 ```
+
+Home 화면에 표시되는 Survey의 순서는 docs/_data/surveys.yml 파일에 입력된 순서를 따릅니다.  
 
 name은 설문 조사의 이름으로, 해당 설정값이 Home 화면의 설문조사 단추 위에 표시됩니다.  
 url은 설문 조사 참여 링크로, Google forms 등의 설문 조사 링크를 입력합니다.  
@@ -48,9 +52,6 @@ topic은 안내 문구를 위한 설정값으로, topic이 입력되어 있고 e
   </div>
 {%- endif -%}
 ```
-
-다른 설문 조사들이 필요하다면, docs/_data/surveys.yml 파일을 수정하여 새로운 설문 조사들을 등록·관리할 수 있습니다.  
-Home 화면에 표시되는 Survey의 순서는 docs/_data/surveys.yml 파일에 입력된 순서를 따릅니다.  
 
 ## Poster 등록·관리
 
@@ -91,10 +92,12 @@ Home 화면에 표시되는 Host는 docs/_data/hosts.yml 파일을 수정하여 
 ```
 
 Host를 등록하는 경우, docs/index.md 파일 내에 원하는 위치에 {% include hosts.html %} 를 추가하시기 바랍니다.  
+
 logo: "" 항목에 로고 이미지가 등록되어 있다면, 해당 로고 이미지만 표시됩니다.  
 로고 이미지가 등록되어 있지 않다면, name: "" 항목의 이름이 표시됩니다.  
 표시되는 순서는 로고 이미지가 등록된 Host -> 로고 이미지가 등록되지 않은 Host이며, 로고 이미지는 한 줄로 나열하고, Host 이름은 한 줄에 하나씩 표시됩니다.  
 로고 이미지 및 Host 이름 안에서의 순서는 docs/_data/hosts.yml 파일에 입력된 순서를 따릅니다.  
+
 표시 방식의 세부 설정은 docs/_includes/hosts.html 파일을 수정하여 조정할 수 있습니다.  
 
 ## 홈페이지 기초 설정·관리
@@ -110,6 +113,9 @@ url: https://org_name.github.io # org_name 부분에 Organization 이름을 입�
 markdown: kramdown
 theme: null
 timezone: Asia/Seoul
+safe: true
+whitelist:
+- jekyll-seo-tag
 plugins:
 - jekyll-seo-tag
 #- jekyll-sitemap
@@ -175,7 +181,8 @@ docs/_includes/footer.html 파일을 수정하여 표시되는 문구를 설정�
 ## 개별 페이지 설정·관리 (기초)
 
 기본 설정된 페이지는 Home, Upcoming Event, Series, Schedule, Lecturers, Materials, Online Meeting 총 7가지 입니다.  
-Upcoming Event를 제외한 각 페이지들은 docs/ 폴더의 각 .md 파일에서 설정·관리할 수 있습니다.(Home 페이지는 index.md 파일에서 설정·관리)  
+Upcoming Event를 제외한 각 페이지들은 docs/ 폴더의 각 .md 파일에서 설정·관리할 수 있습니다. (Home 페이지는 index.md 파일에서 설정·관리)  
+
 Upcoming Event의 경우, 등록된 일정 중 가장 가까운 일정(당일을 포함)의 상세 페이지를 자동으로 표시합니다.  
 기초적인 페이지 설정·관리는 markdown 문법을 따라 파일을 작성·수정하여 할 수 있습니다.  
 필요 시 동일한 디렉토리에 신규 .md 파일을 생성하고, docs/_config.yml 파일을 수정하여 신규 페이지를 등록할 수 있습니다.  
@@ -184,6 +191,7 @@ Upcoming Event의 경우, 등록된 일정 중 가장 가까운 일정(당일을
 
 Upcoming Event 페이지 표시와 동일한 메커니즘으로, Home 페이지에 자동으로 Upcoming banner가 생성됩니다.  
 이 banner는 docs/_events 폴더에 존재하는 해당 event의 .md 파일에 hero image가 설정되어 있어야 정상적으로 표시되며, 동일 이미지를 사용하여 자동으로 banner를 만듭니다.  
+
 Banner는 기본적으로 최상단에 "Upcoming Event" 문구를 표시하고, event의 .md 파일에서 title, location, date, speaker를 순서대로 읽어들여 표시합니다.  
 Banner에 표시되는 항목들의 세부 설정은 docs/_includes/upcoming.html을 수정하여 변경할 수 있습니다.  
 

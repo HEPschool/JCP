@@ -14,7 +14,7 @@ timetable:
   - time: "19:00 - 21:00"
     title: "Tensor Operators and the Wigner-Eckart Theorem"
     speaker: "Sangjin Mun"
-    material_id: "online_2026Fall_GT_4"
+    material_id: "online_2026Fall_GT_5"
 participants: 
   - name: Sangjin Mun
     affiliation: Pusan National University

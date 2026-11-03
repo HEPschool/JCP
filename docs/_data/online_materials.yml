@@ -69,4 +69,10 @@
   date: 2026-10-30
   file: "/assets/materials/online/2026 Fall - Tensor Operators and the Wigner-Eckart Theorem.pdf"
   id: "online_2026Fall_GT_5"
+
+- title: "Spinor Solutions and CPT"
+  speaker: "Yoogeun Kim"
+  date: 2026-11-03
+  file: "/assets/materials/online/2026 Fall - Spinor Solutions and CPT.pdf"
+  id: "online_2026Fall_QFT_7"
   

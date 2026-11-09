@@ -95,7 +95,8 @@ participants:
     affiliation: Chungbuk National University
 photos:
   - "/assets/img/photos/2026_AstroNSN_groupphoto.jpg"
-  - "/assets/img/photos/2026_AstroNSN_lecture.jpg"
+  - "/assets/img/photos/2026_AstroNSN_lecture1.jpg"
+  - "/assets/img/photos/2026_AstroNSN_lecture2.jpg"
 hero:
   image: "/assets/img/heros/lecture/2026_AstroNSN_SN1987A.jpg"
   lines:

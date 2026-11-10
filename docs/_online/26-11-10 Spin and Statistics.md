@@ -1,6 +1,6 @@
 ---
 layout: online
-title: "TBA"
+title: "Spin and Statistics"
 date: 2026-11-10 19:00 +0900
 series: "2026 Fall Joint Meeting"
 speaker: "In Jung Kim"
@@ -12,16 +12,16 @@ overview: >
   <br><br>
 timetable:
   - time: "19:00 - 21:00"
-    title: "TBA"
+    title: "Spin and Statistics"
     speaker: "In Jung Kim"
-    material_id: ""
+    material_id: "online_2026Fall_QFT_8"
 participants: 
   - name: In Jung Kim
     affiliation: Chungnam National University
 hero:
   image: "/assets/img/heros/online/online_default.jpg"
   lines:
-    - text: "TBA"
+    - text: "Spin and Statistics"
       style: title
     - text: "In Jung Kim"
       style: subtitle

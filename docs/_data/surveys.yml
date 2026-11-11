@@ -4,9 +4,9 @@
   enabled: true
 
 - name: "Registration"
-  topic: "Introduction to Astrophysics and Supernova Phenomenology"
-  url: ""
-  enabled: false
+  topic: "Introduction to Particle Simulation"
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSf1nV1-zP5pNlZocWPQk0saJHRbPVfHY1WWYdvyp4uJnHKL8w/viewform?usp=publish-editor"
+  enabled: true
 
 - name: "Presurvey"
   topic: ""

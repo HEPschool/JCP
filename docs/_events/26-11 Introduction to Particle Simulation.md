@@ -12,7 +12,7 @@ overview: >
 timetable:
   - time: "12:00 - 12:10"
     title: "Opening remarks"
-    speaker: "Ju Hyeong Kang"
+    speaker: "In Jung Kim"
   - time: "12:10 - 12:30"
     title: "Discussion"
     speaker: ""

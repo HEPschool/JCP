@@ -87,4 +87,10 @@
   date: 2026-11-13
   file: "/assets/materials/online/2026 Fall - Roots, Weights and SU(3).pdf"
   id: "online_2026Fall_GT_6"
+
+- title: "QED"
+  speaker: "In Jung Kim"
+  date: 2026-11-17
+  file: "/assets/materials/online/2026 Fall - QED.pdf"
+  id: "online_2026Fall_QFT_9"
   

@@ -8,7 +8,7 @@ speaker: "Seong-Ha Kim"
 address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 series: "Student Lecture"
 overview: >
-  TBA
+  Introduction to Particle Simulation
 timetable:
   - time: "12:00 - 12:10"
     title: "Opening remarks"

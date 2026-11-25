@@ -1,15 +1,16 @@
 ---
 layout: event
 event_id: "27-07-SM5"
-title: "SM Week: Day 5"
+title: "2027 SM Week: Day 5"
 date: 2027-07-02 09:00 +0900
-location: "Chungnam National University Imhae Center, Boryeong, Korea"
+location: "Chungnam National University Seaside Training Center, Boryeong, Korea"
 speaker: "SeongSik Kim"
-address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
+address: "Chungnam National University Seaside Training Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
 series: "2027 SM Week"
 overview: >
-  <div><strong>2027 SM Week:</strong></div>
+  <div><strong>2027 SM Week overview and daily programs:</strong></div>
   <nav class="buttons" aria-label="SM Week days">
+    <a class="btn small" href="/JCP/series/2027-sm-week/">2027 SM Week</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-1/">Day 1</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-2/">Day 2</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
@@ -41,7 +42,7 @@ map_embed: >
 hero:
   image: "/assets/img/heros/lecture/2027_SM_Week.png"
   lines:
-    - text: "SM Week: Day 5"
+    - text: "2027 SM Week: Day 5"
       style: title
     - text: "Neutrinos"
       style: subtitle

@@ -8,7 +8,7 @@ period:
   end: "2027-07-02"
 color: "#FF1493"
 program_id: "2027_sm_week"
-address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
+address: "Chungnam National University Seaside Training Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
 map_embed: >
   <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357085d4d9d9308d%3A0xfc0323226a166d82!2z7Lap64Ko64yA7ZWZ6rWQIOyehO2VtOyImOugqOybkA!5e0!3m2!1sko!2skr!4v1790083927457!5m2!1sko!2skr"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -25,11 +25,21 @@ hero:
 
 **2027 SM Week** is a five-day, student-organized school that brings together graduate students to study the Standard Model as a coherent whole. Through student-led lectures, worked calculations, problem-solving sessions, and discussion, the school explores how symmetries, anomalies, the strong and electroweak interactions, flavor physics, and neutrinos fit together.
 
+<div><strong>Program by day:</strong></div>
+<nav class="buttons" aria-label="SM Week days">
+    <span class="btn small" aria-current="page">2027 SM Week</span>
+    <a class="btn small" href="/JCP/events/27-06-sm-week-day-1/">Day 1</a>
+    <a class="btn small" href="/JCP/events/27-06-sm-week-day-2/">Day 2</a>
+    <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
+    <a class="btn small" href="/JCP/events/27-07-sm-week-day-4/">Day 4</a>
+    <a class="btn small" href="/JCP/events/27-07-sm-week-day-5/">Day 5</a>
+</nav>
+
 ## School at a glance
 
 | Item | Details |
 | --- | --- |
-| Venue | Chungnam National University Imhae Center, Boryeong, Korea |
+| Venue | Chungnam National University Seaside Training Center, Boryeong, Korea |
 | Audience | Graduate students in particle theory and phenomenology |
 | Format | 17 lectures totaling 25.5 hours, three practice sessions, and group discussion |
 | Language | Lectures in Korean; lecture notes in English |

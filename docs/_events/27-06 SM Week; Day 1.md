@@ -1,15 +1,16 @@
 ---
 layout: event
 event_id: "27-06-SM1"
-title: "SM Week: Day 1"
+title: "2027 SM Week: Day 1"
 date: 2027-06-28 09:00 +0900
-location: "Chungnam National University Imhae Center, Boryeong, Korea"
+location: "Chungnam National University Seaside Training Center, Boryeong, Korea"
 speaker: "TBA and Sangjin Mun"
-address: "Chungnam National University Imhae Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
+address: "Chungnam National University Seaside Training Center, 41, Haesuyokjang 3-gil, Boryeong, Chungcheongnam-do 33487, Korea"
 series: "2027 SM Week"
 overview: >
-  <div><strong>2027 SM Week:</strong></div>
+  <div><strong>2027 SM Week overview and daily programs:</strong></div>
   <nav class="buttons" aria-label="SM Week days">
+    <a class="btn small" href="/JCP/series/2027-sm-week/">2027 SM Week</a>
     <span class="btn small" aria-current="page">Day 1</span>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-2/">Day 2</a>
     <a class="btn small" href="/JCP/events/27-06-sm-week-day-3/">Day 3</a>
@@ -50,7 +51,7 @@ map_embed: >
 hero:
   image: "/assets/img/heros/lecture/2027_SM_Week.png"
   lines:
-    - text: "SM Week: Day 1"
+    - text: "2027 SM Week: Day 1"
       style: title
     - text: "Symmetries and Broken Symmetries"
       style: subtitle

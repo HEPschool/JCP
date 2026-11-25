@@ -1,7 +1,7 @@
 ---
 layout: online
 title: "Path Integrals I"
-date: 2026-11-24 19:00 +0900
+date: 2026-12-01 19:00 +0900
 series: "2026 Fall Joint Meeting"
 speaker: "Yurang Ko"
 textbook: "Matthew D. Schwartz, Quantum Field Theory and the Standard Model"
@@ -25,6 +25,6 @@ hero:
       style: title
     - text: "Yurang Ko"
       style: subtitle
-    - text: "2026.11.24 (Tue)"
+    - text: "2026.12.01 (Tue)"
       style: text
 ---

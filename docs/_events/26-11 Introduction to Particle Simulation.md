@@ -5,7 +5,7 @@ title: "Introduction to Particle Simulation"
 date: 2026-11-28 12:00 +0900
 location: "Chungnam National University, Daejeon, Korea"
 speaker: "Seong-Ha Kim"
-address: "Room 115, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
+address: "Room 114, College of Natural Sciences Building 4 (W11-2), Chungnam National University, 99 Daehak-ro, Yuseong-gu, Daejeon 34134, Korea"
 series: "Student Lecture"
 overview: >
   Introduction to Particle Simulation
@@ -22,24 +22,39 @@ timetable:
   - time: "13:30 - 14:30"
     title: "Session 0: Security & Backup on AI era"
     speaker: "Seong-Ha Kim"
+    material_id: 
+      - "PS_Note"
+      - "PS_Slides"
   - time: "14:30 - 14:40"
     title: "Break"
     speaker: ""
   - time: "14:40 - 15:15"
     title: "Session 1: Simulation overview"
     speaker: "Seong-Ha Kim"
+    material_id: 
+      - "PS_Note"
+      - "PS_Slides"
   - time: "15:15 - 16:05"
     title: "Session 2: IWCD-PRISM simulation"
     speaker: "Seong-Ha Kim"
+    material_id: 
+      - "PS_Note"
+      - "PS_Slides"
   - time: "16:05 - 16:20"
     title: "Break"
     speaker: ""
   - time: "16:20 - 17:45"
     title: "Session 3: Log-likelihood analysis"
     speaker: "Seong-Ha Kim"
+    material_id: 
+      - "PS_Note"
+      - "PS_Slides"
   - time: "17:45 - 18:00"
     title: "Session 4: Q & A"
     speaker: "Seong-Ha Kim"
+    material_id: 
+      - "PS_Note"
+      - "PS_Slides"
   - time: "18:00 - 20:00"
     title: "Banquet"
     speaker: ""
